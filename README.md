@@ -7,24 +7,24 @@
 ## Team4Tress
 
 # Programmers:
-Emir U
-Denise J
-Nadia D
-Naomi R
-Nicci A
+Emir U,
+Denise J,
+Nadia D,
+Naomi R,
+Nicci A,
 Sami O
 
 # Designers:
-Hugo M
+Hugo M,
 Joakim O
 
 # Artists:
-Judit H
-Olof F
+Judit H,
+Olof F,
 Salomon
 
 # Sound:
-Carl J
+Carl J,
 Ludvig
 
 Feel free to link any existing Linked.in Profiles or Portfolio Websites.
