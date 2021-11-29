@@ -14,16 +14,16 @@ Naomi R
 Nicci A
 Sami O
 
-Designers:
+# Designers:
 Hugo M
 Joakim O
 
-Artists:
+# Artists:
 Judit H
 Olof F
 Salomon
 
-Sound:
+# Sound:
 Carl J
 Ludvig
 
