@@ -4,9 +4,28 @@
 
 {description}
 
-## Team Name
+## Team4Tress
 
-{team members and roles}
+# Programmers:
+Emir U
+Denise J
+Nadia D
+Naomi R
+Nicci A
+Sami O
+
+Designers:
+Hugo M
+Joakim O
+
+Artists:
+Judit H
+Olof F
+Salomon
+
+Sound:
+Carl J
+Ludvig
 
 Feel free to link any existing Linked.in Profiles or Portfolio Websites.
 
