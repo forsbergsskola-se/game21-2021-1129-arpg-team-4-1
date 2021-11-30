@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class RangedEnemySO : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed;
+    public Transform target;
+    public float minimumDistance;
 
-    // Update is called once per frame
-    void Update()
+    public GameObject projectile;
+    public float timeBetweenShots;
+    private float nextShotTime;
+
+
+    private void Update()
     {
+        if (Time.time > nextShotTime)
+        {
+            Instantiate(projectile, transform.position, Quaternion.identity);
+            nextShotTime = Time.time + timeBetweenShots;
+        }
         
+        
+        
+        if (Vector3.Distance(transform.position, target.position) < minimumDistance)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.position, -speed * Time.deltaTime);
+        }
+        //else
+        // {
+        //attack
+        //}
+
     }
 }
