@@ -6,20 +6,20 @@ using UnityEngine.AI;
 
 public class EnemyAiSO : MonoBehaviour
 {
-    public float lookRadius = 7f;
+  public float speed;
+  public Transform target;
+  public float minimumDistance;
 
-    private Transform target;
-    private NavMeshAgent agent;
-
-    private void Start()
+  private void Update()
+  {
+    if (Vector2.Distance(transform.position, target.position) > minimumDistance)
     {
-        agent = GetComponent<NavMeshAgent>();
+      transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
+   //else
+   // {
+      //attack
+    //}
 
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, lookRadius);
-    }
+  }
 }
