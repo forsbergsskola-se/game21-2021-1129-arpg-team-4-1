@@ -12,9 +12,9 @@ public class EnemyAiSO : MonoBehaviour
 
   private void Update()
   {
-    if (Vector3.Distance(transform.position, target.position) > minimumDistance)
+    if (Vector2.Distance(transform.position, target.position) > minimumDistance)
     {
-      transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+      transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
    //else
    // {
