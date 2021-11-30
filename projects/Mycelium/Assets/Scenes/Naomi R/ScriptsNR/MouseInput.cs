@@ -15,7 +15,7 @@ public class @MouseInput : IInputActionCollection, IDisposable
     ""name"": ""Mouse"",
     ""maps"": [
         {
-            ""name"": ""mouse"",
+            ""name"": ""Mouse"",
             ""id"": ""14da60c5-4b1c-40ff-b089-619b19a448e4"",
             ""actions"": [
                 {
@@ -63,10 +63,10 @@ public class @MouseInput : IInputActionCollection, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // mouse
-        m_mouse = asset.FindActionMap("mouse", throwIfNotFound: true);
-        m_mouse_MouseClick = m_mouse.FindAction("MouseClick", throwIfNotFound: true);
-        m_mouse_MousePosition = m_mouse.FindAction("MousePosition", throwIfNotFound: true);
+        // Mouse
+        m_Mouse = asset.FindActionMap("Mouse", throwIfNotFound: true);
+        m_Mouse_MouseClick = m_Mouse.FindAction("MouseClick", throwIfNotFound: true);
+        m_Mouse_MousePosition = m_Mouse.FindAction("MousePosition", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -113,18 +113,18 @@ public class @MouseInput : IInputActionCollection, IDisposable
         asset.Disable();
     }
 
-    // mouse
-    private readonly InputActionMap m_mouse;
+    // Mouse
+    private readonly InputActionMap m_Mouse;
     private IMouseActions m_MouseActionsCallbackInterface;
-    private readonly InputAction m_mouse_MouseClick;
-    private readonly InputAction m_mouse_MousePosition;
+    private readonly InputAction m_Mouse_MouseClick;
+    private readonly InputAction m_Mouse_MousePosition;
     public struct MouseActions
     {
         private @MouseInput m_Wrapper;
         public MouseActions(@MouseInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @MouseClick => m_Wrapper.m_mouse_MouseClick;
-        public InputAction @MousePosition => m_Wrapper.m_mouse_MousePosition;
-        public InputActionMap Get() { return m_Wrapper.m_mouse; }
+        public InputAction @MouseClick => m_Wrapper.m_Mouse_MouseClick;
+        public InputAction @MousePosition => m_Wrapper.m_Mouse_MousePosition;
+        public InputActionMap Get() { return m_Wrapper.m_Mouse; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
@@ -152,7 +152,7 @@ public class @MouseInput : IInputActionCollection, IDisposable
             }
         }
     }
-    public MouseActions @mouse => new MouseActions(this);
+    public MouseActions @Mouse => new MouseActions(this);
     public interface IMouseActions
     {
         void OnMouseClick(InputAction.CallbackContext context);
