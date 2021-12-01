@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 31dd7fe968958354e8c93b5a777baf5c
+guid: a43ad177545a2724bbc34961ac99df4a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2124280993115307352
-    second: halfRC_tile
+      213: 2613348730587745498
+    second: test2_0
   - first:
-      213: 2783848623207855960
-    second: halfLC_tile
+      213: 142361745658363079
+    second: test2_1
   - first:
-      213: -8344227241753890780
-    second: slopeC_tile
+      213: -3033126602819275161
+    second: test2_2
   - first:
-      213: -1942541494301064867
-    second: fullLC_tile
-  - first:
-      213: 7930824765360607370
-    second: fullRC_tile
+      213: 2199016529850516632
+    second: test2_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -80,7 +77,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -92,7 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -104,7 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 1024
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -118,49 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: halfRC_tile
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85d70cdee46fa7d10800000000000000
-      internalID: 2124280993115307352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: halfLC_tile
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 857b3c6c29732a620800000000000000
-      internalID: 2783848623207855960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slopeC_tile
+      name: test2_0
       rect:
         serializedVersion: 2
         x: 128
@@ -174,14 +129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4203f128889533c80800000000000000
-      internalID: -8344227241753890780
+      spriteID: adc86e803da744420800000000000000
+      internalID: 2613348730587745498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fullLC_tile
+      name: test2_1
       rect:
         serializedVersion: 2
         x: 0
@@ -195,18 +150,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d518abe8dc4ba05e0800000000000000
-      internalID: -1942541494301064867
+      spriteID: 7cc329fd045c9f100800000000000000
+      internalID: 142361745658363079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fullRC_tile
+      name: test2_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
+        x: 128
+        y: 0
         width: 128
         height: 128
       alignment: 0
@@ -216,8 +171,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a809033da13ff0e60800000000000000
-      internalID: 7930824765360607370
+      spriteID: 7667b28cc6b28e5d0800000000000000
+      internalID: -3033126602819275161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test2_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894c3fc02e9748e10800000000000000
+      internalID: 2199016529850516632
       vertices: []
       indices: 
       edges: []

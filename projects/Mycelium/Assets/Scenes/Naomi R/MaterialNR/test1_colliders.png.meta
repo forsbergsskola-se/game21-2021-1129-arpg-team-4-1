@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 12b4daaaed095324fa4d9b2eb9ae3ce5
+guid: d9fd9f985cf119e41b60a2bf9e71bf97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7599707462736857780
-    second: floor_tile
+      213: 2124280993115307352
+    second: test1_colliders_0
   - first:
-      213: 4496884335900350250
-    second: half_tile
+      213: 2783848623207855960
+    second: test1_colliders_1
   - first:
-      213: 5626181822207742859
-    second: full_tile
+      213: -8344227241753890780
+    second: test1_colliders_2
   - first:
-      213: -2729275560186544588
-    second: slope_tile
+      213: -1942541494301064867
+    second: test1_colliders_3
+  - first:
+      213: 7930824765360607370
+    second: test1_colliders_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -77,7 +80,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -89,7 +92,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -101,7 +104,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 1024
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -115,7 +118,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floor_tile
+      name: test1_colliders_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d70cdee46fa7d10800000000000000
+      internalID: 2124280993115307352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test1_colliders_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857b3c6c29732a620800000000000000
+      internalID: 2783848623207855960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test1_colliders_2
       rect:
         serializedVersion: 2
         x: 0
@@ -129,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c453faed35a688690800000000000000
-      internalID: -7599707462736857780
+      spriteID: 4203f128889533c80800000000000000
+      internalID: -8344227241753890780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: half_tile
+      name: test1_colliders_3
       rect:
         serializedVersion: 2
         x: 128
@@ -150,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a27db5d5a74286e30800000000000000
-      internalID: 4496884335900350250
+      spriteID: d518abe8dc4ba05e0800000000000000
+      internalID: -1942541494301064867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: full_tile
+      name: test1_colliders_4
       rect:
         serializedVersion: 2
         x: 0
@@ -171,29 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b83d37afe86341e40800000000000000
-      internalID: 5626181822207742859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slope_tile
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43efcec965aaf1ad0800000000000000
-      internalID: -2729275560186544588
+      spriteID: a809033da13ff0e60800000000000000
+      internalID: 7930824765360607370
       vertices: []
       indices: 
       edges: []
