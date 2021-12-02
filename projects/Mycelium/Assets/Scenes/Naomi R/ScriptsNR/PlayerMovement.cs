@@ -39,11 +39,16 @@ public class PlayerMovement : MonoBehaviour
         Vector2 mousePosition = mouseInput.Mouse.MousePosition.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Vector3Int gridPosition = map.WorldToCell(mousePosition);
-        
+
         //makes sure we are clicking on a tile 
         if (map.HasTile(gridPosition))
         {
             destination = mousePosition;
+        }
+        
+        if (Physics2D.Raycast(transform.position, mousePosition, Vector2.Distance(transform.position, mousePosition), 6))
+        {
+            destination = transform.position;
         }
     }
     
@@ -62,5 +67,10 @@ public class PlayerMovement : MonoBehaviour
         {
             destination = transform.position;
         }
+    }
+
+    void checkVoidValid()
+    {
+       
     }
 }
