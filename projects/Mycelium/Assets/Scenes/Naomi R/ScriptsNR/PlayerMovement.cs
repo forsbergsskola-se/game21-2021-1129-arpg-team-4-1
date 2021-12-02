@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3Int gridPosition = map.WorldToCell(mousePosition);
         
         //makes sure we are clicking on a tile 
-        if (map.HasTile(gridPosition) && !gameObject.CompareTag("Collider"))
+        if (map.HasTile(gridPosition))
         {
             destination = mousePosition;
         }
@@ -54,5 +54,13 @@ public class PlayerMovement : MonoBehaviour
             transform. position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
         }
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D hit)
+    {
+        Debug.Log(hit);
+        if (hit.gameObject.tag == "Collider")
+        {
+            destination = transform.position;
+        }
+    }
 }
