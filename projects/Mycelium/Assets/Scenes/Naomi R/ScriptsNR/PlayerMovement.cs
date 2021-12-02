@@ -68,9 +68,4 @@ public class PlayerMovement : MonoBehaviour
             destination = transform.position;
         }
     }
-
-    void checkVoidValid()
-    {
-       
-    }
 }
