@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public Tilemap map;
     MouseInput mouseInput;
     private Vector3 destination;
-    [SerializeField] private float movementSpeed; 
+    [SerializeField] private float movementSpeed;
+    public bool canMove;
 
 
     private void Awake()
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3Int gridPosition = map.WorldToCell(mousePosition);
         
         //makes sure we are clicking on a tile 
-        if (map.HasTile(gridPosition))
+        if (map.HasTile(gridPosition) && !gameObject.CompareTag("Collider"))
         {
             destination = mousePosition;
         }
@@ -53,4 +54,5 @@ public class PlayerMovement : MonoBehaviour
             transform. position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
         }
     }
+    
 }
