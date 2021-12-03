@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
             destination = mousePosition;
         }
         
+        //makes you stop moving if you hit a collider with the tag collider
         if (Physics2D.Raycast(transform.position, mousePosition, Vector2.Distance(transform.position, mousePosition), 6))
         {
             destination = transform.position;
@@ -62,7 +63,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D hit)
     {
-        Debug.Log(hit);
         if (hit.gameObject.tag == "Collider")
         {
             destination = transform.position;
