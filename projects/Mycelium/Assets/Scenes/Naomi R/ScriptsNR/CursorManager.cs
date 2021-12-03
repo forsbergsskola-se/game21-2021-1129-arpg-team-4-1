@@ -1,18 +1,44 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CursorManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Texture2D cursor;
+    public Texture2D cursorInvalid;
+    
+
+    private void Awake()
     {
-        
+        ChangeCursor(cursor);
+        Cursor.lockState = CursorLockMode.Confined; //keeps the cursor inside the game
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+       
+    }
+    
+    private void ChangeCursor(Texture2D cursorType)
+    {
+        Cursor.SetCursor(cursorType, new Vector2 (4, 4), CursorMode.Auto);
+    }
+
+    private void OnMouseEnter()
+    {
+       ChangeCursor(cursorInvalid);
+    }
+
+    private void OnMouseOver()
+    {
+        ChangeCursor(cursorInvalid);
+    }
+
+
+    private void OnMouseExit()
+    { 
+        ChangeCursor(cursor);
     }
 }
