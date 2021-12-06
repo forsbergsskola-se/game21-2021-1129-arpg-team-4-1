@@ -155,10 +155,10 @@ RectTransform:
   m_Father: {fileID: 1901469751}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00086975074, y: -0.0000925064}
-  m_SizeDelta: {x: 182.4475, y: 35.3826}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000869751, y: -0.00009346008}
+  m_SizeDelta: {x: 4.4474945, y: 5.382599}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &157678867
 MonoBehaviour:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6132076, g: 0.06652725, b: 0.06652725, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -369,6 +369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431fb5eb94f185a49b7aea6318127643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 1901469753}
 --- !u!212 &589800996
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -545,6 +548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1901469751}
   - component: {fileID: 1901469752}
+  - component: {fileID: 1901469753}
   m_Layer: 5
   m_Name: Health Bar
   m_TagString: Untagged
@@ -618,12 +622,25 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1901469753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901469750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f52dedeab265a74bbd0d798f0ffae99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1901469752}
 --- !u!1 &1906014627
 GameObject:
   m_ObjectHideFlags: 0
