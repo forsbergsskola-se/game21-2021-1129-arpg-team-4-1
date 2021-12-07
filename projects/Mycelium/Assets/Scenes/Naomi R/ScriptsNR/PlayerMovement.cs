@@ -7,10 +7,12 @@ using UnityEngine.Tilemaps;
 public class PlayerMovement : MonoBehaviour
 {
     public Tilemap map;
-    MouseInput mouseInput;
+    private MouseInput mouseInput;
     private Vector3 destination;
+    private GameObject currentPrefab;
     [SerializeField] private float movementSpeed;
-    public bool canMove;
+    [SerializeField] private GameObject prefab;
+    private bool hasSpawned;
 
 
     private void Awake()
@@ -33,6 +35,17 @@ public class PlayerMovement : MonoBehaviour
         destination = transform.position;
         mouseInput.Mouse.MouseClick.performed += _ => MouseClick();
     }
+    
+    void Update()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
+        
+        if (destinationReached() && hasSpawned)
+        {
+            Destroy(currentPrefab);
+            hasSpawned = false;
+        }
+    }
 
     private void MouseClick()
     {
@@ -44,28 +57,20 @@ public class PlayerMovement : MonoBehaviour
         if (map.HasTile(gridPosition))
         {
             destination = mousePosition;
-        }
-        
-        //makes you stop moving if you hit a collider with the tag collider
-        if (Physics2D.Raycast(transform.position, mousePosition, Vector2.Distance(transform.position, mousePosition), 6))
-        {
-            destination = transform.position;
-        }
-    }
-    
-    void Update()
-    {
-        if (Vector3.Distance(transform.position, destination) > 0.1f)
-        {
-            transform. position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
+            spawnPointer();
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D hit)
+    private void spawnPointer()
     {
-        if (hit.gameObject.tag == "Collider")
-        {
-            destination = transform.position;
-        }
+        Destroy(currentPrefab);
+        currentPrefab = Instantiate(prefab, destination, Quaternion.identity);
+        hasSpawned = true;
+    }
+
+
+    public bool destinationReached()
+    {
+        return destination == transform.position;
     }
 }

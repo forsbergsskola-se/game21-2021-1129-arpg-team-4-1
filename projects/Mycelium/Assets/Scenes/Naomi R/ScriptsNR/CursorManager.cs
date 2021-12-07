@@ -9,7 +9,8 @@ public class CursorManager : MonoBehaviour
 {
     public Texture2D cursor;
     public Texture2D cursorInvalid;
-    CompositeCollider2D collider;
+    private CompositeCollider2D collider;
+
 
     private void Awake()
     {
@@ -19,13 +20,12 @@ public class CursorManager : MonoBehaviour
         //keeps the cursor inside the game, click esc to escape the window
         Cursor.lockState = CursorLockMode.Confined; 
     }
-    
+
     private void ChangeCursor(Texture2D cursorType)
     {
         Cursor.SetCursor(cursorType, new Vector2 (0, 0), CursorMode.Auto);
     }
 
-    
     //changes the mouse when it enters the collider.
     private void OnMouseEnter()
     {
