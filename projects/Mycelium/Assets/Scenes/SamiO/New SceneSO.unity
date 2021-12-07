@@ -519,7 +519,6 @@ GameObject:
   - component: {fileID: 739579604}
   - component: {fileID: 739579607}
   - component: {fileID: 739579608}
-  - component: {fileID: 739579606}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -593,23 +592,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &739579606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739579603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3377d0fc86f37a04eae83b570afdcc87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  target: {fileID: 199378978}
-  minimumDistance: 2
-  projectile: {fileID: 4189246265020614192, guid: eb83f0be6eba1534b99214cd14d0cb03, type: 3}
-  timeBetweenShots: 2
 --- !u!50 &739579607
 Rigidbody2D:
   serializedVersion: 4
