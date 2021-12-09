@@ -6,10 +6,12 @@ using UnityEngine;
 public class SecondBoxDesEU : MonoBehaviour
 {
     /// <summary>
+    /// (easy script)
     /// If an object has the tag "player" and gets touched by the object with player tag
     /// it will get destroyed.
     /// </summary>
     /// <param name="other"></param>
+    
     
     //Destroy function
     void OnCollisionEnter2D(Collision2D other)

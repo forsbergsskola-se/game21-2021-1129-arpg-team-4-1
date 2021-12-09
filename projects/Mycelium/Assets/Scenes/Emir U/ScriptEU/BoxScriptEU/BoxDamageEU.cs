@@ -26,7 +26,7 @@ public class BoxDamageEU : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Weapon")
+        if (other.gameObject.tag == "Player")
         {
             health--;
 

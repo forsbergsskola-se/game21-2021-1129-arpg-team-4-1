@@ -1,0 +1,20 @@
+using UnityEngine;
+
+using TMPro;
+namespace Scenes.Denise_J
+{
+    public class gamemanager : MonoBehaviour
+    {
+        public GameObject damageTextPrefab, enemyInstance;
+
+        public string textToDisplay;
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                GameObject damageTextInstance = Instantiate(damageTextPrefab, enemyInstance.transform);
+                damageTextInstance.transform.GetChild(0).GetComponent<TextMeshPro>().SetText(textToDisplay);
+            }
+        }
+    }
+}
