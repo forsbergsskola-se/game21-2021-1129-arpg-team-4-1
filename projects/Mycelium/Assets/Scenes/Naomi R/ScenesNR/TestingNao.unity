@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 871244886}
   - component: {fileID: 871244885}
   - component: {fileID: 871244884}
+  - component: {fileID: 871244887}
   m_Layer: 6
   m_Name: Collision
   m_TagString: Collider
@@ -1890,7 +1891,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
@@ -5970,14 +5971,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871244880}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -5999,6 +6000,20 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &871244887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871244880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 350d5f7966dca6e44837653cd68b4304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: fcd0405a0c5ec4d4f851536acc516eed, type: 3}
+  cursorInvalid: {fileID: 2800000, guid: ec92b904ffa5b6d42b04e95bf7bf992c, type: 3}
 --- !u!1 &1306068075
 GameObject:
   m_ObjectHideFlags: 0
@@ -6033,7 +6048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   map: {fileID: 1672431306}
   movementSpeed: 2
-  canMove: 0
+  prefab: {fileID: 2864430325069958057, guid: 007fd0fcf2134d84bbd20ab2127e54d7, type: 3}
 --- !u!212 &1306068077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9808,7 +9823,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1849539825}
-  - component: {fileID: 1849539824}
   m_Layer: 0
   m_Name: Cursor
   m_TagString: Untagged
@@ -9816,20 +9830,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1849539824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849539823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 350d5f7966dca6e44837653cd68b4304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursor: {fileID: 2800000, guid: d447fc6c71c8e544d88497ca1df4525a, type: 3}
-  cursorInvalid: {fileID: 2800000, guid: edd6fcfef44859d4895dbe4b162a6754, type: 3}
 --- !u!4 &1849539825
 Transform:
   m_ObjectHideFlags: 0
