@@ -40,9 +40,10 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
-        
+        // makes the player move
         transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
         
+        // removes the pointer after the player has reached his destination 
         if (destinationReached() && hasSpawned)
         {
             Destroy(currentPrefab);
@@ -52,12 +53,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void MouseClick()
     {
+        // - 
         Vector2 mousePosition = mouseInput.Mouse.MousePosition.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Vector3Int gridPosition = map.WorldToCell(mousePosition);
         
 
-        //makes sure we are clicking on a tile 
+        // makes sure we are clicking on a tile and that the location is valid; see CursorManager script.
+        // also spawns the pointer 
         if (map.HasTile(gridPosition) && isValidLocation)
         {
             destination = mousePosition;
@@ -66,8 +69,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    
+    
     private void spawnPointer()
     {
+        // spawns a pointer indicating our set destination. 
         Destroy(currentPrefab);
         currentPrefab = Instantiate(prefab, destination, Quaternion.identity);
         hasSpawned = true;
