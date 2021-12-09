@@ -11,6 +11,7 @@ public class SecondBoxDesEU : MonoBehaviour
     /// </summary>
     /// <param name="other"></param>
     
+    
     //Destroy function
     void OnCollisionEnter2D(Collision2D other)
     {
