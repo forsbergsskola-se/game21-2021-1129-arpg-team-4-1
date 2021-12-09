@@ -40,11 +40,9 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
-        if (isValidLocation)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
-        }
-
+        
+        transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
+        
         if (destinationReached() && hasSpawned)
         {
             Destroy(currentPrefab);
