@@ -13,11 +13,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float movementSpeed;
     [SerializeField] private GameObject prefab;
     private bool hasSpawned;
+    public bool isValidLocation;
 
 
     private void Awake()
     {
         mouseInput = new MouseInput();
+        isValidLocation = true;
     }
 
     private void OnEnable()
@@ -38,8 +40,11 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
-        
+        if (isValidLocation)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
+        }
+
         if (destinationReached() && hasSpawned)
         {
             Destroy(currentPrefab);
@@ -52,13 +57,15 @@ public class PlayerMovement : MonoBehaviour
         Vector2 mousePosition = mouseInput.Mouse.MousePosition.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Vector3Int gridPosition = map.WorldToCell(mousePosition);
+        
 
         //makes sure we are clicking on a tile 
-        if (map.HasTile(gridPosition))
+        if (map.HasTile(gridPosition) && isValidLocation)
         {
             destination = mousePosition;
             spawnPointer();
         }
+
     }
 
     private void spawnPointer()
@@ -69,8 +76,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    public bool destinationReached()
+    private bool destinationReached()
     {
         return destination == transform.position;
     }
+    
 }

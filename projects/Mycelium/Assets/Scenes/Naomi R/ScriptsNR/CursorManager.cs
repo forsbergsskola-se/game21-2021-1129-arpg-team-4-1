@@ -10,6 +10,7 @@ public class CursorManager : MonoBehaviour
     public Texture2D cursor;
     public Texture2D cursorInvalid;
     private CompositeCollider2D collider;
+    [SerializeField] private PlayerMovement PM;
 
 
     private void Awake()
@@ -30,17 +31,20 @@ public class CursorManager : MonoBehaviour
     private void OnMouseEnter()
     {
        ChangeCursor(cursorInvalid);
+       PM.isValidLocation = false;
     }
     
     //changes the mouse when it's hovering over the collider. Not necessary but clean.
     private void OnMouseOver()
     {
         ChangeCursor(cursorInvalid);
+        PM.isValidLocation = false;
     }
     
     //changes the mouse when we leave the collider.
     private void OnMouseExit()
     { 
         ChangeCursor(cursor);
+        PM.isValidLocation = true;
     }
 }
