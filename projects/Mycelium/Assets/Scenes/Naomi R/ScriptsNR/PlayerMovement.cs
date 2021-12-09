@@ -6,14 +6,14 @@ using UnityEngine.Tilemaps;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Tilemap map;
     private MouseInput mouseInput;
     private Vector3 destination;
     private GameObject currentPrefab;
-    [SerializeField] private float movementSpeed;
-    [SerializeField] private GameObject prefab;
     private bool hasSpawned;
     public bool isValidLocation;
+    [SerializeField] private float movementSpeed;
+    [SerializeField] private GameObject prefab;
+    [SerializeField] private Tilemap map;
 
 
     private void Awake()
