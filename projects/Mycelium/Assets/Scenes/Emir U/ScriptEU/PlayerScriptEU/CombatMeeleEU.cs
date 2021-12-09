@@ -6,7 +6,7 @@ using UnityEngine;
 public class CombatMeeleEU : MonoBehaviour
 {
 
-    public Animator animation;
+    //public Animator animation;
 
     public Transform attackPoint;
     public float attackRange = 0.5F;
@@ -24,7 +24,7 @@ public class CombatMeeleEU : MonoBehaviour
     void Attack()
     {
         //Play Attack animation
-        animation.SetTrigger("Attack");
+        //animation.SetTrigger("Attack");
         
         //Detect enemies in the range of attack
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);

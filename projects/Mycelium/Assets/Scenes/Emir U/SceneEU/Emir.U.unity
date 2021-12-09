@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &227879935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 227879936}
+  m_Layer: 7
+  m_Name: AttackPoinit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &227879936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227879935}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.40795135, y: 0.018090412, z: -1.4364971}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1864969276}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1000973560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,6 +162,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8976882094419072719, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
       propertyPath: m_Name
+      value: Barrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976882094419072719, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976882094419072719, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
+      propertyPath: m_TagString
       value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 9103944837965951864, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
@@ -185,20 +223,53 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8976882094419072719, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
   m_PrefabInstance: {fileID: 1000973560}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1000973562
-MonoBehaviour:
+--- !u!61 &1000973565
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000973561}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bedda5c2ccd3fe14aa4da019421de4d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
-  destrucableRef: {fileID: 2654842477766911406, guid: a0a64ea3bc604914bb7922cec278c418, type: 3}
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.42, y: 0.52}
+    newSize: {x: 0.42, y: 0.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 0.52}
+  m_EdgeRadius: 0
+--- !u!50 &1000973566
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000973561}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 100
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1131173780
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,9 +477,9 @@ GameObject:
   - component: {fileID: 1864969273}
   - component: {fileID: 1864969272}
   - component: {fileID: 1864969277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -523,9 +594,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864969271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.15, y: -0.05, z: 0}
+  m_LocalPosition: {x: -4.22, y: -0.129, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 227879936}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -541,3 +613,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eb1c77912296b64c8eb11ff79b66dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackPoint: {fileID: 227879936}
+  attackRange: 0.47
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
