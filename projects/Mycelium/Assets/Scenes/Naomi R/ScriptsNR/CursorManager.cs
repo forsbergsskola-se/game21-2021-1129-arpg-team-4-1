@@ -15,10 +15,12 @@ public class CursorManager : MonoBehaviour
 
     private void Awake()
     {
+        // takes in the Collider Tilemaps' Composite Collider 2D which the onMouse methods need.
         collider = GetComponent<CompositeCollider2D>();
+        
         ChangeCursor(cursor);
         
-        //keeps the cursor inside the game, click esc to escape the window
+        // keeps the cursor inside the game, click esc to escape the window.
         Cursor.lockState = CursorLockMode.Confined; 
     }
 
@@ -27,23 +29,26 @@ public class CursorManager : MonoBehaviour
         Cursor.SetCursor(cursorType, new Vector2 (0, 0), CursorMode.Auto);
     }
 
-    //changes the mouse when it enters the collider.
+   
     private void OnMouseEnter()
     {
+        // changes the mouse when it enters the collider, sets valid location to false since we're now over collider. 
        ChangeCursor(cursorInvalid);
        PM.isValidLocation = false;
     }
     
-    //changes the mouse when it's hovering over the collider. Not necessary but clean.
+    
     private void OnMouseOver()
     {
+        // changes the mouse when it's hovering over the collider. Not necessary but clean. Also makes sure the valid location is still false.
         ChangeCursor(cursorInvalid);
         PM.isValidLocation = false;
     }
     
-    //changes the mouse when we leave the collider.
+    
     private void OnMouseExit()
     { 
+        // changes the mouse when we leave the collider, sets the valid location to true since we're now outside of the colliders and should be able to move.
         ChangeCursor(cursor);
         PM.isValidLocation = true;
     }
