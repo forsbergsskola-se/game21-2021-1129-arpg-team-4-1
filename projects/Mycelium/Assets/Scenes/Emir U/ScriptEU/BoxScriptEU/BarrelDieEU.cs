@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BarrelDieEU : MonoBehaviour
 {
-    public int maxHealth = 100;
+    public int maxHealth = 20;
     int currentHealth;
     
     // Start is called before the first frame update
@@ -22,13 +22,8 @@ public class BarrelDieEU : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            Debug.Log("Box got destroyed");
         }
-    }
-
-    void Die()
-    {
-        Debug.Log("Box got destroyed");
-        
     }
     // Update is called once per frame
     void Update()
