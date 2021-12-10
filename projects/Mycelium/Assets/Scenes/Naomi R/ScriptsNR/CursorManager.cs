@@ -40,9 +40,8 @@ public class CursorManager : MonoBehaviour
     
     private void OnMouseOver()
     {
-        // changes the mouse when it's hovering over the collider. Not necessary but clean. Also makes sure the valid location is still false.
+        // changes the mouse when it's hovering over the collider. Not necessary but clean.
         ChangeCursor(cursorInvalid);
-        PM.isValidLocation = false;
     }
     
     
