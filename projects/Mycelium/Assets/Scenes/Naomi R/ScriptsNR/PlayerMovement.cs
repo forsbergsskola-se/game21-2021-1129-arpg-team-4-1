@@ -14,8 +14,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float movementSpeed;
     [SerializeField] private GameObject prefab;
     [SerializeField] private Tilemap map;
-
-
+    
+    
     private void Awake()
     {
         mouseInput = new MouseInput();
@@ -66,10 +66,7 @@ public class PlayerMovement : MonoBehaviour
             destination = mousePosition;
             spawnPointer();
         }
-
     }
-
-    
     
     private void spawnPointer()
     {
@@ -78,8 +75,7 @@ public class PlayerMovement : MonoBehaviour
         currentPrefab = Instantiate(prefab, destination, Quaternion.identity);
         hasSpawned = true;
     }
-
-
+    
     private bool destinationReached()
     {
         return destination == transform.position;
