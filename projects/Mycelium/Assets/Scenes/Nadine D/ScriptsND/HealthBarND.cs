@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HealthBarND : MonoBehaviour
 {
     public Slider slider;
+    public Gradient gradient;
     
     public void SetMaxHealth(int health)
     {
