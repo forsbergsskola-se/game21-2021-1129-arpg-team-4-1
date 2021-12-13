@@ -7,7 +7,7 @@ public class PlayerND : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
 
-    public HealthBarND healthBar;
+    public PlayerHealthBarND healthBar;
 
     // Start is called before the first frame update
     void Start()
