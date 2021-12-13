@@ -327,9 +327,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 213329024}
-  agroRange: 3
+  agroRange: 2
   moveSpeed: 2
-  minDistance: 1
+  minDistance: 0.3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

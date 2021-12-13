@@ -21,10 +21,10 @@ public class EnemyAggro : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        float distToPlayer = Vector2.Distance(transform.position, player.position);
+        float distToPlayer = Vector3.Distance(transform.position, player.position);
         print("distToPlayer:" + distToPlayer);
 
         if (distToPlayer < agroRange)
@@ -40,14 +40,14 @@ public class EnemyAggro : MonoBehaviour
 
     private void StopChasingPlayer()
     {
-        rb2d.velocity = Vector2.zero;
+        rb2d.velocity = Vector3.zero;
 
     }
 
     private void ChasePlayer()
     {
-        if(Vector2.Distance(transform.position, player.position) > minDistance) {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+        if(Vector3.Distance(transform.position, player.position) > minDistance) {
+            transform.position = Vector3.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
         }
         else
         {
