@@ -6009,12 +6009,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 871244880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 350d5f7966dca6e44837653cd68b4304, type: 3}
+  m_Script: {fileID: 11500000, guid: 853c1b49a0b947c42a7d6448b37b4fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: fcd0405a0c5ec4d4f851536acc516eed, type: 3}
   cursorInvalid: {fileID: 2800000, guid: ec92b904ffa5b6d42b04e95bf7bf992c, type: 3}
-  PM: {fileID: 1306068076}
+  PM: {fileID: 0}
 --- !u!1 &1306068075
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,30 +6027,13 @@ GameObject:
   - component: {fileID: 1306068077}
   - component: {fileID: 1306068079}
   - component: {fileID: 1306068080}
-  - component: {fileID: 1306068076}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1306068076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306068075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 771a9db37e3f2044dba27d3aaf9b0cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isValidLocation: 0
-  movementSpeed: 2
-  prefab: {fileID: 2864430325069958057, guid: 007fd0fcf2134d84bbd20ab2127e54d7, type: 3}
-  map: {fileID: 1672431306}
 --- !u!212 &1306068077
 SpriteRenderer:
   m_ObjectHideFlags: 0
