@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 
 public class PlayerMovementNR : MonoBehaviour
 {
-      private MouseInput mouseInput;
+    private MouseInput mouseInput;
     private Vector3 destination;
     private GameObject currentPrefab;
     private bool hasSpawned;

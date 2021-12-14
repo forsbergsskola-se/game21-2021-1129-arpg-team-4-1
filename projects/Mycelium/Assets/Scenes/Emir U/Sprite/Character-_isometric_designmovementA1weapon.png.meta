@@ -1,0 +1,732 @@
+fileFormatVersion: 2
+guid: 21ca8e386dbac3641b8cefba11f1af7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4975438714898877211
+    second: Character-_isometric_designmovementA1weapon_0
+  - first:
+      213: -5705261337432661241
+    second: Character-_isometric_designmovementA1weapon_1
+  - first:
+      213: 2273103612293066974
+    second: Character-_isometric_designmovementA1weapon_2
+  - first:
+      213: 1986038843432692634
+    second: Character-_isometric_designmovementA1weapon_3
+  - first:
+      213: -7373509632309322304
+    second: Character-_isometric_designmovementA1weapon_4
+  - first:
+      213: 3255502349789337298
+    second: Character-_isometric_designmovementA1weapon_5
+  - first:
+      213: 3090492865241555312
+    second: Character-_isometric_designmovementA1weapon_6
+  - first:
+      213: -7235057273043234961
+    second: Character-_isometric_designmovementA1weapon_7
+  - first:
+      213: -4429091189450287207
+    second: Character-_isometric_designmovementA1weapon_8
+  - first:
+      213: 9018444389863355568
+    second: Character-_isometric_designmovementA1weapon_9
+  - first:
+      213: -3756605907225917017
+    second: Character-_isometric_designmovementA1weapon_10
+  - first:
+      213: 2039216254308835483
+    second: Character-_isometric_designmovementA1weapon_11
+  - first:
+      213: -7829974741527777024
+    second: Character-_isometric_designmovementA1weapon_12
+  - first:
+      213: -2690016393569792299
+    second: Character-_isometric_designmovementA1weapon_13
+  - first:
+      213: -3370672364839419214
+    second: Character-_isometric_designmovementA1weapon_14
+  - first:
+      213: -765122191055164042
+    second: Character-_isometric_designmovementA1weapon_15
+  - first:
+      213: 4698051994171424323
+    second: Character-_isometric_designmovementA1weapon_16
+  - first:
+      213: -3614827213369911638
+    second: Character-_isometric_designmovementA1weapon_17
+  - first:
+      213: -5183311565439432060
+    second: Character-_isometric_designmovementA1weapon_18
+  - first:
+      213: -988125406898040807
+    second: Character-_isometric_designmovementA1weapon_19
+  - first:
+      213: -6172142855780797761
+    second: Character-_isometric_designmovementA1weapon_20
+  - first:
+      213: -5566406221582382154
+    second: Character-_isometric_designmovementA1weapon_21
+  - first:
+      213: 5689880244452192543
+    second: Character-_isometric_designmovementA1weapon_22
+  - first:
+      213: 4006981873988502750
+    second: Character-_isometric_designmovementA1weapon_23
+  - first:
+      213: -6124190905535951961
+    second: Character-_isometric_designmovementA1weapon_24
+  - first:
+      213: -3491671306462090976
+    second: Character-_isometric_designmovementA1weapon_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_0
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 4691
+        width: 482
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b0643762f4c0540800000000000000
+      internalID: 4975438714898877211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_1
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 4712
+        width: 524
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7036e879a07d2d0b0800000000000000
+      internalID: -5705261337432661241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_2
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 4707
+        width: 487
+        height: 671
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0b26421bfab8f10800000000000000
+      internalID: 2273103612293066974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_3
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 4637
+        width: 490
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9beeec3ec3df8b10800000000000000
+      internalID: 1986038843432692634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_4
+      rect:
+        serializedVersion: 2
+        x: 2858
+        y: 4715
+        width: 473
+        height: 714
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd18425e080ca990800000000000000
+      internalID: -7373509632309322304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_5
+      rect:
+        serializedVersion: 2
+        x: 3433
+        y: 4610
+        width: 495
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d694a4832edd2d20800000000000000
+      internalID: 3255502349789337298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_6
+      rect:
+        serializedVersion: 2
+        x: 4099
+        y: 4667
+        width: 487
+        height: 698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0712a9503e2a3ea20800000000000000
+      internalID: 3090492865241555312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_7
+      rect:
+        serializedVersion: 2
+        x: 4709
+        y: 4642
+        width: 525
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fc6ae3eb9e79b90800000000000000
+      internalID: -7235057273043234961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_8
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 4672
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997d00f8705b882c0800000000000000
+      internalID: -4429091189450287207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 3891
+        width: 557
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b47b6c0463f72d70800000000000000
+      internalID: 9018444389863355568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_10
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 3757
+        width: 524
+        height: 773
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a94aaaa4dadddbc0800000000000000
+      internalID: -3756605907225917017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_11
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 3805
+        width: 492
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90e74a0160cc4c10800000000000000
+      internalID: 2039216254308835483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_12
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 3757
+        width: 509
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001b4f22577565390800000000000000
+      internalID: -7829974741527777024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_13
+      rect:
+        serializedVersion: 2
+        x: 2852
+        y: 3864
+        width: 471
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de8b45a7542baad0800000000000000
+      internalID: -2690016393569792299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_14
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 3698
+        width: 508
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2458fb757f831d0800000000000000
+      internalID: -3370672364839419214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_15
+      rect:
+        serializedVersion: 2
+        x: 4006
+        y: 3709
+        width: 580
+        height: 671
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d6368cb6db165f0800000000000000
+      internalID: -765122191055164042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_16
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 3725
+        width: 711
+        height: 666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e37e8b565d23140800000000000000
+      internalID: 4698051994171424323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_17
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 3674
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6dba63dcd85ddc0800000000000000
+      internalID: -3614827213369911638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_18
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 2783
+        width: 481
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a0fc5f79d2118b0800000000000000
+      internalID: -5183311565439432060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_19
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 2876
+        width: 594
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910dd408d297942f0800000000000000
+      internalID: -988125406898040807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_20
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 2874
+        width: 578
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2783a26c4285aa0800000000000000
+      internalID: -6172142855780797761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_21
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 2895
+        width: 581
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbce07980720c2b0800000000000000
+      internalID: -5566406221582382154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_22
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 2951
+        width: 471
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11f511afe386fe40800000000000000
+      internalID: 5689880244452192543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_23
+      rect:
+        serializedVersion: 2
+        x: 3479
+        y: 2887
+        width: 495
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed48384d8c8ab9730800000000000000
+      internalID: 4006981873988502750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_24
+      rect:
+        serializedVersion: 2
+        x: 3987
+        y: 2858
+        width: 621
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab0ada91d0820ba0800000000000000
+      internalID: -6124190905535951961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character-_isometric_designmovementA1weapon_25
+      rect:
+        serializedVersion: 2
+        x: 4482
+        y: 2815
+        width: 792
+        height: 760
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02927e942771b8fc0800000000000000
+      internalID: -3491671306462090976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

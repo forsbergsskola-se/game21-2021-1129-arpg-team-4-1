@@ -9,6 +9,10 @@ public class PlayerMovementEU : MonoBehaviour
     float horizontal;
     float vertical;
 
+    private float horizontalMove = 0f;
+    
+    public Animator animation;
+
     public float runSpeed = 10.0f;
     
     
@@ -23,6 +27,10 @@ public class PlayerMovementEU : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        
+        animation.SetFloat("Speed", Mathf.Abs(horizontalMove));
     }
 
     private void FixedUpdate()
