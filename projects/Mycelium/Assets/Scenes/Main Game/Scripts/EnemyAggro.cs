@@ -27,13 +27,16 @@ public class EnemyAggro : MonoBehaviour
 
         if (distToPlayer < agroRange)
         {
-            ChasePlayer();
+            ChasePlayer(); 
+            
+            Debug.Log("chasing");
         }
 
-       // else
-       // {
-          //  StopChasingPlayer();
-       // }
+       else
+        {
+           //StopChasingPlayer(); 
+           Debug.Log("outOfRange");
+        }
     }
 
    // private void StopChasingPlayer()
@@ -47,8 +50,8 @@ public class EnemyAggro : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) < agroRange) //Agro range
         {
             //rotate to look at the player
-            transform.LookAt(player.position);
-            transform.Rotate(new Vector3(0, -90, 0), Space.Self); //correcting the original rotation
+            //transform.LookAt(player.position);
+           // transform.Rotate(new Vector3(0, -90, 0), Space.Self); //correcting the original rotation
         }
 
         if (Vector3.Distance(transform.position, player.position) < agroRange) //Agro range
@@ -57,7 +60,8 @@ public class EnemyAggro : MonoBehaviour
             if (Vector3.Distance(transform.position, player.position) > minDistance)
             {
                 //move if distance from target is greater than distance
-                transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
+                //transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
+                transform.Translate((player.position - transform.position) * moveSpeed* Time.deltaTime);
             }
 
             {

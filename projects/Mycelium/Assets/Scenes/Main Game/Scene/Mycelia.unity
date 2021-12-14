@@ -166,9 +166,9 @@ GameObject:
   - component: {fileID: 213329022}
   - component: {fileID: 213329021}
   - component: {fileID: 213329020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 213329024}
   agroRange: 2
-  moveSpeed: 2
+  moveSpeed: 3
   minDistance: 0.3
 --- !u!1 &519420028
 GameObject:

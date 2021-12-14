@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DamageManagerNR : MonoBehaviour
+public class DamageManager : MonoBehaviour
 {
     public GameObject damageTextPrefab, enemyInstance;
     public string damageTaken;
