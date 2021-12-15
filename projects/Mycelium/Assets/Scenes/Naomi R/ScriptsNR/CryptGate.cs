@@ -6,6 +6,7 @@ public class CryptGate : MonoBehaviour, IClick
 {
     public void onClickAction()
     {
-        //add what it does on click
+        Debug.Log("You clicked the gate");
+        Destroy(gameObject);
     }
 }
