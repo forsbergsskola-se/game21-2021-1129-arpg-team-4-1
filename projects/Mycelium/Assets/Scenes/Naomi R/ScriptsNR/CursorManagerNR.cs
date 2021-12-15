@@ -18,7 +18,7 @@ public class CursorManagerNR : MonoBehaviour
         // takes in the Collider Tilemaps' Composite Collider 2D which the onMouse methods need.
         collider = GetComponent<CompositeCollider2D>();
         
-        //makes sure we start out with our default cursor
+        // makes sure we start out with our default cursor
         ChangeCursor(cursor);
         
         // locks the cursor inside the game, click esc to escape the window.
