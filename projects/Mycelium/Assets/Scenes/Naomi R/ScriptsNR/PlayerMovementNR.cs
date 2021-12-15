@@ -6,11 +6,14 @@ using UnityEngine.Tilemaps;
 
 public class PlayerMovementNR : MonoBehaviour
 {
+    
     private MouseInput controls;
     private Vector3 destination;
     private GameObject currentPrefab;
     private bool hasSpawned;
-    public bool isValidLocation;
+
+    [SerializeField] private MapCollision MC;
+    [SerializeField] private GameObject player;
     [SerializeField] private float movementSpeed;
     [SerializeField] private GameObject prefab;
     [SerializeField] private Tilemap map;
@@ -19,7 +22,6 @@ public class PlayerMovementNR : MonoBehaviour
     private void Awake()
     {
         controls = new MouseInput();
-        isValidLocation = true;
     }
 
     private void OnEnable()
@@ -34,17 +36,14 @@ public class PlayerMovementNR : MonoBehaviour
 
     void Start()
     {
-        destination = transform.position;
+        destination = player.transform.position;
         controls.Mouse.MouseClick.performed += _ => MouseClick();
-        
     }
     
     void Update()
     {
-        // makes the player move
-        transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
+        player.transform.position = Vector3.MoveTowards(player.transform.position, destination, movementSpeed * Time.deltaTime); 
         
-        // removes the pointer after the player has reached his destination 
         if (destinationReached() && hasSpawned)
         {
             Destroy(currentPrefab);
@@ -54,30 +53,21 @@ public class PlayerMovementNR : MonoBehaviour
 
     private void MouseClick()
     {
-        // Checks the mouse position from the camera and gives us that value so that we can then set the 
-        // destination to be the position of where the mouse was when we clicked
         Vector2 mousePosition = controls.Mouse.MousePosition.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Vector3Int gridPosition = map.WorldToCell(mousePosition);
         
-
-        // makes sure we are clicking on a tile and that the location is valid; see CursorManager script.
-        // also spawns the pointer 
-        if (map.HasTile(gridPosition) && isValidLocation)
+        
+        if (map.HasTile(gridPosition) && MC.isValidLocation)
         {
             destination = mousePosition;
             spawnPointer();
         }
     }
-
-    private void InteractClick()
-    {
-        
-    }
+    
     
     private void spawnPointer()
     {
-        // spawns a pointer indicating our set destination. 
         Destroy(currentPrefab);
         currentPrefab = Instantiate(prefab, destination, Quaternion.identity);
         hasSpawned = true;
@@ -85,7 +75,7 @@ public class PlayerMovementNR : MonoBehaviour
     
     private bool destinationReached()
     {
-        return destination == transform.position;
+        return destination == player.transform.position;
     }
     
 }
