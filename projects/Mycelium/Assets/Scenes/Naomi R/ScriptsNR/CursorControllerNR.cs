@@ -6,21 +6,40 @@ using UnityEngine;
 public class CursorControllerNR : MonoBehaviour
 {
     
-    public Texture2D cursorDefault;
-    public Texture2D cursorInvalid;
-    public Texture2D cursorClicked;
-    // public Texture2D attack;
-    // public Texture2D destroyableObject;
-    // public Texture2D gateLocked;
-    // public Texture2D gateUnlocked;
-
+    public MouseInput controls;
+    private Camera mainCamera;
     [SerializeField] private MapCollision MC;
+    [SerializeField] private Texture2D cursorDefault;
+    [SerializeField] private Texture2D cursorInvalid;
+    [SerializeField] private Texture2D cursorClicked;
+    // [SerializeField] private Texture2D attack;
+    // [SerializeField] private Texture2D destroyableObject;
+    // [SerializeField] private Texture2D gateLocked;
+    // [SerializeField] private Texture2D gateUnlocked;
 
-        private void Awake()
+    private void Awake()
     {
-        ChangeCursor(cursorDefault);
+        controls = new MouseInput();
+        mainCamera = Camera.main;
         
+        ChangeCursor(cursorDefault);
         Cursor.lockState = CursorLockMode.Confined; 
+    }
+
+    private void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Disable();
+    }
+
+    private void Start()
+    {
+        controls.Mouse.MouseClick.started += _ => StartedClick();
+        controls.Mouse.MouseClick.performed += _ => EndedClick();
     }
 
     private void FixedUpdate()
@@ -29,11 +48,34 @@ public class CursorControllerNR : MonoBehaviour
         {
             ChangeCursor(cursorDefault);
         }
-        
+
         if (MC.isValidLocation == false)
         {
             ChangeCursor(cursorInvalid);
         }
+    }
+
+    private void DetectObject()
+    {
+        Ray ray = mainCamera.ScreenPointToRay(controls.Mouse.MousePosition.ReadValue<Vector2>());
+        RaycastHit2D hits2D = Physics2D.GetRayIntersection(ray);
+        if (hits2D.collider != null)
+        {
+            IClick click = hits2D.collider.gameObject.GetComponent<IClick>();
+            if (click != null) click.onClickAction();
+            
+            // Debug.Log("Hit 2D Collider" + hits2D.collider.tag);
+        }
+    }
+
+    private void StartedClick()
+    {
+       // space  
+    }
+    
+    private void EndedClick()
+    {
+        DetectObject();
     }
 
     private void ChangeCursor(Texture2D cursorType)
