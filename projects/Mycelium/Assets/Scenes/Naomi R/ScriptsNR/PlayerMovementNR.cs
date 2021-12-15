@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 
 public class PlayerMovementNR : MonoBehaviour
 {
-    private MouseInput mouseInput;
+    private MouseInput controls;
     private Vector3 destination;
     private GameObject currentPrefab;
     private bool hasSpawned;
@@ -18,24 +18,25 @@ public class PlayerMovementNR : MonoBehaviour
     
     private void Awake()
     {
-        mouseInput = new MouseInput();
+        controls = new MouseInput();
         isValidLocation = true;
     }
 
     private void OnEnable()
     {
-        mouseInput.Enable();
+        controls.Enable();
     }
 
     private void OnDisable()
     {
-        mouseInput.Disable();
+        controls.Disable();
     }
 
     void Start()
     {
         destination = transform.position;
-        mouseInput.Mouse.MouseClick.performed += _ => MouseClick();
+        controls.Mouse.MouseClick.performed += _ => MouseClick();
+        controls.Mouse.InteractClick.started += _ => InteractClick();
     }
     
     void Update()
@@ -53,8 +54,9 @@ public class PlayerMovementNR : MonoBehaviour
 
     private void MouseClick()
     {
-        // - 
-        Vector2 mousePosition = mouseInput.Mouse.MousePosition.ReadValue<Vector2>();
+        // Checks the mouse position from the camera and gives us that value so that we can then set the 
+        // destination to be the position of where the mouse was when we clicked
+        Vector2 mousePosition = controls.Mouse.MousePosition.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Vector3Int gridPosition = map.WorldToCell(mousePosition);
         
@@ -66,6 +68,11 @@ public class PlayerMovementNR : MonoBehaviour
             destination = mousePosition;
             spawnPointer();
         }
+    }
+
+    private void InteractClick()
+    {
+        
     }
     
     private void spawnPointer()
