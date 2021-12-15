@@ -8,12 +8,12 @@ using UnityEngine.Tilemaps;
 public class MapCollision : MonoBehaviour
 {
     
-    private CompositeCollider2D collider;
+    private CompositeCollider2D colliderLayer;
     public bool isValidLocation;
     
     private void Awake()
     {
-        collider = GetComponent<CompositeCollider2D>();
+        colliderLayer = GetComponent<CompositeCollider2D>();
         isValidLocation = true;
     }
     
