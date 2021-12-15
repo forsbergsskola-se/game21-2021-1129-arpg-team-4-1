@@ -6015,7 +6015,7 @@ MonoBehaviour:
   PM: {fileID: 1306068076}
   cursor: {fileID: 2800000, guid: fcd0405a0c5ec4d4f851536acc516eed, type: 3}
   cursorInvalid: {fileID: 2800000, guid: ec92b904ffa5b6d42b04e95bf7bf992c, type: 3}
-  cursorClicked: {fileID: 0}
+  cursorClicked: {fileID: 2800000, guid: 602a3f5c07735de478256e88b49c8ddf, type: 3}
 --- !u!1 &1306068075
 GameObject:
   m_ObjectHideFlags: 0
