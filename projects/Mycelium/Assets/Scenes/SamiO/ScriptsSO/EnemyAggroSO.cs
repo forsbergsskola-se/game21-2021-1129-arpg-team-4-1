@@ -43,7 +43,8 @@ public class EnemyAggroSO : MonoBehaviour
         rb2d.velocity = Vector2.zero;
 
     }
-
+		
+	
     private void ChasePlayer()
     {
         if(Vector2.Distance(transform.position, player.position) > minDistance) {
@@ -51,7 +52,7 @@ public class EnemyAggroSO : MonoBehaviour
         }
         else
         {
-            //Attack
+            //attack
         }
     }
 }
