@@ -20,14 +20,6 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
-                },
-                {
-                    "name": "InteractClick",
-                    "type": "Button",
-                    "id": "048348cf-4b8b-4bfb-8d1b-91b40ec0b178",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press(behavior=1)"
                 }
             ],
             "bindings": [
@@ -50,17 +42,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "MousePosition",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "feb41d8d-4ca1-45e0-b7ac-5d677abe68d3",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "InteractClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
