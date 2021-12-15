@@ -160,6 +160,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4010760105727652484, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6717024932457588029, guid: 031fbb4e697fadf4a90d9141ecef8286, type: 3}
     - target: {fileID: 8976882094419072719, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
       propertyPath: m_Name
       value: Barrel
@@ -178,11 +182,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9103944837965951864, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3673005
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 9103944837965951864, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.84
+      value: -0.54
       objectReference: {fileID: 0}
     - target: {fileID: 9103944837965951864, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -223,6 +227,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8976882094419072719, guid: 58e00ac47eb48334c9bbced61db8deea, type: 3}
   m_PrefabInstance: {fileID: 1000973560}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1000973562
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000973561}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e9b2a2f96367fd40bac145f3f596f51, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1000973564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,18 +272,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.1380837, y: 0.0109335035}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.42, y: 0.52}
+    oldSize: {x: 0.78, y: 0.7}
     newSize: {x: 0.42, y: 0.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.52}
+  m_Size: {x: 0.5555731, y: 0.70805645}
   m_EdgeRadius: 0
 --- !u!50 &1000973566
 Rigidbody2D:
