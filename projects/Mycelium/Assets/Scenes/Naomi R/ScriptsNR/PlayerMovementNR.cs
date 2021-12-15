@@ -36,7 +36,7 @@ public class PlayerMovementNR : MonoBehaviour
     {
         destination = transform.position;
         controls.Mouse.MouseClick.performed += _ => MouseClick();
-        controls.Mouse.InteractClick.started += _ => InteractClick();
+        
     }
     
     void Update()
