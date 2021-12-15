@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,7 @@ using UnityEngine.Tilemaps;
 public class PlayerMovementNR : MonoBehaviour
 {
     
-    private MouseInput controls;
+    public CursorControllerNR CC;
     private Vector3 destination;
     private GameObject currentPrefab;
     private bool hasSpawned;
@@ -19,32 +20,17 @@ public class PlayerMovementNR : MonoBehaviour
     [SerializeField] private Tilemap map;
     
     
-    private void Awake()
-    {
-        controls = new MouseInput();
-    }
-
-    private void OnEnable()
-    {
-        controls.Enable();
-    }
-
-    private void OnDisable()
-    {
-        controls.Disable();
-    }
-
     void Start()
     {
         destination = player.transform.position;
-        controls.Mouse.MouseClick.performed += _ => MouseClick();
+        CC.controls.Mouse.MouseClick.performed += _ => MouseClick();
     }
     
     void Update()
     {
         player.transform.position = Vector3.MoveTowards(player.transform.position, destination, movementSpeed * Time.deltaTime); 
         
-        if (destinationReached() && hasSpawned)
+        if (DestinationReached() && hasSpawned)
         {
             Destroy(currentPrefab);
             hasSpawned = false;
@@ -53,7 +39,7 @@ public class PlayerMovementNR : MonoBehaviour
 
     private void MouseClick()
     {
-        Vector2 mousePosition = controls.Mouse.MousePosition.ReadValue<Vector2>();
+        Vector2 mousePosition = CC.controls.Mouse.MousePosition.ReadValue<Vector2>();
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         Vector3Int gridPosition = map.WorldToCell(mousePosition);
         
@@ -61,19 +47,18 @@ public class PlayerMovementNR : MonoBehaviour
         if (map.HasTile(gridPosition) && MC.isValidLocation)
         {
             destination = mousePosition;
-            spawnPointer();
+            SpawnPointer();
         }
     }
-    
-    
-    private void spawnPointer()
+
+    private void SpawnPointer()
     {
         Destroy(currentPrefab);
         currentPrefab = Instantiate(prefab, destination, Quaternion.identity);
         hasSpawned = true;
     }
     
-    private bool destinationReached()
+    private bool DestinationReached()
     {
         return destination == player.transform.position;
     }
