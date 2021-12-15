@@ -6,6 +6,8 @@ public class BarrelDieEU : MonoBehaviour
 {
     public int maxHealth = 20;
     int currentHealth;
+
+    public Animator animator;
     
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,7 @@ public class BarrelDieEU : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            animator.SetBool("IsDestroyed", false);;
             Debug.Log("Box got destroyed");
         }
     }

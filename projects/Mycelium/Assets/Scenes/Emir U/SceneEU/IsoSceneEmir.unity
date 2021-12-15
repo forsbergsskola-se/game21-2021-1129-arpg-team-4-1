@@ -135,9 +135,10 @@ GameObject:
   - component: {fileID: 385069077}
   - component: {fileID: 385069076}
   - component: {fileID: 385069074}
-  - component: {fileID: 385069079}
   - component: {fileID: 385069075}
+  - component: {fileID: 385069079}
   - component: {fileID: 385069080}
+  - component: {fileID: 385069081}
   m_Layer: 7
   m_Name: Barrel
   m_TagString: Barrel
@@ -157,15 +158,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 600
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &385069075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -179,7 +180,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.12974781, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -190,7 +191,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.78, y: 0.7}
+  m_Size: {x: 0.52050436, y: 0.7}
   m_EdgeRadius: 0
 --- !u!114 &385069076
 MonoBehaviour:
@@ -205,6 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  animator: {fileID: 0}
 --- !u!212 &385069077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -322,6 +324,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  animator: {fileID: 0}
+--- !u!95 &385069081
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385069073}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e9b2a2f96367fd40bac145f3f596f51, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &958428832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4524,7 +4546,7 @@ TilemapCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196340828}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4601,7 +4623,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.6919882}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4612,7 +4634,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.81, y: 8}
+  m_Size: {x: 4.81, y: 6.6160235}
   m_EdgeRadius: 0
 --- !u!50 &1551417272
 Rigidbody2D:
@@ -4629,12 +4651,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1551417273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4695,7 +4717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551417268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.48, y: -0.04, z: 0}
+  m_LocalPosition: {x: -2.48, y: -0.031, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4715,7 +4737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animation: {fileID: 1551417270}
   attackPoint: {fileID: 1551417274}
-  attackRange: 0.5
+  attackRange: 0.47
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
