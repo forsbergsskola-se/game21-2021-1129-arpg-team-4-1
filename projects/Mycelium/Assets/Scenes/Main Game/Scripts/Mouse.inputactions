@@ -56,8 +56,8 @@
                 {
                     "name": "",
                     "id": "feb41d8d-4ca1-45e0-b7ac-5d677abe68d3",
-                    "path": "",
-                    "interactions": "",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
                     "action": "InteractClick",
