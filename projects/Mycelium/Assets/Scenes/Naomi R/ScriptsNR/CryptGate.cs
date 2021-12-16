@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
+using UnityEngine.SceneManagement;
 
 public class CryptGate : MonoBehaviour, IClick
 {
@@ -16,7 +17,7 @@ public class CryptGate : MonoBehaviour, IClick
         {
             PM.destination = Player.transform.position;
             Debug.Log("you clicked gate");
-            Destroy(gameObject);
+            SceneManager.LoadScene("Crypt", LoadSceneMode.Single);
         }
         else Debug.Log("Not Colliding");
     }
