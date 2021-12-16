@@ -15,7 +15,7 @@ public class BackupEnemyScript : MonoBehaviour
   
       private Transform target;
       private Rigidbody2D rb;
-      private Animator anim;
+      //private Animator anim;
       private Vector2 movement;
       public Vector3 dir;
   

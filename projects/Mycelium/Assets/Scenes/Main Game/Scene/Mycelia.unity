@@ -328,7 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 213329024}
   agroRange: 2
-  moveSpeed: 1.5
+  moveSpeed: 2
   minDistance: 0.3
 --- !u!1001 &476426406
 PrefabInstance:
@@ -423,7 +423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6577996219236081208, guid: 295772571cb01e74c922b027766571a7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6577996219236081209, guid: 295772571cb01e74c922b027766571a7, type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476426407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c395100ff08b6c4db06a240fb0ab927, type: 3}
   m_Name: 
@@ -10558,6 +10558,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6577996219236081207, guid: 295772571cb01e74c922b027766571a7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577996219236081207, guid: 295772571cb01e74c922b027766571a7, type: 3}
       propertyPath: m_SortingOrder
       value: 4
       objectReference: {fileID: 0}
@@ -10567,7 +10571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6577996219236081208, guid: 295772571cb01e74c922b027766571a7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6577996219236081209, guid: 295772571cb01e74c922b027766571a7, type: 3}
       propertyPath: patrolPoints.Array.data[0]
