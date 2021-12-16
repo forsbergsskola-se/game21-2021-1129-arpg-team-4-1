@@ -7614,16 +7614,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 4, y: -18, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 5, y: -18, z: 0}
     second:
       serializedVersion: 2
@@ -12592,7 +12582,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 81a3b2383ad4bef4a85b120ed76c02a2, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 18b28bf8186e4eb4797fe191e875057c, type: 2}
-  - m_RefCount: 401
+  - m_RefCount: 400
     m_Data: {fileID: 11400000, guid: af5dd6a42ee4a06468efe46dea6141cd, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: c4e0a33784ea30f4cbef0036560c62e9, type: 2}
@@ -12604,8 +12594,10 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 31c6d688a01f2a745b631f9223ab8de2, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: b35ba9a9f0156b54cb7a117b38e58cb2, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 401
+  - m_RefCount: 400
     m_Data: {fileID: 4099880982581102847, guid: 246cff82f085b8a488d8ad24b88b45be, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: -3812107437050738501, guid: 246cff82f085b8a488d8ad24b88b45be, type: 3}
@@ -12617,8 +12609,10 @@ Tilemap:
     m_Data: {fileID: 3345730431585869000, guid: 246cff82f085b8a488d8ad24b88b45be, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 7011124111833222199, guid: 246cff82f085b8a488d8ad24b88b45be, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 579
+  - m_RefCount: 578
     m_Data:
       e00: 1
       e01: 0
@@ -12637,7 +12631,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 579
+  - m_RefCount: 578
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
