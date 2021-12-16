@@ -4,55 +4,69 @@ using UnityEngine;
 
 public class EnemyAggroSO : MonoBehaviour
 {
-    [SerializeField]
-    private Transform player;
-   
-    [SerializeField]
-    private float agroRange;
-    
-    [SerializeField]
-    private float moveSpeed;
+    [SerializeField] private Transform player;
+
+    [SerializeField] private float agroRange;
+
+    [SerializeField] private float moveSpeed;
 
     public float minDistance;
 
     private Rigidbody2D rb2d;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        float distToPlayer = Vector2.Distance(transform.position, player.position);
+        float distToPlayer = Vector3.Distance(transform.position, player.position);
         print("distToPlayer:" + distToPlayer);
 
         if (distToPlayer < agroRange)
         {
-            ChasePlayer();
+            ChasePlayer(); 
+            
+            Debug.Log("chasing");
         }
 
         else
         {
-            StopChasingPlayer();
+            //StopChasingPlayer(); 
+            Debug.Log("outOfRange");
         }
     }
 
-    private void StopChasingPlayer()
-    {
-        rb2d.velocity = Vector2.zero;
+    // private void StopChasingPlayer()
+    //{
+    // rb2d.velocity = Vector3.zero;
 
-    }
-		
-	
+    // }
+
     private void ChasePlayer()
     {
-        if(Vector2.Distance(transform.position, player.position) > minDistance) {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
-        }
-        else
+        if (Vector3.Distance(transform.position, player.position) < agroRange) //Agro range
         {
-            //attack
+            //rotate to look at the player
+            //transform.LookAt(player.position);
+            // transform.Rotate(new Vector3(0, -90, 0), Space.Self); //correcting the original rotation
+        }
+
+        if (Vector3.Distance(transform.position, player.position) < agroRange) //Agro range
+        {
+            //move towards the player
+            if (Vector3.Distance(transform.position, player.position) > minDistance)
+            {
+                //move if distance from target is greater than distance
+                //transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
+                transform.Translate((player.position - transform.position) * moveSpeed* Time.deltaTime);
+            }
+
+            {
+                //Attack
+            }
         }
     }
 }
