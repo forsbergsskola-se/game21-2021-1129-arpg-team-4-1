@@ -55,11 +55,11 @@ public class CursorControllerNR : MonoBehaviour
         }
     }
 
-    private void DetectObject()
+    public void DetectObject()
     {
         Ray ray = mainCamera.ScreenPointToRay(controls.Mouse.MousePosition.ReadValue<Vector2>());
         RaycastHit2D hits2D = Physics2D.GetRayIntersection(ray);
-        if (hits2D.collider != null)
+        if (hits2D.collider != null) 
         {
             IClick click = hits2D.collider.gameObject.GetComponent<IClick>();
             if (click != null) click.onClickAction();
@@ -70,7 +70,7 @@ public class CursorControllerNR : MonoBehaviour
 
     private void StartedClick()
     {
-       // space  
+       // null
     }
     
     private void EndedClick()
