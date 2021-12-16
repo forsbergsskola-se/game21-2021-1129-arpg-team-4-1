@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCollisionNr : MonoBehaviour
+public class PlayerCollisionNR : MonoBehaviour
 {
     public bool isClickColliding;
     
