@@ -62,5 +62,4 @@ public class PlayerMovementNR : MonoBehaviour
     {
         return destination == player.transform.position;
     }
-    
 }
