@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Barrel
   - Collider
+  - Clickable
   layers:
   - Default
   - TransparentFX
