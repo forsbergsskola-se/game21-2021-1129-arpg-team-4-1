@@ -10,14 +10,14 @@ public class CryptGate : MonoBehaviour, IClick
     [SerializeField] private PlayerCollisionNR PC;
     [SerializeField] private PlayerMovementNR PM;
     [SerializeField] private GameObject Player;
+    [SerializeField] private LevelLoader LL;
     
     public void onClickAction()
     {
         if (PC.isClickColliding)
         {
             PM.destination = Player.transform.position;
-            Debug.Log("you clicked gate");
-            SceneManager.LoadScene("Crypt", LoadSceneMode.Single);
+            LL.LoadLevel(2);
         }
         else Debug.Log("Not Colliding");
     }
