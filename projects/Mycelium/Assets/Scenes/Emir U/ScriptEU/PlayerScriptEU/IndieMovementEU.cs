@@ -13,12 +13,25 @@ public class IndieMovementEU : MonoBehaviour
 
     Vector2 movement;
 
+    bool moving;
+
     // Update is called once per frame
     void Update()
     {
         // Input 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+        if (Input.GetMouseButtonDown(0))
+        {
+            movement = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            moving = true;
+        }
+
+        if (moving && (Vector2)transform.position != movement)
+        {
+            float step = moveSpeed * Time.deltaTime;
+            
+        }
         
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
