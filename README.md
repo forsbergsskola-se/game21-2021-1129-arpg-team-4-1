@@ -1,37 +1,44 @@
-# {game-title}
+# Mycelium
 
 {video}
 
 {description}
 
-## Team4Tress
+# Created by:
 
-# Programmers:
-Emir U,
+## Programmers:
+Emir Ulusoy
 
+Denise Joy
 
-Denise J,
-Nadia D,
-Naomi R,
-Nicci A,
-Sami O
+Nadia Dahlberg
 
-# Designers:
-Hugo M,
-Joakim O
+Naomi Ruokamo
 
-# Artists:
-Judit H,
-Olof F,
+Nicci Arosén
+
+Sami Olsson
+
+## Designers:
+Hugo Molander
+
+Joakim Ornerfors
+
+## Artists:
+Judit H
+
+Olof F
+
 Salomon
 
-# Sound:
-Carl J,
+## Sound:
+Carl J
+
 Ludvig
 
 Feel free to link any existing Linked.in Profiles or Portfolio Websites.
 
-## Design Documents
+# Design Documents
 
 {gdd}
 
@@ -39,4 +46,4 @@ Feel free to link any existing Linked.in Profiles or Portfolio Websites.
 
 {art-bible}
 
-## Media
+# Media
