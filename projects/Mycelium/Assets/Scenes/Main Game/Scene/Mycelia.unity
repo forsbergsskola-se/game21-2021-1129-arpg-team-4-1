@@ -538,7 +538,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6577996219236081208, guid: 295772571cb01e74c922b027766571a7, type: 3}
   m_PrefabInstance: {fileID: 476426406}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &476426408
+--- !u!114 &476426409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -547,34 +547,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 476426407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 069ce6598cfbc704b88db90dd25f969a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c395100ff08b6c4db06a240fb0ab927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  checkRadius: 2
-  attackRadius: 2
-  shouldRotate: 0
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  dir: {x: 0, y: 0, z: 0}
---- !u!114 &476426409
+  speed: 1
+  patrolPoints:
+  - {fileID: 1711586319}
+  - {fileID: 147005787}
+  waitTime: 2
+--- !u!114 &476426414
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476426407}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c395100ff08b6c4db06a240fb0ab927, type: 3}
+  m_Script: {fileID: 11500000, guid: fed3b9c5704b778439b2aac859e81441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  patrolPoints:
-  - {fileID: 1711586319}
-  - {fileID: 147005787}
-  waitTime: 2
+  player: {fileID: 213329024}
+  agroRange: 2
+  moveSpeed: 1.5
+  minDistance: 0.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
