@@ -737,6 +737,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6577996219236081208, guid: 295772571cb01e74c922b027766571a7, type: 3}
   m_PrefabInstance: {fileID: 476426406}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &476426408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476426407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3c85dad32a3a64aa1f0536a78248e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slider: {fileID: 1604478190}
+  Low: {r: 0, g: 0, b: 0, a: 0}
+  High: {r: 0, g: 0, b: 0, a: 0}
+  Offset: {x: 0, y: 0, z: 0}
 --- !u!114 &476426409
 MonoBehaviour:
   m_ObjectHideFlags: 0
