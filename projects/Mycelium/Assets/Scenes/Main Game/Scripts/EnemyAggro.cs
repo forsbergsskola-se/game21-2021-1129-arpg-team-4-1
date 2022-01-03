@@ -12,8 +12,12 @@ public class EnemyAggro : MonoBehaviour
     [SerializeField] private float moveSpeed;
 
     public float minDistance;
-    public float dist;
-    public float howClose;
+    public float attackRange;
+    //public GameObject sword;
+    public float swingRate =1f;
+    public float nextSwing;
+    
+    
     
 
     private Rigidbody2D rb2d;
@@ -36,18 +40,18 @@ public class EnemyAggro : MonoBehaviour
             Debug.Log("chasing");
         }
 
-       else
+        else
         {
-           //StopChasingPlayer(); 
+           StopChasingPlayer(); 
            Debug.Log("outOfRange");
         }
     }
 
-   // private void StopChasingPlayer()
-    //{
-       // rb2d.velocity = Vector3.zero;
+    private void StopChasingPlayer()
+    {
+        rb2d.velocity = Vector3.zero;
 
-   // }
+    }
 
     private void ChasePlayer()
     {
@@ -80,7 +84,3 @@ public class EnemyAggro : MonoBehaviour
     
 }
 
-
-//if(Vector3.Distance(transform.position, player.position) > minDistance) {
-   // transform.position = Vector3.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
-//}
