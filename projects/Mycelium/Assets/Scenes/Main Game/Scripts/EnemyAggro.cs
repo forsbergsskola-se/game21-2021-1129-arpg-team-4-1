@@ -12,6 +12,9 @@ public class EnemyAggro : MonoBehaviour
     [SerializeField] private float moveSpeed;
 
     public float minDistance;
+    public float dist;
+    public float howClose;
+    
 
     private Rigidbody2D rb2d;
 
@@ -62,16 +65,19 @@ public class EnemyAggro : MonoBehaviour
             {
                 //move if distance from target is greater than distance
                 //transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
-                transform.Translate((player.position - transform.position) * moveSpeed* Time.deltaTime);
+                transform.Translate((player.position - transform.position) * moveSpeed * Time.deltaTime);
             }
 
+            if (minDistance <= 0.5f)
             {
-                //Attack
+                
             }
+            
         } 
         
         
     }
+    
 }
 
 

@@ -430,7 +430,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384977581}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c3c85dad32a3a64aa1f0536a78248e5, type: 3}
   m_Name: 
@@ -613,6 +613,8 @@ MonoBehaviour:
   agroRange: 2
   moveSpeed: 2
   minDistance: 0.3
+  dist: 0
+  howClose: 0
 --- !u!1001 &476426406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -776,7 +778,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476426407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c3c85dad32a3a64aa1f0536a78248e5, type: 3}
   m_Name: 
@@ -801,6 +803,8 @@ MonoBehaviour:
   agroRange: 2
   moveSpeed: 1.5
   minDistance: 0.5
+  dist: 0
+  howClose: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
