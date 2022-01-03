@@ -614,9 +614,8 @@ MonoBehaviour:
   moveSpeed: 2
   attackTimer: 0
   minDistance: 0.3
-  swingRate: 1
-  nextSwing: 0
   lineOfSite: 0
+  attackRange: 0
 --- !u!1001 &476426406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -806,9 +805,27 @@ MonoBehaviour:
   moveSpeed: 1.5
   attackTimer: 0
   minDistance: 0.5
-  swingRate: 1
-  nextSwing: 0
   lineOfSite: 0
+  attackRange: 0
+--- !u!95 &476426416
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476426407}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
