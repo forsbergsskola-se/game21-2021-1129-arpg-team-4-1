@@ -14,10 +14,10 @@ public class EnemyAggro : MonoBehaviour
     [SerializeField] private float attackTimer = 0.0f;
     
     public float minDistance;
-    public float lineOfSite;
     private float attackCooldown = 2.0f;
     public float attackRange = 0f;
-    
+    public float updateHealth;
+    public float pointIncreasePerSecond;
 
     private Rigidbody2D rb2d;
 
@@ -25,6 +25,7 @@ public class EnemyAggro : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         attackRange = minDistance + 0.2f;
+        pointIncreasePerSecond = 1f;
     }
 
 
@@ -46,15 +47,22 @@ public class EnemyAggro : MonoBehaviour
         }
         else
         {
-           StopChasingPlayer(); 
-          
+           StopChasingPlayer();
+           
         }
 
         if (distToPlayer <= attackRange)
         {
             Attack();
         }
-        
+        //updateHealth += pointIncreasePerSecond * Time.deltaTime; 
+
+        if (Player.gameOver)
+        {
+            //disable animator
+            this.enabled = false;
+        }
+       
     }
 
     private void StopChasingPlayer()
@@ -69,7 +77,6 @@ public class EnemyAggro : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) > minDistance)
         {
             //move if distance from target is greater than distance
-            //transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
             transform.Translate((player.position - transform.position) * moveSpeed * Time.deltaTime);
         }
         
@@ -86,17 +93,12 @@ public class EnemyAggro : MonoBehaviour
         Player playerHealth = player.GetComponent<Player>();
         if (playerHealth != null)
         {
-            playerHealth.TakeDamage(5);
+            playerHealth.TakeDamage(20);
             //anime here
             Debug.Log("Hit player");
             attackTimer = attackCooldown;
         }
     }
-    private void OnDrawGizmosSelected()
-    {
-       Gizmos.color = Color.green;
-       Gizmos.DrawWireSphere(transform.position, lineOfSite);
-       //Gizmos.DrawWireSphere(transform.position, attackRange);
-    }
+    
 }
 
