@@ -612,8 +612,8 @@ MonoBehaviour:
   player: {fileID: 213329024}
   agroRange: 2
   moveSpeed: 2
+  attackTimer: 0
   minDistance: 0.3
-  attackRange: 0
   swingRate: 1
   nextSwing: 0
   lineOfSite: 0
@@ -804,8 +804,8 @@ MonoBehaviour:
   player: {fileID: 213329024}
   agroRange: 2
   moveSpeed: 1.5
+  attackTimer: 0
   minDistance: 0.5
-  attackRange: 0.51
   swingRate: 1
   nextSwing: 0
   lineOfSite: 0
