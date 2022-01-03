@@ -10,42 +10,59 @@ public class EnemyAggro : MonoBehaviour
     [SerializeField] private float agroRange;
 
     [SerializeField] private float moveSpeed;
-
+    
+    [SerializeField] private float attackTimer = 0.0f;
+    
     public float minDistance;
-    public float attackRange;
-    //public GameObject sword;
-    public float swingRate =1f;
-    public float nextSwing;
-    public float lineOfSite;
-    
-    
-    
+    private float attackCooldown = 2.0f;
+    public float attackRange = 0f;
+    public float updateHealth;
+    public float pointIncreasePerSecond;
 
     private Rigidbody2D rb2d;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        attackRange = minDistance + 0.2f;
+        pointIncreasePerSecond = 1f;
     }
 
 
     void Update()
     {
+        if (attackTimer > 0)
+        {
+            attackTimer -= Time.deltaTime;
+            //Debug.Log("attacktimer"+ attackTimer);
+        }
         float distToPlayer = Vector3.Distance(transform.position, player.position);
-        print("distToPlayer:" + distToPlayer);
+        
 
         if (distToPlayer < agroRange)
         {
             ChasePlayer(); 
+            Debug.Log("chasingPlayer");
             
-            Debug.Log("chasing");
         }
-
         else
         {
-           StopChasingPlayer(); 
-           Debug.Log("outOfRange");
+           StopChasingPlayer();
+           
         }
+
+        if (distToPlayer <= attackRange)
+        {
+            Attack();
+        }
+        //updateHealth += pointIncreasePerSecond * Time.deltaTime; 
+
+        if (Player.gameOver)
+        {
+            //disable animator
+            this.enabled = false;
+        }
+       
     }
 
     private void StopChasingPlayer()
@@ -56,38 +73,32 @@ public class EnemyAggro : MonoBehaviour
 
     private void ChasePlayer()
     {
-        if (Vector3.Distance(transform.position, player.position) < agroRange) //Agro range
+
+        if (Vector3.Distance(transform.position, player.position) > minDistance)
         {
-            //rotate to look at the player
-            //transform.LookAt(player.position);
-           // transform.Rotate(new Vector3(0, -90, 0), Space.Self); //correcting the original rotation
+            //move if distance from target is greater than distance
+            transform.Translate((player.position - transform.position) * moveSpeed * Time.deltaTime);
         }
-
-        if (Vector3.Distance(transform.position, player.position) < agroRange) //Agro range
-        {
-            //move towards the player
-            if (Vector3.Distance(transform.position, player.position) > minDistance)
-            {
-                //move if distance from target is greater than distance
-                //transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
-                transform.Translate((player.position - transform.position) * moveSpeed * Time.deltaTime);
-            }
-
-            if (minDistance <= attackRange)
-            {
-                
-            }
-            
-        } 
-        
         
     }
 
-    private void OnDrawGizmosSelected()
+   
+    private void Attack()
     {
-       Gizmos.color = Color.green;
-       Gizmos.DrawWireSphere(transform.position, lineOfSite);
-       Gizmos.DrawWireSphere(transform.position, attackRange);
+        if (attackTimer > 0)
+        {
+            return;
+        }
+        Debug.Log("Attack");
+        Player playerHealth = player.GetComponent<Player>();
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(20);
+            //anime here
+            Debug.Log("Hit player");
+            attackTimer = attackCooldown;
+        }
     }
+    
 }
 

@@ -14,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float movementSpeed;
     [SerializeField] private GameObject prefab;
     [SerializeField] private Tilemap map;
+    private static bool gameOver;
+    public int currentHealth;
+    
     
     
     private void Awake()
@@ -48,6 +51,19 @@ public class PlayerMovement : MonoBehaviour
         {
             Destroy(currentPrefab);
             hasSpawned = false;
+        } 
+        
+        if (Player.gameOver)
+        {
+            //death anim 
+
+            //disable movement script
+            this.enabled = false;
+        } 
+        
+        if (currentHealth < 0)
+        {
+            gameOver = true;
         }
     }
 
