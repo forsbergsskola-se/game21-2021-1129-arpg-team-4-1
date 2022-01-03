@@ -16,7 +16,7 @@ public class EnemyAggro : MonoBehaviour
     public float minDistance;
     public float lineOfSite;
     private float attackCooldown = 2.0f;
-    
+    public float attackRange = 0f;
     
 
     private Rigidbody2D rb2d;
@@ -24,6 +24,7 @@ public class EnemyAggro : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        attackRange = minDistance + 0.2f;
     }
 
 
@@ -43,12 +44,17 @@ public class EnemyAggro : MonoBehaviour
             Debug.Log("chasingPlayer");
             
         }
-
         else
         {
            StopChasingPlayer(); 
           
         }
+
+        if (distToPlayer <= attackRange)
+        {
+            Attack();
+        }
+        
     }
 
     private void StopChasingPlayer()
@@ -66,13 +72,10 @@ public class EnemyAggro : MonoBehaviour
             //transform.Translate(new Vector3(moveSpeed * Time.deltaTime, 0, 0));
             transform.Translate((player.position - transform.position) * moveSpeed * Time.deltaTime);
         }
-        else
-        {
-            Attack();
-        }
         
     }
 
+   
     private void Attack()
     {
         if (attackTimer > 0)
@@ -84,6 +87,7 @@ public class EnemyAggro : MonoBehaviour
         if (playerHealth != null)
         {
             playerHealth.TakeDamage(5);
+            //anime here
             Debug.Log("Hit player");
             attackTimer = attackCooldown;
         }
