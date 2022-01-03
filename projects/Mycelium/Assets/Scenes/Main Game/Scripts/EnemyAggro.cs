@@ -14,7 +14,7 @@ public class EnemyAggro : MonoBehaviour
     [SerializeField] private float attackTimer = 0.0f;
     
     public float minDistance;
-    private float attackCooldown = 2.0f;
+    private float attackCooldown = 2.5f;
     public float attackRange = 0f;
     public float updateHealth;
     public float pointIncreasePerSecond;
@@ -93,7 +93,7 @@ public class EnemyAggro : MonoBehaviour
         Player playerHealth = player.GetComponent<Player>();
         if (playerHealth != null)
         {
-            playerHealth.TakeDamage(20);
+            playerHealth.TakeDamage(10);
             //anime here
             Debug.Log("Hit player");
             attackTimer = attackCooldown;
