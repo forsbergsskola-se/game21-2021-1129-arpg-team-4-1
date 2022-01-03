@@ -613,8 +613,10 @@ MonoBehaviour:
   agroRange: 2
   moveSpeed: 2
   minDistance: 0.3
-  dist: 0
-  howClose: 0
+  attackRange: 0
+  swingRate: 1
+  nextSwing: 0
+  lineOfSite: 0
 --- !u!1001 &476426406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -803,8 +805,10 @@ MonoBehaviour:
   agroRange: 2
   moveSpeed: 1.5
   minDistance: 0.5
-  dist: 0
-  howClose: 0
+  attackRange: 0.51
+  swingRate: 1
+  nextSwing: 0
+  lineOfSite: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

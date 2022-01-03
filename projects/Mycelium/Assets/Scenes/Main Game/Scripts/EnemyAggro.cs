@@ -16,6 +16,7 @@ public class EnemyAggro : MonoBehaviour
     //public GameObject sword;
     public float swingRate =1f;
     public float nextSwing;
+    public float lineOfSite;
     
     
     
@@ -72,7 +73,7 @@ public class EnemyAggro : MonoBehaviour
                 transform.Translate((player.position - transform.position) * moveSpeed * Time.deltaTime);
             }
 
-            if (minDistance <= 0.5f)
+            if (minDistance <= attackRange)
             {
                 
             }
@@ -81,6 +82,12 @@ public class EnemyAggro : MonoBehaviour
         
         
     }
-    
+
+    private void OnDrawGizmosSelected()
+    {
+       Gizmos.color = Color.green;
+       Gizmos.DrawWireSphere(transform.position, lineOfSite);
+       Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
 }
 
