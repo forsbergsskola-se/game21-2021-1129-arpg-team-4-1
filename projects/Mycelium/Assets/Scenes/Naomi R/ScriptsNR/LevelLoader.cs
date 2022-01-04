@@ -6,18 +6,9 @@ using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
-    
     public Animator transition;
     public float transitionTime = 1f;
     
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            LoadNextLevel();
-        }
-    }
-
     public void LoadNextLevel()
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
