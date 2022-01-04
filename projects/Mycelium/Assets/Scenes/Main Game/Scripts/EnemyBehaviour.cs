@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,15 @@ public class EnemyBehaviour : MonoBehaviour
         Hitpoints = MaxHitpoints;
         HealthBarEnemy.SetHealth(Hitpoints, MaxHitpoints);
     }
-    
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeHit(2);
+        }
+    }
+
     public void TakeHit(float damage)
     {
         Hitpoints -= damage;
