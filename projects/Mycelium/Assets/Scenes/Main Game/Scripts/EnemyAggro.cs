@@ -12,25 +12,17 @@ public class EnemyAggro : MonoBehaviour
     [SerializeField] private float moveSpeed;
     
     [SerializeField] private float attackTimer = 0.0f;
-
-    [SerializeField] private int regenAmount;
-    
     
     public float minDistance;
     private float attackCooldown = 2.5f;
     public float attackRange = 0f;
-    public float updateHealth;
-    //public float pointIncreasePerSecond;
-    public bool inCombat;
-    private float outOfCombatTimer, outOfCombatDelay;
-
     private Rigidbody2D rb2d;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         attackRange = minDistance + 0.2f;
-        //pointIncreasePerSecond = 1f;
+        
        
     }
 
@@ -69,23 +61,9 @@ public class EnemyAggro : MonoBehaviour
             //disable animator
             this.enabled = false;
         }
-
         
-        if (!inCombat)
-        {
-            outOfCombatTimer += Time.deltaTime;
- 
-            if (outOfCombatTimer > outOfCombatDelay)
-            {
-                //if ( < maxHealth)
-               {
-                   Regen();
-                }
-            }
-        }
     }
     
-
     private void StopChasingPlayer()
     {
         rb2d.velocity = Vector3.zero;
@@ -119,19 +97,6 @@ public class EnemyAggro : MonoBehaviour
             Debug.Log("Hit player");
             attackTimer = attackCooldown;
         }
-    }
-
-   
-    
-    private IEnumerator Regen()
-    {
-        //if (!combat())
-        {
-            
-        }
-        
-        //How often player will regen
-        yield return new WaitForSeconds(1.5f);
     }
     
 }

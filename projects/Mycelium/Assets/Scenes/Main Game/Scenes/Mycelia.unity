@@ -612,11 +612,8 @@ MonoBehaviour:
   agroRange: 2
   moveSpeed: 2
   attackTimer: 0
-  regenAmount: 0
   minDistance: 0.3
   attackRange: 0
-  updateHealth: 0
-  inCombat: 0
 --- !u!1001 &476426406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -712,6 +709,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6577996219236081208, guid: 295772571cb01e74c922b027766571a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6577996219236081209, guid: 295772571cb01e74c922b027766571a7, type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
@@ -805,11 +806,8 @@ MonoBehaviour:
   agroRange: 2
   moveSpeed: 1.5
   attackTimer: 0
-  regenAmount: 0
   minDistance: 0.5
   attackRange: 0
-  updateHealth: 0
-  inCombat: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
