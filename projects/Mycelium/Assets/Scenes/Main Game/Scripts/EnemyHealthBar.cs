@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 public class EnemyHealthBar : MonoBehaviour
@@ -6,9 +7,15 @@ public class EnemyHealthBar : MonoBehaviour
     public Color Low;
     public Color High;
     public Vector3 Offset; //We use this, because not all enemies have the same height. 
-    public Camera mainCamera;
-    
-public void SetHealth(float health, float maxHealth)
+    private Camera mainCamera;
+
+
+    public void Awake()
+    {
+        mainCamera = Camera.main;
+    }
+
+    public void SetHealth(float health, float maxHealth)
     {
         Slider.gameObject.SetActive(health < maxHealth); //The enemy health bar should only be visable when the enemy is not at full health.
         Slider.value = health;
@@ -18,6 +25,6 @@ public void SetHealth(float health, float maxHealth)
 
     void Update()
     {
-        Slider.transform.position = mainCamera.WorldToScreenPoint(transform.parent.position + Offset);
+        Slider.transform.position = mainCamera.WorldToScreenPoint(transform.position + Offset);
     }
 }
