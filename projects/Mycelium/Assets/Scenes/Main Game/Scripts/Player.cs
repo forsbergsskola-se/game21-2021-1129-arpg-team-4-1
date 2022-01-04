@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         else if (currentHealth != maxHealth && !isRegen)
         { //If they have health less than max
             //coroutine = Regen();
-            StartCoroutine(coroutine); //Start regen
+            //StartCoroutine(coroutine); //Start regen
         }
     }
 
