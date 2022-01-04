@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
 
     private void StartCoroutine(Coroutine methodName)
     {
-        throw new NotImplementedException();
+        
     }
 
     IEnumerable<WaitForSeconds> couroutine = Regen();
