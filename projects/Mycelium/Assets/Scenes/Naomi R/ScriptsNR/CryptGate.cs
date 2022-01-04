@@ -17,7 +17,7 @@ public class CryptGate : MonoBehaviour, IClick
         if (PC.isClickColliding)
         {
             PM.destination = Player.transform.position;
-            //add load next level
+            LL.LoadNextLevel();
         }
         else Debug.Log("Not close enough");
     }
