@@ -77,10 +77,10 @@ public class EnemyAggro : MonoBehaviour
  
             if (outOfCombatTimer > outOfCombatDelay)
             {
-                //if (currentHealth < maxHealth)
-               // {
-                   // Regen();
-               // }
+                //if ( < maxHealth)
+               {
+                   Regen();
+                }
             }
         }
     }
