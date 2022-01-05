@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    public float Hitpoints;
-    public float MaxHitpoints = 5;
+    public static float Hitpoints;
+    public static float MaxHitpoints = 5;
     public EnemyHealthBar HealthBarEnemy;
     
     void Start()

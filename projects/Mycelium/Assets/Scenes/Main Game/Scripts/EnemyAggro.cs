@@ -18,7 +18,8 @@ public class EnemyAggro : MonoBehaviour
     public float attackRange = 0f;
     private Rigidbody2D rb2d;
     public static bool InCombat;
-
+    private static float hitPoints = EnemyBehaviour.Hitpoints;
+    private static float maxHitpoints = EnemyBehaviour.MaxHitpoints;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -69,7 +70,7 @@ public class EnemyAggro : MonoBehaviour
     {
         if (!InCombat)
         {
-            //if ()
+            if (hitPoints < maxHitpoints )
             {
                 
             }
@@ -79,15 +80,7 @@ public class EnemyAggro : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
     }
 
-
-    private void Combat()
-    {
-        if ()
-        {
-            
-        }
-        
-    }
+    
     private void StopChasingPlayer()
     {
         rb2d.velocity = Vector3.zero;
