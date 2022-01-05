@@ -17,12 +17,13 @@ public class EnemyAggro : MonoBehaviour
     private float attackCooldown = 2.5f;
     public float attackRange = 0f;
     private Rigidbody2D rb2d;
+    public static bool InCombat;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         attackRange = minDistance + 0.2f;
-        
+        InCombat = false;
        
     }
 
@@ -39,20 +40,20 @@ public class EnemyAggro : MonoBehaviour
 
         if (distToPlayer < agroRange)
         {
-            ChasePlayer(); 
-            
-            
+            ChasePlayer();
+
+            InCombat = true;
         }
         else
         {
            StopChasingPlayer();
-           
+           InCombat = false;
         }
 
         if (distToPlayer <= attackRange)
         {
             Attack();
-            
+            InCombat = true;
         }
         //updateHealth += pointIncreasePerSecond * Time.deltaTime; 
 
@@ -63,7 +64,30 @@ public class EnemyAggro : MonoBehaviour
         }
         
     }
-    
+
+    private IEnumerator Regen()
+    {
+        if (!InCombat)
+        {
+            //if ()
+            {
+                
+            }
+        }
+        
+        // How often enemy will regen
+        yield return new WaitForSeconds(1.5f);
+    }
+
+
+    private void Combat()
+    {
+        if ()
+        {
+            
+        }
+        
+    }
     private void StopChasingPlayer()
     {
         rb2d.velocity = Vector3.zero;
