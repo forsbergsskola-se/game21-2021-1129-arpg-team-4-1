@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    public static float Hitpoints;
-    public static float MaxHitpoints = 5;
+    public float Hitpoints;
+    public float MaxHitpoints = 5;
     public EnemyHealthBar HealthBarEnemy;
     
     void Start()
@@ -33,4 +33,18 @@ public class EnemyBehaviour : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void Heal(float amount)
+    {
+        Hitpoints += amount;
+
+        if (Hitpoints > MaxHitpoints)
+        {
+            Hitpoints = MaxHitpoints;
+        }
+        
+        HealthBarEnemy.SetHealth(Hitpoints, MaxHitpoints);
+    }
+    
+    
 }

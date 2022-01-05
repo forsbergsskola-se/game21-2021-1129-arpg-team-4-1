@@ -17,9 +17,8 @@ public class EnemyAggro : MonoBehaviour
     private float attackCooldown = 2.5f;
     public float attackRange = 0f;
     private Rigidbody2D rb2d;
-    public static bool InCombat;
-    private static float hitPoints = EnemyBehaviour.Hitpoints;
-    private static float maxHitpoints = EnemyBehaviour.MaxHitpoints;
+    public bool InCombat;
+    
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -47,10 +46,15 @@ public class EnemyAggro : MonoBehaviour
         }
         else
         {
-           StopChasingPlayer();
+            if (InCombat == true)
+            {
+                Regen();
+            }
+            
+            StopChasingPlayer();
            InCombat = false;
         }
-
+        
         if (distToPlayer <= attackRange)
         {
             Attack();
@@ -70,9 +74,12 @@ public class EnemyAggro : MonoBehaviour
     {
         if (!InCombat)
         {
-            if (hitPoints < maxHitpoints )
+            EnemyBehaviour ebehaviour = GetComponent<EnemyBehaviour>();
+            if (ebehaviour.Hitpoints < ebehaviour.MaxHitpoints)
             {
-                
+                int value = Mathf.FloorToInt(ebehaviour.MaxHitpoints * 0.05f);
+                ebehaviour.Heal(value);
+                Debug.Log(value);
             }
         }
         
