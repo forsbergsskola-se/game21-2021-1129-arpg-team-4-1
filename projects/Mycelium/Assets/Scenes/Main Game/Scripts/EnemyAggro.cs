@@ -19,12 +19,16 @@ public class EnemyAggro : MonoBehaviour
     private Rigidbody2D rb2d;
     public bool InCombat;
     
+    
     void Start()
     {
+        
+        StartCoroutine(Regen());
         rb2d = GetComponent<Rigidbody2D>();
         attackRange = minDistance + 0.2f;
         InCombat = false;
-       
+        
+
     }
 
 
@@ -72,19 +76,24 @@ public class EnemyAggro : MonoBehaviour
 
     private IEnumerator Regen()
     {
-        if (!InCombat)
+
+        while (true)
         {
-            EnemyBehaviour ebehaviour = GetComponent<EnemyBehaviour>();
-            if (ebehaviour.Hitpoints < ebehaviour.MaxHitpoints)
+            if (!InCombat)
             {
-                int value = Mathf.FloorToInt(ebehaviour.MaxHitpoints * 0.05f);
-                ebehaviour.Heal(value);
-                Debug.Log(value);
+                EnemyBehaviour ebehaviour = GetComponent<EnemyBehaviour>();
+                if (ebehaviour.Hitpoints < ebehaviour.MaxHitpoints)
+                {
+                    int value = Mathf.FloorToInt(ebehaviour.MaxHitpoints * 0.05f);
+                    ebehaviour.Heal(value);
+                    Debug.Log(value);
+                }
             }
-        }
         
-        // How often enemy will regen
-        yield return new WaitForSeconds(1.5f);
+            // How often enemy will regen
+            yield return new WaitForSeconds(1.5f);
+        }
+       
     }
 
     
