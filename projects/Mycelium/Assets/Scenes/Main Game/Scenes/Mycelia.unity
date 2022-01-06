@@ -20669,6 +20669,7 @@ GameObject:
   - component: {fileID: 213329021}
   - component: {fileID: 213329025}
   - component: {fileID: 213329020}
+  - component: {fileID: 213329026}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -20688,7 +20689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfdb662f32f7c40428533eded3a572b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isClickColliding: 0
 --- !u!50 &213329021
 Rigidbody2D:
   serializedVersion: 4
@@ -20806,6 +20806,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1753453996}
+--- !u!95 &213329026
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213329019}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f281577d25bf795439eaa53528a0a78e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &279714048
 GameObject:
   m_ObjectHideFlags: 0
