@@ -16,16 +16,19 @@ public class EnemyAggro : MonoBehaviour
     public float minDistance;
     private float attackCooldown = 2.5f;
     public float attackRange = 0f;
-    public float updateHealth;
-    public float pointIncreasePerSecond;
-
     private Rigidbody2D rb2d;
-
+    public bool InCombat;
+    
+    
     void Start()
     {
+        
+        StartCoroutine(Regen());
         rb2d = GetComponent<Rigidbody2D>();
         attackRange = minDistance + 0.2f;
-        pointIncreasePerSecond = 1f;
+        InCombat = false;
+        
+
     }
 
 
@@ -41,19 +44,25 @@ public class EnemyAggro : MonoBehaviour
 
         if (distToPlayer < agroRange)
         {
-            ChasePlayer(); 
-            Debug.Log("chasingPlayer");
-            
+            ChasePlayer();
+
+            InCombat = true;
         }
         else
         {
-           StopChasingPlayer();
-           
+            if (InCombat == true)
+            {
+                Regen();
+            }
+            
+            StopChasingPlayer();
+           InCombat = false;
         }
-
+        
         if (distToPlayer <= attackRange)
         {
             Attack();
+            InCombat = true;
         }
         //updateHealth += pointIncreasePerSecond * Time.deltaTime; 
 
@@ -62,9 +71,32 @@ public class EnemyAggro : MonoBehaviour
             //disable animator
             this.enabled = false;
         }
+        
+    }
+
+    private IEnumerator Regen()
+    {
+
+        while (true)
+        {
+            if (!InCombat)
+            {
+                EnemyBehaviour ebehaviour = GetComponent<EnemyBehaviour>();
+                if (ebehaviour.Hitpoints < ebehaviour.MaxHitpoints)
+                {
+                    int value = Mathf.FloorToInt(ebehaviour.MaxHitpoints * 0.05f);
+                    ebehaviour.Heal(value);
+                    Debug.Log(value);
+                }
+            }
+        
+            // How often enemy will regen
+            yield return new WaitForSeconds(1.5f);
+        }
        
     }
 
+    
     private void StopChasingPlayer()
     {
         rb2d.velocity = Vector3.zero;

@@ -8,6 +8,7 @@ TagManager:
   - Barrel
   - Collider
   - Clickable
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -25,7 +25,7 @@ public class BarrelDieEU : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Destroy(gameObject, 5);
+            Destroy(gameObject, 2);
             destroyed = true;
             animator.SetBool("IsDestroyed", true);
             Debug.Log("Box got destroyed");
