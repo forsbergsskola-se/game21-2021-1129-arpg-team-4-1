@@ -30,17 +30,9 @@ public class BarrelDieEU : MonoBehaviour
             Destroy(gameObject, 2);
             destroyed = true;
             animator.SetBool("IsDestroyed", true);
+            GetComponent<Collider2D>().enabled = false;
         }
     }
-    // public void OnCollisionEnter2D(int damage, Collision col )
-    // {
-    //     if(col.gameObject.tag == "Barrel")
-    //     {
-    //         Destroy(col.gameObject);
-    //         destroyed = true;
-    //         animator.SetBool("IsDestroyed", true);
-    //     }
-    // }
 
     // Update is called once per frame
     void Update()
