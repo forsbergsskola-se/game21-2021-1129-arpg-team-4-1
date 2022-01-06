@@ -16,10 +16,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Tilemap map;
     private static bool gameOver;
     public int currentHealth;
-    public Animator animator;
-    
-    
-    
+
+    public Animator animatior;
+
+
+
     private void Awake()
     {
         mouseInput = new MouseInput();
@@ -45,8 +46,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // makes the player move
-        transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime); 
-        
+
+        transform.position = Vector3.MoveTowards(transform.position, destination, movementSpeed * Time.deltaTime);
+
         // removes the pointer after the player has reached his destination 
         if (destinationReached() && hasSpawned)
         {
