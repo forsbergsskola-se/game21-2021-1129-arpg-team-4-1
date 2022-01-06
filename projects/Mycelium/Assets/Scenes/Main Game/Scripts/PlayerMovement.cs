@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Tilemap map;
     private static bool gameOver;
     public int currentHealth;
+    public Animator animator;
     
     
     
