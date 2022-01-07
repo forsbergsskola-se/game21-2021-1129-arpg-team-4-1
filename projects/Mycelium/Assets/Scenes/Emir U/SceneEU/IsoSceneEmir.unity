@@ -252,8 +252,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385069073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3912, y: 0.65716815, z: 0}
-  m_LocalScale: {x: 1.0683, y: 1, z: 1}
+  m_LocalPosition: {x: -1.3819, y: 0.65716815, z: 0}
+  m_LocalScale: {x: 1.0921232, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -4708,7 +4708,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1551417275
 MonoBehaviour:
@@ -4814,10 +4814,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1838824078}
   - component: {fileID: 1838824077}
-  - component: {fileID: 1838824076}
   - component: {fileID: 1838824081}
   - component: {fileID: 1838824080}
   - component: {fileID: 1838824079}
+  - component: {fileID: 1838824076}
   - component: {fileID: 1838824082}
   m_Layer: 7
   m_Name: Vas
@@ -4909,7 +4909,7 @@ Transform:
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &1838824079
 Tilemap:
@@ -4995,7 +4995,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1838824082
 MonoBehaviour:
   m_ObjectHideFlags: 0
