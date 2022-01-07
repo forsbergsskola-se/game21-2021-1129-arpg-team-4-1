@@ -1,0 +1,1011 @@
+fileFormatVersion: 2
+guid: 2fdc39fc9f9677e4a816af2c318b42c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 983354639652631225
+    second: tiles_village_256_0
+  - first:
+      213: -3790258962096101788
+    second: tiles_village_256_1
+  - first:
+      213: 2999989523798337078
+    second: tiles_village_256_2
+  - first:
+      213: 664742048989510941
+    second: tiles_village_256_3
+  - first:
+      213: -6974289612373456702
+    second: tiles_village_256_4
+  - first:
+      213: 7700161117264908931
+    second: tiles_village_256_5
+  - first:
+      213: 5466808550635078651
+    second: tiles_village_256_6
+  - first:
+      213: -4132835820276390649
+    second: tiles_village_256_7
+  - first:
+      213: -5653812964244670982
+    second: tiles_village_256_8
+  - first:
+      213: -3598454383945210177
+    second: tiles_village_256_9
+  - first:
+      213: 6775694625481212053
+    second: tiles_village_256_10
+  - first:
+      213: -7330718954079962641
+    second: tiles_village_256_11
+  - first:
+      213: -602756546906230929
+    second: tiles_village_256_12
+  - first:
+      213: 6927050773198401480
+    second: tiles_village_256_13
+  - first:
+      213: -5350821778681062168
+    second: tiles_village_256_14
+  - first:
+      213: -7392158973822913926
+    second: tiles_village_256_15
+  - first:
+      213: 1633837136515395670
+    second: tiles_village_256_16
+  - first:
+      213: -8980542359240476367
+    second: tiles_village_256_17
+  - first:
+      213: 2932061151114702005
+    second: tiles_village_256_18
+  - first:
+      213: -1760499658026889413
+    second: tiles_village_256_19
+  - first:
+      213: -2605726756308631529
+    second: tiles_village_256_20
+  - first:
+      213: -274440887674743175
+    second: tiles_village_256_21
+  - first:
+      213: -5005147522490640772
+    second: tiles_village_256_22
+  - first:
+      213: 3878339525198272252
+    second: tiles_village_256_23
+  - first:
+      213: 6955102167080147155
+    second: tiles_village_256_24
+  - first:
+      213: 7486833742766507056
+    second: tiles_village_256_25
+  - first:
+      213: -6312459161578437841
+    second: tiles_village_256_26
+  - first:
+      213: 2079639964560224037
+    second: tiles_village_256_27
+  - first:
+      213: -7350147865238525700
+    second: tiles_village_256_28
+  - first:
+      213: 6852265302507467392
+    second: tiles_village_256_29
+  - first:
+      213: -6464026103646721761
+    second: tiles_village_256_30
+  - first:
+      213: -6692088639527376363
+    second: tiles_village_256_31
+  - first:
+      213: -8608122241329625101
+    second: tiles_village_256_32
+  - first:
+      213: 1489690528535229621
+    second: tiles_village_256_33
+  - first:
+      213: -5571204996196818748
+    second: tiles_village_256_34
+  - first:
+      213: 6668583536506013191
+    second: tiles_village_256_35
+  - first:
+      213: 5658475084291569383
+    second: tiles_village_256_36
+  - first:
+      213: 8592972835272624828
+    second: tiles_village_256_37
+  - first:
+      213: 5107411542653738600
+    second: tiles_village_256_38
+  - first:
+      213: 3274322993860056066
+    second: tiles_village_256_39
+  - first:
+      213: -430284423286415924
+    second: tiles_village_256_40
+  - first:
+      213: -79102400677373461
+    second: tiles_village_256_41
+  - first:
+      213: -8365446843063068238
+    second: tiles_village_256_42
+  - first:
+      213: -3321892941988319238
+    second: tiles_village_256_43
+  - first:
+      213: -7557169335980810682
+    second: tiles_village_256_44
+  - first:
+      213: 5445982521276586949
+    second: tiles_village_256_45
+  - first:
+      213: 5131811928521662754
+    second: tiles_village_256_46
+  - first:
+      213: 176623090580121262
+    second: tiles_village_256_47
+  - first:
+      213: -1229605896657861306
+    second: tiles_village_256_48
+  - first:
+      213: 5723525421426844681
+    second: tiles_village_256_49
+  - first:
+      213: 2020624899192757270
+    second: tiles_village_256_50
+  - first:
+      213: 6826198272572749815
+    second: tiles_village_256_51
+  - first:
+      213: 126662684997591925
+    second: tiles_village_256_52
+  - first:
+      213: 7736357438386211062
+    second: tiles_village_256_53
+  - first:
+      213: -4283365798801673442
+    second: tiles_village_256_54
+  - first:
+      213: 7711327456849222710
+    second: tiles_village_256_55
+  - first:
+      213: -5416394485907923122
+    second: tiles_village_256_56
+  - first:
+      213: -2855361700402276448
+    second: tiles_village_256_57
+  - first:
+      213: 9054719750932768817
+    second: tiles_village_256_58
+  - first:
+      213: -2757093499582484641
+    second: tiles_village_256_59
+  - first:
+      213: -7833609554402244810
+    second: tiles_village_256_60
+  - first:
+      213: 7288979202220734867
+    second: tiles_village_256_61
+  - first:
+      213: -7434253382686424844
+    second: tiles_village_256_62
+  - first:
+      213: 8951417749244591083
+    second: tiles_village_256_63
+  - first:
+      213: -4949216045649108569
+    second: tiles_village_256_64
+  - first:
+      213: -8503172751747462130
+    second: tiles_village_256_65
+  - first:
+      213: 5218402365302432513
+    second: tiles_village_256_66
+  - first:
+      213: -6296933270285062966
+    second: tiles_village_256_67
+  - first:
+      213: -5789526409932704382
+    second: tiles_village_256_68
+  - first:
+      213: -5276780279343058822
+    second: tiles_village_256_69
+  - first:
+      213: -5197900017816582406
+    second: tiles_village_256_70
+  - first:
+      213: -670218056339665538
+    second: tiles_village_256_71
+  - first:
+      213: 5951754767619113260
+    second: tiles_village_256_72
+  - first:
+      213: 2559387699618238466
+    second: tiles_village_256_73
+  - first:
+      213: -5870284201172585453
+    second: tiles_village_256_74
+  - first:
+      213: 2275108610562760765
+    second: tiles_village_256_75
+  - first:
+      213: 8008764164706786539
+    second: tiles_village_256_76
+  - first:
+      213: 2870699426255723495
+    second: tiles_village_256_77
+  - first:
+      213: -5979392345486494578
+    second: tiles_village_256_78
+  - first:
+      213: 7345053353639263337
+    second: tiles_village_256_79
+  - first:
+      213: 6300658544633007680
+    second: tiles_village_256_80
+  - first:
+      213: -7323455875518194030
+    second: tiles_village_256_81
+  - first:
+      213: -7351840989452019793
+    second: tiles_village_256_82
+  - first:
+      213: 3732191200583788481
+    second: tiles_village_256_83
+  - first:
+      213: 4955246982417448545
+    second: tiles_village_256_84
+  - first:
+      213: -1609275113700171888
+    second: tiles_village_256_85
+  - first:
+      213: 8525300613866898969
+    second: tiles_village_256_86
+  - first:
+      213: -8677826305208094654
+    second: tiles_village_256_87
+  - first:
+      213: -7708482854140833726
+    second: tiles_village_256_88
+  - first:
+      213: -4795683973529554780
+    second: tiles_village_256_89
+  - first:
+      213: 5462003014318222179
+    second: tiles_village_256_90
+  - first:
+      213: -3286158986630455523
+    second: tiles_village_256_91
+  - first:
+      213: -1367677522466964780
+    second: tiles_village_256_92
+  - first:
+      213: -2318321739002383666
+    second: tiles_village_256_93
+  - first:
+      213: -7319776643525532357
+    second: tiles_village_256_94
+  - first:
+      213: 7985026253673401085
+    second: tiles_village_256_95
+  - first:
+      213: 4353194997805232329
+    second: tiles_village_256_96
+  - first:
+      213: 3081099804576779432
+    second: tiles_village_256_97
+  - first:
+      213: -2532376108052118293
+    second: tiles_village_256_98
+  - first:
+      213: -5160916709577392758
+    second: tiles_village_256_99
+  - first:
+      213: -910374232151255634
+    second: tiles_village_256_100
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiles_village_256_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b23ab0b5d395ad00800000000000000
+      internalID: 983354639652631225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466658d3e8b466bc0800000000000000
+      internalID: -3790258962096101788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636a4e7c39a12a920800000000000000
+      internalID: 2999989523798337078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1df8412f53a93900800000000000000
+      internalID: 664742048989510941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c888c58c88563f90800000000000000
+      internalID: -6974289612373456702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38299db2db77cda60800000000000000
+      internalID: 7700161117264908931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf30ca399610edb40800000000000000
+      internalID: 5466808550635078651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7056a69d7b735a6c0800000000000000
+      internalID: -4132835820276390649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5b2bf601f9981b0800000000000000
+      internalID: -5653812964244670982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6af70adc8bf0ec0800000000000000
+      internalID: -3598454383945210177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590c45adc5a180e50800000000000000
+      internalID: 6775694625481212053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe937d973fd044a90800000000000000
+      internalID: -7330718954079962641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fec973d1492a7f0800000000000000
+      internalID: -602756546906230929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfe5952af3d12060800000000000000
+      internalID: 6927050773198401480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_14
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec9a4131ff0eb5b0800000000000000
+      internalID: -5350821778681062168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72b1122496c96990800000000000000
+      internalID: -7392158973822913926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65077de183e8ca610800000000000000
+      internalID: 1633837136515395670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1397f132e44be5380800000000000000
+      internalID: -8980542359240476367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc2aeb0516c0b820800000000000000
+      internalID: 2932061151114702005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f4c1873e27197e0800000000000000
+      internalID: -1760499658026889413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7104e74225996dbd0800000000000000
+      internalID: -2605726756308631529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_21
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976dd4a777df03cf0800000000000000
+      internalID: -274440887674743175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_22
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76d481c8d42a8ab0800000000000000
+      internalID: -5005147522490640772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6dcc5ff31a2d530800000000000000
+      internalID: 3878339525198272252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d89c5d329c758060800000000000000
+      internalID: 6955102167080147155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_25
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03481024f9396e760800000000000000
+      internalID: 7486833742766507056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_26
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2305fe56d3a568a0800000000000000
+      internalID: -6312459161578437841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_village_256_27
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f6154878d5cdc10800000000000000
+      internalID: 2079639964560224037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
