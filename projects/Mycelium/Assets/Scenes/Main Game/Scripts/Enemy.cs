@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.name.Equals ("Fire"))
+        if (col.gameObject.name.Equals ("Danger"))
             healthAmount -= 0.1f;
     }
 }
