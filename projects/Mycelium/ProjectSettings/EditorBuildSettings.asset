@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Naomi R/ScenesNR/TestingNao.unity
     guid: 6ecc72db916b33c4da1f38b2e369bbc5
+  - enabled: 1
+    path: Assets/Scenes/Main Game/Scenes/scene_crypt.unity
+    guid: 2e672ab583f8be149a7205fd4e81f84d
+  - enabled: 1
+    path: Assets/Scenes/Main Game/Scenes/scene_village.unity
+    guid: 24e80a2101f1ca9428a25bd4f2fea2a1
   m_configObjects: {}
