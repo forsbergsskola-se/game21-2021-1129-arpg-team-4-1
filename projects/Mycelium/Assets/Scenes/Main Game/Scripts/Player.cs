@@ -22,12 +22,11 @@ public class Player : MonoBehaviour
 
     
     void Update()
-    //Everytime we press the space bar, player takes 20 damage
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(20);
-        }
+       // if (Input.GetKeyDown(KeyCode.Space)) //Everytime we press the space bar, player takes 20 damage
+        // {
+           // TakeDamage(20);
+      //  }
 
         if (currentHealth < 0)
         {
