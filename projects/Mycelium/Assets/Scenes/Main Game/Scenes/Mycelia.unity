@@ -20805,7 +20805,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d7ee8699889d54283d1eec1bd0fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 213329024}
+  attackTimer: 0
   healthBar: {fileID: 1753453996}
+  minDistance: 1.2
+  attackRange: 3
 --- !u!95 &213329026
 Animator:
   serializedVersion: 3

@@ -122,6 +122,8 @@ public class EnemyAggro : MonoBehaviour
             return;
         }
         Debug.Log("Attack");
+        
+        //change to enemy health
         Player playerHealth = player.GetComponent<Player>();
         if (playerHealth != null)
         {
