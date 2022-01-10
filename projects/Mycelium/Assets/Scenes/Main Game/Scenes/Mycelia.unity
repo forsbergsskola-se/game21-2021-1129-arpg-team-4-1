@@ -21471,7 +21471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hitpoints: 0
-  MaxHitpoints: 5
+  MaxHitpoints: 10
   HealthBarEnemy: {fileID: 384977583}
 --- !u!114 &476426409
 MonoBehaviour:
@@ -21520,7 +21520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 213329024}
   agroRange: 2
-  moveSpeed: 1.5
+  moveSpeed: 1.2
   attackTimer: 0
   minDistance: 0.5
   attackRange: 0

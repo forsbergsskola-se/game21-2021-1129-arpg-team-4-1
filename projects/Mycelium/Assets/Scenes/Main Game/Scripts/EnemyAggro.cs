@@ -77,8 +77,8 @@ public class EnemyAggro : MonoBehaviour
     private IEnumerator Regen()
     {
 
-        while (true)
-        {
+       
+        
             if (!InCombat)
             {
                 EnemyBehaviour ebehaviour = GetComponent<EnemyBehaviour>();
@@ -92,7 +92,7 @@ public class EnemyAggro : MonoBehaviour
         
             // How often enemy will regen
             yield return new WaitForSeconds(1.5f);
-        }
+        
        
     }
 
