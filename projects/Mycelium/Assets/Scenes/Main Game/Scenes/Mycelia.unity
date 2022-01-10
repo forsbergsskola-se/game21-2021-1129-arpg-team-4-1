@@ -21264,7 +21264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 213329024}
   agroRange: 2
-  moveSpeed: 1.2
+  moveSpeed: 1.4
   attackTimer: 0
   minDistance: 0.5
   attackRange: 0
