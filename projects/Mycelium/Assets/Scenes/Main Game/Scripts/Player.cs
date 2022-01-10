@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private Transform player;
-    [SerializeField] private float attackTimer = 0.0f;
     
     
     public static int maxHealth = 100; //Player max health is 100
@@ -35,24 +33,7 @@ public class Player : MonoBehaviour
            // TakeDamage(20);
       //  }
 
-      if (attackTimer > 0)
-      {
-          attackTimer -= Time.deltaTime;
-          //Debug.Log("attacktimer"+ attackTimer);
-      } 
-      
-      float distToPlayer = Vector3.Distance(transform.position, player.position);
-      
-      if (distToPlayer <= attackRange)
-      {
-          Attack();
-          
-      }
-      
-      
-      
-      
-      
+
       if (currentHealth < 0)
         {
             gameOver = true;
@@ -74,21 +55,6 @@ public class Player : MonoBehaviour
         }
        
     }
-    private void Attack()
-    {
-        if (attackTimer > 0)
-        {
-            return;
-        }
-        Debug.Log("Attack");
-        Player playerHealth = player.GetComponent<Player>();
-        if (playerHealth != null)
-        {
-            //playerHealth.TakeDamage(10);
-            //anime here
-            Debug.Log("Hit player");
-            attackTimer = attackCooldown;
-        }
-    }
+   
    
 }
