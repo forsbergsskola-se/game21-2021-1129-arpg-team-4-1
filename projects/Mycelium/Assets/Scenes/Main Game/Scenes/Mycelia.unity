@@ -21056,8 +21056,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -25.5, y: -14.8}
+  m_SizeDelta: {x: 58.7442, y: 6.2596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &346369548
 MonoBehaviour:
@@ -21072,7 +21072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.33962262, g: 0.0016019973, b: 0.0016019973, a: 1}
+  m_Color: {r: 0.8018868, g: 0.12482201, b: 0.12482201, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22142,8 +22142,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.276501, y: -52.64219}
-  m_SizeDelta: {x: 85.059006, y: 168.0727}
+  m_AnchoredPosition: {x: -0.00002670288, y: -102.8}
+  m_SizeDelta: {x: 210.0308, y: 288.9835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1058476015
 MonoBehaviour:
@@ -22165,7 +22165,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c03a96e70285f7f468793aacd928c2bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a34c46d187daa93439a40c75134af0ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -36035,7 +36035,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1.9765, y: -40.757797}
+  m_AnchoredPosition: {x: 0.0000014305, y: -95}
   m_SizeDelta: {x: 79.049, y: 11.706802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1753453996
@@ -36053,8 +36053,8 @@ MonoBehaviour:
   slider: {fileID: 1753453997}
   gradient:
     serializedVersion: 2
-    key0: {r: 0.32614365, g: 0.009096611, b: 0.0016726912, a: 1}
-    key1: {r: 0.029369881, g: 0.18867922, b: 0.034694467, a: 1}
+    key0: {r: 0.8, g: 0.1254902, b: 0.1254902, a: 1}
+    key1: {r: 0.114142045, g: 0.8962264, b: 0.15229246, a: 1}
     key2: {r: 0.029369881, g: 0.18867922, b: 0.034694467, a: 1}
     key3: {r: 0.029369881, g: 0.18867922, b: 0.034694467, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
