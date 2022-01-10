@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     {
         destination = transform.position;
         mouseInput.Mouse.MouseClick.performed += _ => MouseClick();
+        gameOver = false;
     }
     
     void Update()

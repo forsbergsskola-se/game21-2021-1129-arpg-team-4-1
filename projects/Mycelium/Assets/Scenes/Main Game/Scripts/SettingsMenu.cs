@@ -17,7 +17,7 @@ void Start ()
 resolutions = Screen.resolutions;
 resolutionDropdown.ClearOptions();
 
-List <strings> options = new List <string>();
+List <string> options = new List <string>();
 
 for (int i = 0; i < resolutions.Length; i++)
 {
