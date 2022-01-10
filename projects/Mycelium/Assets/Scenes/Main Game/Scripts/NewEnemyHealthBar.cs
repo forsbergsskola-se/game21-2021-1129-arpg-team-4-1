@@ -9,7 +9,7 @@ public class NewEnemyHealthBar : MonoBehaviour {
         localScale = transform.localScale;
     }
     void Update () {
-        localScale.x = Cat.healthAmount;
+       // localScale.x = Cat.healthAmount;
         transform.localScale = localScale;
     }
 }
