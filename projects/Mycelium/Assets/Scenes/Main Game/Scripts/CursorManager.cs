@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
+/*
+
 public class CursorManager : MonoBehaviour
 {
     public Texture2D cursor;
@@ -52,3 +54,5 @@ public class CursorManager : MonoBehaviour
         PM.isValidLocation = true;
     }
 }
+
+*/

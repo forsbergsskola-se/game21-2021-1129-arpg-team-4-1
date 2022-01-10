@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+/*
+
 public class PlayerMovement : MonoBehaviour
 {
     private MouseInput mouseInput;
@@ -103,3 +105,5 @@ public class PlayerMovement : MonoBehaviour
     }
     
 }
+*/
+
