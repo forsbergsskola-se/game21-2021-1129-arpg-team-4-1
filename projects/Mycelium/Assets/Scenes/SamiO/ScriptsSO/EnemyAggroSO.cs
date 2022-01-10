@@ -23,19 +23,19 @@ public class EnemyAggroSO : MonoBehaviour
     void Update()
     {
         float distToPlayer = Vector3.Distance(transform.position, player.position);
-        print("distToPlayer:" + distToPlayer);
+        
 
         if (distToPlayer < agroRange)
         {
             ChasePlayer(); 
             
-            Debug.Log("chasing");
+            //Debug.Log("chasing");
         }
 
         else
         {
             //StopChasingPlayer(); 
-            Debug.Log("outOfRange");
+           // Debug.Log("outOfRange");
         }
     }
 
