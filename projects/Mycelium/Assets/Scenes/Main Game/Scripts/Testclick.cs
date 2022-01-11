@@ -8,7 +8,7 @@ public class Testclick : MonoBehaviour ,IClick
     public GameObject player;
     private PlayerAttack attackScript;
     
-    // Start is called before the first frame update
+    
     void Start()
     {
         player = GameObject.FindWithTag("Player");
