@@ -63,8 +63,6 @@ public class CursorControllerNR : MonoBehaviour
         {
             IClick click = hits2D.collider.gameObject.GetComponent<IClick>();
             if (click != null) click.onClickAction();
-            
-            // Debug.Log("Hit 2D Collider" + hits2D.collider.tag);
         }
     }
 

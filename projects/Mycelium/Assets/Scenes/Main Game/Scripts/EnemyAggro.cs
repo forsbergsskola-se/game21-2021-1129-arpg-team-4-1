@@ -123,7 +123,7 @@ public class EnemyAggro : MonoBehaviour
         }
         Debug.Log("Attack");
         
-        //change to enemy health
+       
         Player playerHealth = player.GetComponent<Player>();
         if (playerHealth != null)
         {

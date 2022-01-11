@@ -20843,6 +20843,7 @@ MonoBehaviour:
   enemyTargeted: {fileID: 0}
   attackRange: 5
   attackTimer: 0
+  player: {fileID: 213329024}
 --- !u!1 &279714048
 GameObject:
   m_ObjectHideFlags: 0
@@ -21094,6 +21095,14 @@ PrefabInstance:
     - target: {fileID: 6541324141230453605, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541324141230453611, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541324141230453611, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
+      propertyPath: barrelmaxHealth
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
