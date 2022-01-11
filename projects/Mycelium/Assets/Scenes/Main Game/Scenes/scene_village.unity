@@ -132,8 +132,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 81422500}
-  - component: {fileID: 81422499}
   - component: {fileID: 81422498}
+  - component: {fileID: 81422499}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 81422497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 224fc017de917134893cac774dfe2ce5, type: 3}
+  m_Script: {fileID: 11500000, guid: e95e5a4934976794aba5c17eae7d92d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CC: {fileID: 81422498}
@@ -178,6 +178,7 @@ MonoBehaviour:
   movementSpeed: 2
   prefab: {fileID: 2864430325069958057, guid: 007fd0fcf2134d84bbd20ab2127e54d7, type: 3}
   map: {fileID: 470467051}
+  animator: {fileID: 94297623}
 --- !u!4 &81422500
 Transform:
   m_ObjectHideFlags: 0
@@ -334,6 +335,7 @@ GameObject:
   - component: {fileID: 94297624}
   - component: {fileID: 94297623}
   - component: {fileID: 94297627}
+  - component: {fileID: 94297628}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -507,6 +509,19 @@ MonoBehaviour:
   attackRange: 5
   attackTimer: 0
   player: {fileID: 94297621}
+--- !u!114 &94297628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94297620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfdb662f32f7c40428533eded3a572b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isClickColliding: 0
 --- !u!1 &109029310
 GameObject:
   m_ObjectHideFlags: 0
@@ -35727,7 +35742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 315343049670075977, guid: 68c5c46aaf55c0343b5c8b97a19feb6e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 315343049670075979, guid: 68c5c46aaf55c0343b5c8b97a19feb6e, type: 3}
       propertyPath: m_RootOrder
@@ -57706,7 +57721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1bcd26f2fe4ec499d7f26d3d56bff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PC: {fileID: 0}
+  PC: {fileID: 94297628}
   PM: {fileID: 81422499}
   Player: {fileID: 94297620}
   LL: {fileID: 991929278}
@@ -57723,7 +57738,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.80687237, y: -0.2626574}
+  m_Offset: {x: 0.023644447, y: -0.4077008}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -57734,7 +57749,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.906213, y: 3.016687}
+  m_Size: {x: 4.745879, y: 2.7266002}
   m_EdgeRadius: 0
 --- !u!212 &1160324045
 SpriteRenderer:
@@ -57796,7 +57811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160324042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.21, y: 17.28, z: 0}
+  m_LocalPosition: {x: 9.48, y: 17.3, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
