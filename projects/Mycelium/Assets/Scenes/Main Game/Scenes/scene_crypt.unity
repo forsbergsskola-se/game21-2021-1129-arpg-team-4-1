@@ -3835,17 +3835,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6541324141230453605, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
   m_PrefabInstance: {fileID: 546722271}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &546722274 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5142239096716665764, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
-  m_PrefabInstance: {fileID: 546722271}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2c79e937bd8d143aa8afb8c8103221, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &552062287
 GameObject:
   m_ObjectHideFlags: 0
@@ -70039,8 +70028,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1363517687}
-  - component: {fileID: 1363517685}
   - component: {fileID: 1363517686}
+  - component: {fileID: 1363517685}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -70057,12 +70046,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1363517684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 086fee83f449d804e85f01b5ebef3d5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 08030b4ce65975b4a840b13e835f7190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MC: {fileID: 2092529721}
-  EC: {fileID: 1426086412}
-  DO: {fileID: 546722274}
   cursorDefault: {fileID: 2800000, guid: fcd0405a0c5ec4d4f851536acc516eed, type: 3}
   cursorInvalid: {fileID: 2800000, guid: ec92b904ffa5b6d42b04e95bf7bf992c, type: 3}
   cursorAttack: {fileID: 2800000, guid: 3efe1e0e0c77c844ca907a8947039ede, type: 3}
@@ -70078,8 +70065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95e5a4934976794aba5c17eae7d92d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CC: {fileID: 0}
   destination: {x: 0, y: 0, z: 0}
+  CC: {fileID: 1363517685}
   MC: {fileID: 2092529721}
   player: {fileID: 1650896658}
   movementSpeed: 2
@@ -72647,9 +72634,9 @@ GameObject:
   - component: {fileID: 1650896664}
   - component: {fileID: 1650896663}
   - component: {fileID: 1650896662}
-  - component: {fileID: 1650896661}
-  - component: {fileID: 1650896660}
   - component: {fileID: 1650896659}
+  - component: {fileID: 1650896660}
+  - component: {fileID: 1650896661}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -72685,6 +72672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfdb662f32f7c40428533eded3a572b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClickColliding: 0
 --- !u!95 &1650896661
 Animator:
   serializedVersion: 3
