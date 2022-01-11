@@ -15,12 +15,7 @@ public class Testclick : MonoBehaviour ,IClick
         attackScript = player.GetComponent<PlayerAttack>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void onClickAction()
     {
         attackScript.SetEnemyTarget(this.gameObject);
