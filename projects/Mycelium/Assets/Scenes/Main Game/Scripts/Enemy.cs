@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.name.Equals ("Danger"))
+        if (col.gameObject.name.Equals ("Player attacks enemy"))
             healthAmount -= 0.1f;
     }
 }
