@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class CryptGate : MonoBehaviour, IClick
 {
     [SerializeField] private PlayerCollisionNR PC;
-    [SerializeField] private PlayerMovementNR PM;
+    [SerializeField] private PlayerMovementExperimentation PM;
     [SerializeField] private GameObject Player;
     [SerializeField] private LevelLoader LL;
     
