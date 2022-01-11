@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class CursorControllerNR : MonoBehaviour
 {
-    
     public MouseInput controls;
     private Camera mainCamera;
+    
     [SerializeField] private MapCollision MC;
     [SerializeField] private EnemyCollision EC;
+    [SerializeField] private DestroyableObjectCollision DO;
+    
     [SerializeField] private Texture2D cursorDefault;
     [SerializeField] private Texture2D cursorInvalid;
     [SerializeField] private Texture2D cursorAttack;
@@ -45,7 +47,7 @@ public class CursorControllerNR : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (MC.isValidLocation && !EC.isEnemy)
+        if (MC.isValidLocation && !EC.isEnemy && !DO.isObject)
         {
             ChangeCursor(cursorDefault);
         }
@@ -53,7 +55,7 @@ public class CursorControllerNR : MonoBehaviour
         {
             ChangeCursor(cursorInvalid);
         }
-        if (EC.isEnemy)
+        if (EC.isEnemy || DO.isObject)
         {
             ChangeCursor(cursorAttack);
         }
