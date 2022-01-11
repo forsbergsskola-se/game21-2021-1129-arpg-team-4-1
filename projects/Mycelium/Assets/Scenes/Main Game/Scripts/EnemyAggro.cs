@@ -17,16 +17,16 @@ public class EnemyAggro : MonoBehaviour
     private float attackCooldown = 2.5f;
     public float attackRange = 0f;
     private Rigidbody2D rb2d;
-    public bool InCombat;
+    //public bool InCombat;
     
     
     void Start()
     {
         
-        StartCoroutine(Regen());
+        //StartCoroutine(Regen());
         rb2d = GetComponent<Rigidbody2D>();
         attackRange = minDistance + 0.2f;
-        InCombat = false;
+        //InCombat = false;
         
 
     }
@@ -46,25 +46,25 @@ public class EnemyAggro : MonoBehaviour
         {
             ChasePlayer();
 
-            InCombat = true;
+            //InCombat = true;
         }
         else
         {
-            if (InCombat == true)
-            {
-                Regen();
-            }
+            //if (InCombat == true)
+            //{
+                //Regen();
+           // }
             
             StopChasingPlayer();
-           InCombat = false;
+          //InCombat = false;
         }
         
         if (distToPlayer <= attackRange)
         {
             Attack();
-            InCombat = true;
+            //InCombat = true;
         }
-        //updateHealth += pointIncreasePerSecond * Time.deltaTime; 
+      
 
         if (Player.gameOver)
         {
@@ -74,26 +74,25 @@ public class EnemyAggro : MonoBehaviour
         
     }
 
-    private IEnumerator Regen()
-    {
+    //private IEnumerator Regen()
+    //{
 
        
         
-           // if (!InCombat)
-            //{
-              //  EnemyHealthSO ebehaviour = GetComponent<EnemyHealthSO>();
-               // if (ebehaviour.enemyHealth < ebehaviour.maxEnemyHealth)
-               // {
-                 //   int value = Mathf.FloorToInt(ebehaviour.maxEnemyHealth * 0.05f);
+           //if (!InCombat)
+           // {
+                //EnemyHealthSO ebehaviour = GetComponent<EnemyHealthSO>();
+                //if (ebehaviour.enemyHealth < ebehaviour.maxEnemyHealth)
+                //{ int value = Mathf.FloorToInt(ebehaviour.maxEnemyHealth * 0.05f);
                    
-               // }
+                //}
            // }
         
             // How often enemy will regen
-            yield return new WaitForSeconds(1.5f);
+            //yield return new WaitForSeconds(1.5f);
         
        
-    }
+   // }
 
     
     private void StopChasingPlayer()
