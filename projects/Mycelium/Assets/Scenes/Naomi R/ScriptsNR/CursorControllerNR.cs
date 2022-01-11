@@ -9,10 +9,11 @@ public class CursorControllerNR : MonoBehaviour
     public MouseInput controls;
     private Camera mainCamera;
     [SerializeField] private MapCollision MC;
+    [SerializeField] private EnemyCollision EC;
     [SerializeField] private Texture2D cursorDefault;
     [SerializeField] private Texture2D cursorInvalid;
-    [SerializeField] private Texture2D cursorClicked;
-    // [SerializeField] private Texture2D attack;
+    [SerializeField] private Texture2D cursorAttack;
+    // [SerializeField] private Texture2D cursorClicked;
     // [SerializeField] private Texture2D destroyableObject;
     // [SerializeField] private Texture2D gateLocked;
     // [SerializeField] private Texture2D gateUnlocked;
@@ -44,16 +45,19 @@ public class CursorControllerNR : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (MC.isValidLocation)
+        if (MC.isValidLocation && !EC.isEnemy)
         {
             ChangeCursor(cursorDefault);
         }
-
         if (MC.isValidLocation == false)
         {
             ChangeCursor(cursorInvalid);
         }
-        
+        if (EC.isEnemy)
+        {
+            ChangeCursor(cursorAttack);
+        }
+
     }
 
     public void DetectObject()
