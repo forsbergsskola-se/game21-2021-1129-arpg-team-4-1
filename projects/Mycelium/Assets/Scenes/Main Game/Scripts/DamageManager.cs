@@ -8,9 +8,6 @@ public class DamageManager : MonoBehaviour
 {
     public GameObject damageTextPrefab, enemyInstance;
     public string damageTaken;
-    public EnemyHealthSO dmgTake;
-    
-    
     
     private void Update()
     {
