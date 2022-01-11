@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private BoxCollider2D colliderLayer;
+    public bool isEnemy;
+    
+    private void Awake()
     {
-        
+        colliderLayer = GetComponent<BoxCollider2D>();
+        isEnemy = false;
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    private void OnMouseEnter()
     {
-        
+        isEnemy = true;
+    }
+    
+    private void OnMouseExit()
+    { 
+        isEnemy = false;
     }
 }
