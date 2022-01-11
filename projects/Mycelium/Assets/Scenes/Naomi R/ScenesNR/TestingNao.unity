@@ -248,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PC: {fileID: 167959095}
   Player: {fileID: 167959094}
-  PM: {fileID: 1530395394}
+  PM: {fileID: 1530395392}
   NextStatue: {fileID: 1909720633}
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &167959094
@@ -391,8 +391,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &167959100
-CapsuleCollider2D:
+--- !u!58 &167959100
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -404,9 +404,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0030126572, y: -0.072303176}
-  m_Size: {x: 0.18658924, y: 0.3613221}
-  m_Direction: 0
+  m_Offset: {x: -0.000000029802322, y: -0.012050569}
+  serializedVersion: 2
+  m_Radius: 0.33393264
 --- !u!1 &377533150
 GameObject:
   m_ObjectHideFlags: 0
@@ -6692,7 +6692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PC: {fileID: 167959095}
   Player: {fileID: 167959094}
-  PM: {fileID: 1530395394}
+  PM: {fileID: 1530395392}
   NextStatue: {fileID: 146812547}
   offset: {x: 0, y: 0, z: 0}
 --- !u!61 &934900152
@@ -7137,7 +7137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CC: {fileID: 1530395393}
-  destination: {x: 0, y: 0, z: 0}
   MC: {fileID: 871244887}
   player: {fileID: 167959094}
   movementSpeed: 2
@@ -11055,7 +11054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PC: {fileID: 167959095}
   Player: {fileID: 167959094}
-  PM: {fileID: 1530395394}
+  PM: {fileID: 1530395392}
   NextStatue: {fileID: 934900150}
   offset: {x: 0, y: 0, z: 0}
 --- !u!114 &1919975237 stripped

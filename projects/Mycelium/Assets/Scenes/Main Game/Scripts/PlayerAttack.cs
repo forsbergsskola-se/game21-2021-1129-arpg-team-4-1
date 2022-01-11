@@ -7,7 +7,8 @@ public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private GameObject enemyTargeted;
     [SerializeField] private EnemyHealthSO enemyHealth;
-    [SerializeField] private float attackRange = 5f;
+    [SerializeField] private BarrelDieEU barrelHealth;
+    [SerializeField] private float attackRange = 4f;
     [SerializeField] private float attackTimer = 0.0f;
     [SerializeField] private Transform player;
     private float attackCooldown = 2.5f;
@@ -45,7 +46,8 @@ public class PlayerAttack : MonoBehaviour
         }
         enemyTargeted = newTarget; 
         enemyHealth = enemyTargeted.GetComponent<EnemyHealthSO>();
-        
+        barrelHealth = enemyTargeted.GetComponent<BarrelDieEU>();
+
     } 
     
     private void Attack()
@@ -56,24 +58,24 @@ public class PlayerAttack : MonoBehaviour
         }
         Debug.Log("Attack enemy");
         attackTimer = attackCooldown;
-        //change to enemy health
+        
         
         if (enemyHealth != null)
         {
-            enemyHealth.TakeDamage(10);
+            //enemyHealth.TakeDamage(10);
             //anime here
             Debug.Log("Hit enemy");
            attackTimer = attackCooldown;
         } 
 
 
-        //BarrelDieEU barrelHealth = player.GetComponent<BarrelDieEU>();
-        //if (barrelHealth != null)
-        //{
-            //barrelHealth.TakeDamage(10);
+        
+        if (barrelHealth != null)
+        {
+            barrelHealth.TakeDamage(10);
             //anime here
-            //Debug.Log("Hit Barrel");
+            Debug.Log("Hit Barrel");
             //attackTimer = attackCooldown;
-        //}
+        }
     }
 }

@@ -80,14 +80,13 @@ public class EnemyAggro : MonoBehaviour
        
         
            // if (!InCombat)
-            {
-               // EnemyBehaviour ebehaviour = GetComponent<EnemyBehaviour>();
-                //if (ebehaviour.Hitpoints < ebehaviour.MaxHitpoints)
+            //{
+              //  EnemyHealthSO ebehaviour = GetComponent<EnemyHealthSO>();
+               // if (ebehaviour.enemyHealth < ebehaviour.maxEnemyHealth)
                // {
-                  //  int value = Mathf.FloorToInt(ebehaviour.MaxHitpoints * 0.05f);
-                   // ebehaviour.Heal(value);
-                   // Debug.Log(value);
-                }
+                 //   int value = Mathf.FloorToInt(ebehaviour.maxEnemyHealth * 0.05f);
+                   
+               // }
            // }
         
             // How often enemy will regen

@@ -40,14 +40,13 @@ public class EnemyHealthSO : MonoBehaviour
     public void TakeDamage(int damage)
     {
         enemyHealth -= damage; //When taking damage, we subtract damage from players current health
-        updateEnemyBar();
-       
+        //healthBarUI.SetHealth(enemyHealth;
     } 
     
-
-    public void updateEnemyBar()
+    public void SetEnemyHealth(float health)
     {
-        slider.value = enemyHealth;
+        //slider.value = ; 
+       
     }
     float CalculateHealth()
     {
