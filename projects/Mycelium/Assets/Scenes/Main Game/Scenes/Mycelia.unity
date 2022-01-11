@@ -20918,7 +20918,7 @@ MonoBehaviour:
   enemyTargeted: {fileID: 0}
   enemyHealth: {fileID: 0}
   barrelHealth: {fileID: 0}
-  attackRange: 5
+  attackRange: 1
   attackTimer: 0
   player: {fileID: 213329024}
 --- !u!1 &279714048
