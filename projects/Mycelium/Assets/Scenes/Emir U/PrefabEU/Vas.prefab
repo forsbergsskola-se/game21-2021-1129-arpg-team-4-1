@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8852998220758479550}
   - component: {fileID: 8852998220758479549}
   - component: {fileID: 8852998220758479523}
+  - component: {fileID: 6721613344003899494}
   m_Layer: 7
   m_Name: Vas
   m_TagString: Barrel
@@ -204,5 +205,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c23a216d53e0b4e95c4fe5af464edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  barrelmaxHealth: 10
   animator: {fileID: 8852998220758479549}
+--- !u!114 &6721613344003899494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8852998220758479546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2c79e937bd8d143aa8afb8c8103221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isObject: 0
