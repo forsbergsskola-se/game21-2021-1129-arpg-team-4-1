@@ -47548,8 +47548,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1938914007}
-  - component: {fileID: 1938914006}
   - component: {fileID: 1938914008}
+  - component: {fileID: 1938914006}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -47566,12 +47566,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1938914005}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 086fee83f449d804e85f01b5ebef3d5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 08030b4ce65975b4a840b13e835f7190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MC: {fileID: 699303824}
-  EC: {fileID: 1058891918}
-  DO: {fileID: 0}
   cursorDefault: {fileID: 2800000, guid: fcd0405a0c5ec4d4f851536acc516eed, type: 3}
   cursorInvalid: {fileID: 2800000, guid: ec92b904ffa5b6d42b04e95bf7bf992c, type: 3}
   cursorAttack: {fileID: 2800000, guid: 3efe1e0e0c77c844ca907a8947039ede, type: 3}
@@ -47602,7 +47600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {x: 0, y: 0, z: 0}
-  CC: {fileID: 0}
+  CC: {fileID: 1938914006}
   MC: {fileID: 699303824}
   player: {fileID: 1495777168}
   movementSpeed: 2
