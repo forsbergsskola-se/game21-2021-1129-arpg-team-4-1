@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CursorControllerExperimentation : MonoBehaviour
 {
-     public MouseInput controls;
+    public MouseInput controls;
     private Camera mainCamera;
+    private bool isObject;
     
     [SerializeField] private MapCollision MC;
     [SerializeField] private EnemyCollision EC;
-    [SerializeField] private DestroyableObjectCollision DO;
-    
+
     [SerializeField] private Texture2D cursorDefault;
     [SerializeField] private Texture2D cursorInvalid;
     [SerializeField] private Texture2D cursorAttack;
@@ -42,7 +42,9 @@ public class CursorControllerExperimentation : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (MC.isValidLocation && !EC.isEnemy && !DO.isObject)
+        DectectHover();
+        
+        if (MC.isValidLocation && !EC.isEnemy && !isObject)
         {
             ChangeCursor(cursorDefault);
         }
@@ -50,7 +52,7 @@ public class CursorControllerExperimentation : MonoBehaviour
         {
             ChangeCursor(cursorInvalid);
         }
-        if (EC.isEnemy || DO.isObject)
+        if (EC.isEnemy || isObject)
         {
             ChangeCursor(cursorAttack);
         }
@@ -66,6 +68,16 @@ public class CursorControllerExperimentation : MonoBehaviour
             IClick click = hits2D.collider.gameObject.GetComponent<IClick>();
             if (click != null) click.onClickAction();
         }
+        
+    }
+
+    public void DectectHover()
+    {
+        Ray rayObject = mainCamera.ScreenPointToRay(controls.Mouse.MousePosition.ReadValue<Vector2>());
+        RaycastHit2D hitsObject = Physics2D.GetRayIntersection(rayObject);
+        
+        if (hitsObject.collider != null && hitsObject.collider.tag == "Barrel") isObject = true;
+        else isObject = false;
     }
 
     private void StartedClick()
