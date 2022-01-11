@@ -58,7 +58,7 @@ public class PlayerMovementNR : MonoBehaviour
         hasSpawned = true;
     }
     
-    private bool DestinationReached()
+    public bool DestinationReached()
     {
         return destination == player.transform.position;
     }
