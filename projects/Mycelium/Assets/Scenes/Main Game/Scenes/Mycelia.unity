@@ -21576,11 +21576,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6836134438993523260, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
       propertyPath: m_Size.x
-      value: 1.6355724
+      value: 1.1265354
       objectReference: {fileID: 0}
     - target: {fileID: 6836134438993523260, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
       propertyPath: m_Size.y
-      value: 2.4729846
+      value: 2.0403042
       objectReference: {fileID: 0}
     - target: {fileID: 6836134438993523260, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
       propertyPath: m_Offset.x
@@ -21588,7 +21588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6836134438993523260, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
       propertyPath: m_Offset.y
-      value: 0.088684484
+      value: -0.00039686367
       objectReference: {fileID: 0}
     - target: {fileID: 6836134438993523261, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
       propertyPath: m_RootOrder
@@ -21787,7 +21787,7 @@ MonoBehaviour:
   agroRange: 1
   moveSpeed: 1.5
   attackTimer: 0
-  minDistance: 0.7
+  minDistance: 0.8
   attackRange: 5
   InCombat: 0
 --- !u!114 &1472717193

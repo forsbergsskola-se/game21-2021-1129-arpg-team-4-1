@@ -438,6 +438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1994768287}
+  minDistance: 0
+  attackRange: 0
 --- !u!50 &94297625
 Rigidbody2D:
   serializedVersion: 4
@@ -61814,7 +61816,8 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6836134438993523259, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
 --- !u!1 &1749986879
 GameObject:
@@ -62148,6 +62151,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6836134438993523249, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
   m_PrefabInstance: {fileID: 1734539409}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1864738474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864738473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed3b9c5704b778439b2aac859e81441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 94297621}
+  agroRange: 1
+  moveSpeed: 1
+  attackTimer: 0
+  minDistance: 0.8
+  attackRange: 5
+  InCombat: 0
 --- !u!4 &1864738479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6836134438993523261, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
