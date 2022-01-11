@@ -28,13 +28,7 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-       // if (Input.GetKeyDown(KeyCode.Space)) //Everytime we press the space bar, player takes 20 damage
-        // {
-           // TakeDamage(20);
-      //  }
-
-
-      if (currentHealth < 0)
+        if (currentHealth < 0)
         {
             gameOver = true;
         } 
