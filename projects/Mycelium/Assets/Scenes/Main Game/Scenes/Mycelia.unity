@@ -35878,7 +35878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2433793641545841692, guid: 7a677f5462fac9448bda8596acecc8fe, type: 3}
       propertyPath: agroRange
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2433793641545841692, guid: 7a677f5462fac9448bda8596acecc8fe, type: 3}
       propertyPath: attackRange
