@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,16 @@ public class EnemyBehaviour : MonoBehaviour
         Hitpoints = MaxHitpoints;
         Healthbar.SetHealth(Hitpoints, MaxHitpoints);
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)) //Everytime we press the space bar, player takes 20 damage
+        {
+         TakeHit(1);
+          }
+    }
+
+
     void TakeHit(float damage)
     {
         Hitpoints -= damage;
