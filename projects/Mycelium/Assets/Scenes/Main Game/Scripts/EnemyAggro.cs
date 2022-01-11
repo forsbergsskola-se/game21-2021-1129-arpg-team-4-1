@@ -126,7 +126,7 @@ public class EnemyAggro : MonoBehaviour
         if (playerHealth != null)
         {
             playerHealth.TakeDamage(10);
-            //anime here
+            
             Debug.Log("Hit player");
             attackTimer = attackCooldown;
         }
