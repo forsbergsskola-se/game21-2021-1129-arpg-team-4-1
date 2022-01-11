@@ -9,7 +9,7 @@ public class PlayerAttack : MonoBehaviour
     //[SerializeField] private enemyHealthScirpt enemyHealth;
     [SerializeField] private float attackRange = 5f;
     [SerializeField] private float attackTimer = 0.0f;
-    
+    [SerializeField] private Transform player;
     private float attackCooldown = 2.5f;
     void Start()
     {
@@ -64,6 +64,16 @@ public class PlayerAttack : MonoBehaviour
             //anime here
            // Debug.Log("Hit enemy");
            // attackTimer = attackCooldown;
-        //}
+        //} 
+
+
+        BarrelDieEU barrelHealth = player.GetComponent<BarrelDieEU>();
+        if (barrelHealth != null)
+        {
+            barrelHealth.TakeDamage(10);
+            //anime here
+            Debug.Log("Hit Barrel");
+            attackTimer = attackCooldown;
+        }
     }
 }

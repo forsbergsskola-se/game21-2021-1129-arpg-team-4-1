@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class BarrelDieEU : MonoBehaviour
 {
-    public int maxHealth = 20;
-    int currentHealth;
+    public int barrelmaxHealth = 10;
+    int barrelcurrentHealth;
 
     bool destroyed = false;
 
@@ -15,17 +15,17 @@ public class BarrelDieEU : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        barrelcurrentHealth = barrelmaxHealth;
     }
 
     public void TakeDamage(int damage)
     {
         // substracts health
-        currentHealth -= damage;
+        barrelcurrentHealth -= damage;
         
         // Animation and fucntion for destroying object
     
-        if (currentHealth <= 0)
+        if (barrelcurrentHealth <= 0)
         {
             Destroy(gameObject, 2);
             destroyed = true;

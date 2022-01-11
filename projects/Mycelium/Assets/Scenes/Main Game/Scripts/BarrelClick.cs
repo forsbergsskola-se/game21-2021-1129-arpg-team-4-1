@@ -8,7 +8,7 @@ public class BarrelClick : MonoBehaviour ,IClick
     private PlayerAttack attackScript;
     void Start()
     {
-        player = GameObject.FindWithTag("Barrel");
+        player = GameObject.FindWithTag("Player");
         attackScript = player.GetComponent<PlayerAttack>();
     }
 
