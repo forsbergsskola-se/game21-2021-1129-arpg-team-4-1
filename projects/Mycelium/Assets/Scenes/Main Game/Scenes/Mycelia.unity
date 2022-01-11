@@ -20841,6 +20841,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTargeted: {fileID: 0}
+  attackRange: 5
+  attackTimer: 0
 --- !u!1 &279714048
 GameObject:
   m_ObjectHideFlags: 0
@@ -21782,7 +21784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 213329024}
-  agroRange: 2
+  agroRange: 1
   moveSpeed: 1.5
   attackTimer: 0
   minDistance: 0.7
