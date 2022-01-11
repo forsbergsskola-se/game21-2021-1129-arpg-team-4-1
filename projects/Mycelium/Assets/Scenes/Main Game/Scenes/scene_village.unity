@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 94297624}
   - component: {fileID: 94297623}
   - component: {fileID: 94297627}
+  - component: {fileID: 94297628}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -489,6 +490,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfdb662f32f7c40428533eded3a572b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &94297628
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94297620}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.78, y: 7.0600004}
+    newSize: {x: 5.78, y: 7.0600004}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.78, y: 7.0600004}
+  m_EdgeRadius: 0
 --- !u!1 &109029310
 GameObject:
   m_ObjectHideFlags: 0
@@ -61773,7 +61800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6836134438993523249, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
       propertyPath: m_Name
-      value: Enemy (1) 1
+      value: Enemy 1
       objectReference: {fileID: 0}
     - target: {fileID: 6836134438993523259, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
       propertyPath: player
@@ -62830,6 +62857,10 @@ PrefabInstance:
     - target: {fileID: 1313788407902678040, guid: 617fc96ee17c4314d944171bde4235e4, type: 3}
       propertyPath: m_Name
       value: Player Health Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313788408266096819, guid: 617fc96ee17c4314d944171bde4235e4, type: 3}
+      propertyPath: m_WholeNumbers
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1313788408266096821, guid: 617fc96ee17c4314d944171bde4235e4, type: 3}
       propertyPath: m_AnchoredPosition.x
