@@ -7,7 +7,7 @@ public class EnemyHealthSO : MonoBehaviour
     public float enemyHealth;
     public float maxEnemyHealth;
 
-    public GameObject heathBarUI;
+    public GameObject healthBarUI;
     public Slider slider;
     
     void Start()
@@ -16,14 +16,14 @@ public class EnemyHealthSO : MonoBehaviour
         slider.value = CalculateHealth();
     }
 
-   
+
     void Update()
     {
         slider.value = CalculateHealth();
 
         if (enemyHealth < maxEnemyHealth)
         {
-            heathBarUI.SetActive(true);
+            healthBarUI.SetActive(true);
         }
 
         if (enemyHealth <= 0)
@@ -35,10 +35,25 @@ public class EnemyHealthSO : MonoBehaviour
         {
             enemyHealth = maxEnemyHealth;
         }
+    } 
+  
+    public void TakeDamage(int damage)
+    {
+        enemyHealth -= damage; //When taking damage, we subtract damage from players current health
+        //healthBarUI.SetHealth(enemyHealth;
+    } 
+    
+    public void SetEnemyHealth(float health)
+    {
+        //slider.value = ; 
+       
     }
-
     float CalculateHealth()
     {
         return enemyHealth / maxEnemyHealth;
-    }
+    } 
+    
+   
+    
+  
 }

@@ -20916,6 +20916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTargeted: {fileID: 0}
+  enemyHealth: {fileID: 0}
   attackRange: 5
   attackTimer: 0
   player: {fileID: 213329024}
@@ -21133,9 +21134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad07b6092f0752488af192b7416822a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 100
+  enemyHealth: 0
   maxEnemyHealth: 100
-  heathBarUI: {fileID: 945826849}
+  healthBarUI: {fileID: 945826849}
   slider: {fileID: 347712802}
 --- !u!1 &347712800
 GameObject:
