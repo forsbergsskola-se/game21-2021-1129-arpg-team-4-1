@@ -12837,7 +12837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495777168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.68, y: -1.35, z: 0}
+  m_LocalPosition: {x: -25.91, y: -0.75, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -47571,7 +47571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MC: {fileID: 699303824}
   EC: {fileID: 1058891918}
-  DO: {fileID: 2035921291}
+  DO: {fileID: 0}
   cursorDefault: {fileID: 2800000, guid: fcd0405a0c5ec4d4f851536acc516eed, type: 3}
   cursorInvalid: {fileID: 2800000, guid: ec92b904ffa5b6d42b04e95bf7bf992c, type: 3}
   cursorAttack: {fileID: 2800000, guid: 3efe1e0e0c77c844ca907a8947039ede, type: 3}
@@ -47601,8 +47601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95e5a4934976794aba5c17eae7d92d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CC: {fileID: 1938914006}
   destination: {x: 0, y: 0, z: 0}
+  CC: {fileID: 0}
   MC: {fileID: 699303824}
   player: {fileID: 1495777168}
   movementSpeed: 2
@@ -48107,17 +48107,6 @@ Transform:
   m_Father: {fileID: 1741557684}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2035921291 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5142239096716665764, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
-  m_PrefabInstance: {fileID: 682469693}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2c79e937bd8d143aa8afb8c8103221, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2093895069
 PrefabInstance:
   m_ObjectHideFlags: 0
