@@ -503,6 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTargeted: {fileID: 0}
   enemyHealth: {fileID: 0}
+  barrelHealth: {fileID: 0}
   attackRange: 5
   attackTimer: 0
   player: {fileID: 94297621}
@@ -56980,7 +56981,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -57055,7 +57056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 94297621}
-  offset: {x: 0, y: 0, z: -8}
+  offset: {x: 0, y: 0, z: -5}
 --- !u!114 &991929278 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 315343049670075976, guid: 68c5c46aaf55c0343b5c8b97a19feb6e, type: 3}
