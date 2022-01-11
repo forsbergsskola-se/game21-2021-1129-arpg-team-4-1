@@ -60,7 +60,7 @@ public class PlayerAttack : MonoBehaviour
         
         if (enemyHealth != null)
         {
-            //enemyHealth.TakeDamage(10);
+            enemyHealth.TakeDamage(10);
             //anime here
             Debug.Log("Hit enemy");
            attackTimer = attackCooldown;
