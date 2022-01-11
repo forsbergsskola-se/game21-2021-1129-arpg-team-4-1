@@ -61816,6 +61816,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6836134438993523263, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6836134438993523259, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9692bf8fa8dc6bc4c95a77b7d6393277, type: 3}
@@ -62398,6 +62402,14 @@ PrefabInstance:
     - target: {fileID: 7626667256383668406, guid: c271aa1de09325c47bb23762a8d21a15, type: 3}
       propertyPath: m_Name
       value: Player Health Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626667257303186940, guid: c271aa1de09325c47bb23762a8d21a15, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626667257303186940, guid: c271aa1de09325c47bb23762a8d21a15, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -81
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c271aa1de09325c47bb23762a8d21a15, type: 3}
