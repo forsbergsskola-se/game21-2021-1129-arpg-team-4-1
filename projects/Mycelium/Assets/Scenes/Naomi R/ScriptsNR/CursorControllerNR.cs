@@ -71,6 +71,7 @@ public class CursorControllerNR : MonoBehaviour
             IClick click = hits2D.collider.gameObject.GetComponent<IClick>();
             if (click != null) click.onClickAction();
         }
+        
     }
 
     private void StartedClick()
