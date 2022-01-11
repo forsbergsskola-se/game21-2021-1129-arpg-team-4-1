@@ -20917,6 +20917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTargeted: {fileID: 0}
   enemyHealth: {fileID: 0}
+  barrelHealth: {fileID: 0}
   attackRange: 5
   attackTimer: 0
   player: {fileID: 213329024}
@@ -21764,7 +21765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &945826850
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22019,7 +22020,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
