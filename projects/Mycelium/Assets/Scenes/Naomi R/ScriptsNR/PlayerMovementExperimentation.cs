@@ -7,7 +7,7 @@ using UnityEngine.Tilemaps;
 public class PlayerMovementExperimentation : MonoBehaviour
 { 
     public CursorControllerNR CC;
-    private Vector3 destination;
+    public Vector3 destination;
     private GameObject currentPrefab;
     private bool hasSpawned;
 
@@ -71,7 +71,7 @@ public class PlayerMovementExperimentation : MonoBehaviour
         hasSpawned = true;
     }
     
-    private bool DestinationReached()
+    public bool DestinationReached()
     {
         return destination == player.transform.position;
     }
