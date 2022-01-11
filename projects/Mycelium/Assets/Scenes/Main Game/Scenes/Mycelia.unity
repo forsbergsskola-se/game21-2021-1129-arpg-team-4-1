@@ -20843,7 +20843,7 @@ MonoBehaviour:
   enemyTargeted: {fileID: 0}
   attackRange: 5
   attackTimer: 0
-  player: {fileID: 0}
+  player: {fileID: 213329024}
 --- !u!1 &279714048
 GameObject:
   m_ObjectHideFlags: 0
