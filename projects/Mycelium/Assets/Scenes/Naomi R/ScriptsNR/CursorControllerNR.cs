@@ -53,6 +53,7 @@ public class CursorControllerNR : MonoBehaviour
         {
             ChangeCursor(cursorInvalid);
         }
+        
     }
 
     public void DetectObject()
