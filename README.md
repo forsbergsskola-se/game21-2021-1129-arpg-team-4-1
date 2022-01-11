@@ -1,9 +1,5 @@
 # Mycelium
 
-{video}
-
-{description}
-
 # Created by:
 
 ## Programmers:
@@ -35,8 +31,6 @@ Salomon
 Carl J
 
 Ludvig
-
-Feel free to link any existing Linked.in Profiles or Portfolio Websites.
 
 # Design Documents
 
