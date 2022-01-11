@@ -10,7 +10,6 @@ public class CursorControllerExperimentation : MonoBehaviour
     private bool isEnemy;
     
     [SerializeField] private MapCollision MC;
-    //[SerializeField] private EnemyCollision EC;
 
     [SerializeField] private Texture2D cursorDefault;
     [SerializeField] private Texture2D cursorInvalid;
