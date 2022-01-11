@@ -154,9 +154,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MC: {fileID: 796436103}
+  EC: {fileID: 0}
+  DO: {fileID: 0}
   cursorDefault: {fileID: 2800000, guid: fcd0405a0c5ec4d4f851536acc516eed, type: 3}
   cursorInvalid: {fileID: 2800000, guid: ec92b904ffa5b6d42b04e95bf7bf992c, type: 3}
-  cursorClicked: {fileID: 2800000, guid: 602a3f5c07735de478256e88b49c8ddf, type: 3}
+  cursorAttack: {fileID: 0}
 --- !u!114 &81422499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56930,7 +56932,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
