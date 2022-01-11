@@ -49,6 +49,11 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
         
         
+        if (currentHealth <= 0)
+        {
+            //Die
+        }
+       
     }
    
    
