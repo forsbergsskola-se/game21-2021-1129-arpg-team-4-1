@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 
 public class PlayerMovementExperimentation : MonoBehaviour
 { 
-    public CursorControllerNR CC;
+    public CursorControllerExperimentation CC;
     public Vector3 destination;
     private GameObject currentPrefab;
     private bool hasSpawned;

@@ -7,9 +7,10 @@ public class CursorControllerExperimentation : MonoBehaviour
     public MouseInput controls;
     private Camera mainCamera;
     private bool isObject;
+    private bool isEnemy;
     
     [SerializeField] private MapCollision MC;
-    [SerializeField] private EnemyCollision EC;
+    //[SerializeField] private EnemyCollision EC;
 
     [SerializeField] private Texture2D cursorDefault;
     [SerializeField] private Texture2D cursorInvalid;
@@ -42,9 +43,9 @@ public class CursorControllerExperimentation : MonoBehaviour
 
     private void FixedUpdate()
     {
-        DectectHover();
-        
-        if (MC.isValidLocation && !EC.isEnemy && !isObject)
+        DetectBarrel();
+
+        if (MC.isValidLocation && !isObject)
         {
             ChangeCursor(cursorDefault);
         }
@@ -52,7 +53,7 @@ public class CursorControllerExperimentation : MonoBehaviour
         {
             ChangeCursor(cursorInvalid);
         }
-        if (EC.isEnemy || isObject)
+        if (isObject)
         {
             ChangeCursor(cursorAttack);
         }
@@ -71,7 +72,7 @@ public class CursorControllerExperimentation : MonoBehaviour
         
     }
 
-    public void DectectHover()
+    public void DetectBarrel()
     {
         Ray rayObject = mainCamera.ScreenPointToRay(controls.Mouse.MousePosition.ReadValue<Vector2>());
         RaycastHit2D hitsObject = Physics2D.GetRayIntersection(rayObject);

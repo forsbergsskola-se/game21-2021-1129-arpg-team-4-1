@@ -9,6 +9,7 @@ TagManager:
   - Collider
   - Clickable
   - Enemy
+  - Test
   layers:
   - Default
   - TransparentFX
