@@ -8,13 +8,17 @@ public class BarrelDieEU : MonoBehaviour
     public int barrelmaxHealth = 10;
     int barrelcurrentHealth;
 
-    bool destroyed = false;
+    private GameObject player;
+    private bool destroyed;
     public Animator animator;
+    public Animator playerAnimator;
     
    
     void Start()
     {
         barrelcurrentHealth = barrelmaxHealth;
+        player = GameObject.FindWithTag("Player");
+        playerAnimator = player.gameObject.GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage)
@@ -26,9 +30,10 @@ public class BarrelDieEU : MonoBehaviour
     
         if (barrelcurrentHealth <= 0)
         {
-            destroyed = true;
+            //destroyed = true;
             animator.SetBool("IsDestroyed", true);
             GetComponent<Collider2D>().enabled = false;
+            playerAnimator.SetBool("isAttacking", false);
         }
     }
 
