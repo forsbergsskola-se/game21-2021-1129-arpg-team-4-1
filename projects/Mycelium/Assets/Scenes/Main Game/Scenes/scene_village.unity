@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MC: {fileID: 796436103}
+  EC: {fileID: 0}
   cursorDefault: {fileID: 2800000, guid: fcd0405a0c5ec4d4f851536acc516eed, type: 3}
   cursorInvalid: {fileID: 2800000, guid: ec92b904ffa5b6d42b04e95bf7bf992c, type: 3}
   cursorAttack: {fileID: 2800000, guid: 3efe1e0e0c77c844ca907a8947039ede, type: 3}
@@ -173,10 +174,10 @@ MonoBehaviour:
   CC: {fileID: 81422498}
   MC: {fileID: 796436103}
   player: {fileID: 94297620}
-  movementSpeed: 2
   prefab: {fileID: 2864430325069958057, guid: 007fd0fcf2134d84bbd20ab2127e54d7, type: 3}
   map: {fileID: 470467051}
   animator: {fileID: 94297623}
+  movementSpeed: 2
 --- !u!4 &81422500
 Transform:
   m_ObjectHideFlags: 0
@@ -349,7 +350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94297620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.4, y: 5.02, z: 0}
+  m_LocalPosition: {x: -8.47, y: 5.09, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children:
   - {fileID: 2144791795}
@@ -504,10 +505,10 @@ MonoBehaviour:
   enemyTargeted: {fileID: 0}
   enemyHealth: {fileID: 0}
   barrelHealth: {fileID: 0}
+  playerAnimator: {fileID: 0}
   attackRange: 5
   attackTimer: 0
   player: {fileID: 94297621}
-  _animator: {fileID: 94297623}
 --- !u!114 &94297628
 MonoBehaviour:
   m_ObjectHideFlags: 0
