@@ -429,6 +429,7 @@ GameObject:
   - component: {fileID: 1749611902455499869}
   - component: {fileID: 1749611902455499862}
   - component: {fileID: 1749611901323402805}
+  - component: {fileID: 8812352520813300311}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Clickable
@@ -491,7 +492,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: -8322153284385598999, guid: cc2e2d6126722e1469513d47f3d623ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -523,7 +524,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1749611902455499868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -562,10 +563,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c395100ff08b6c4db06a240fb0ab927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
+  enemyAnimator: {fileID: 8812352520813300311}
+  speed: 1
   waitTime: 0
 --- !u!114 &1749611901323402807
 MonoBehaviour:
@@ -580,6 +582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  enemyAnimator: {fileID: 8812352520813300311}
   agroRange: 2
   moveSpeed: 1.5
   attackTimer: 0
@@ -614,6 +617,7 @@ MonoBehaviour:
   maxEnemyHealth: 100
   healthBarUI: {fileID: 1749611902084486046}
   slider: {fileID: 1749611902416392861}
+  playerAnimator: {fileID: 0}
 --- !u!114 &1749611902455499862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,7 +625,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5087109128464221168}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4434ec8addb10c04ea33047d7f15f98a, type: 3}
   m_Name: 
@@ -643,3 +647,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnemy: 1
+--- !u!95 &8812352520813300311
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5087109128464221168}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 849f7c5ebee8d354abeae0b27c112fa6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
