@@ -6,6 +6,7 @@ public class PlayerCollisionNR : MonoBehaviour
 {
     public bool isClickColliding;
     
+    
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider != null && collider.tag == "Clickable")
