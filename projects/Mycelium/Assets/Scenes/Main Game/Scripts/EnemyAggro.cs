@@ -16,16 +16,15 @@ public class EnemyAggro : MonoBehaviour
     private float attackCooldown = 2.5f;
     public float attackRange = 0f;
     private Rigidbody2D rb2d;
-    //public bool InCombat;
+  
     
     
     void Start()
     {
         
-        //StartCoroutine(Regen());
         rb2d = GetComponent<Rigidbody2D>();
         attackRange = minDistance + 0.2f;
-        //InCombat = false;
+       
         
 
     }
@@ -36,7 +35,7 @@ public class EnemyAggro : MonoBehaviour
         if (attackTimer > 0)
         {
             attackTimer -= Time.deltaTime;
-            //Debug.Log("attacktimer"+ attackTimer);
+            
         }
         float distToPlayer = Vector3.Distance(transform.position, player.position);
         
@@ -45,23 +44,19 @@ public class EnemyAggro : MonoBehaviour
         {
             ChasePlayer();
 
-            //InCombat = true;
+           
         }
         else
         {
-            //if (InCombat == true)
-            //{
-                //Regen();
-           // }
             
             StopChasingPlayer();
-          //InCombat = false;
+          
         }
         
         if (distToPlayer <= attackRange)
         {
             Attack();
-            //InCombat = true;
+           
         }
       
 

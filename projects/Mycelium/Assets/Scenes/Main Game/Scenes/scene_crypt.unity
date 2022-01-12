@@ -73365,6 +73365,7 @@ MonoBehaviour:
   healthBar: {fileID: 1540138163}
   minDistance: 0
   attackRange: 0
+  animator: {fileID: 0}
 --- !u!1001 &1656630176
 PrefabInstance:
   m_ObjectHideFlags: 0

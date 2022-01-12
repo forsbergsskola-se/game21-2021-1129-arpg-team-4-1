@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public float minDistance;
     private float attackCooldown = 2.5f;
     public float attackRange = 0f;
-   
+    public Animator animator;
    
 
     void Start()
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     {
         if (currentHealth < 0)
         {
-            gameOver = true;
+            animator.SetBool("isDead", true);
         } 
         
      
