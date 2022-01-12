@@ -7,16 +7,17 @@ using UnityEngine.Tilemaps;
 public class PlayerMovementExperimentation : MonoBehaviour
 { 
     public Vector3 destination;
-    public CursorControllerExperimentation CC;
+    
     private GameObject currentPrefab;
     private bool hasSpawned;
 
+    [SerializeField] private CursorControllerExperimentation CC;
     [SerializeField] private MapCollision MC;
     [SerializeField] private GameObject player;
-    [SerializeField] private float movementSpeed;
     [SerializeField] private GameObject prefab;
     [SerializeField] private Tilemap map;
     [SerializeField] private Animator animator;
+    [SerializeField] private float movementSpeed;
     
     
     void Start()
