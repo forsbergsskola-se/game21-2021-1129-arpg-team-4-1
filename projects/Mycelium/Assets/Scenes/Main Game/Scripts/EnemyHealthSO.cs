@@ -9,6 +9,7 @@ public class EnemyHealthSO : MonoBehaviour
 
     public GameObject healthBarUI;
     public Slider slider;
+    [SerializeField] private Animator playerAnimator;
     
     void Start()
     {
@@ -29,6 +30,7 @@ public class EnemyHealthSO : MonoBehaviour
         if (enemyHealth <= 0)
         {
             Destroy(gameObject);
+            playerAnimator.SetBool("isAttacking", false);
         }
 
         if (enemyHealth > maxEnemyHealth)
@@ -51,9 +53,6 @@ public class EnemyHealthSO : MonoBehaviour
     float CalculateHealth()
     {
         return enemyHealth / maxEnemyHealth;
-    } 
-    
-   
-    
-  
+    }
+
 }
