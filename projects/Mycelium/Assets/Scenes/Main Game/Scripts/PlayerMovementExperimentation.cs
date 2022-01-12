@@ -43,7 +43,7 @@ public class PlayerMovementExperimentation : MonoBehaviour
         }
     }
 
-    /*
+    
      private void SpeedFix()
     {
         if (DestinationReached())
@@ -53,7 +53,7 @@ public class PlayerMovementExperimentation : MonoBehaviour
         else animator.SetFloat("Speed", destination.sqrMagnitude);
         
     }
-    */
+    
 
     private void MouseClick()
     {
