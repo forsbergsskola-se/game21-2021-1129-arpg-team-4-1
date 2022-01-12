@@ -3,7 +3,7 @@ using UnityEngine;
 using TMPro;
 namespace Scenes.Denise_J
 {
-    public class gamemanager : MonoBehaviour
+    public class GameManagerDJ : MonoBehaviour
     {
         public GameObject damageTextPrefab, enemyInstance;
 
