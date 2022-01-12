@@ -7,9 +7,9 @@ public class CursorControllerExperimentation : MonoBehaviour
     public MouseInput controls;
     private Camera mainCamera;
     private bool isObject;
-    private bool isEnemy;
-    
+
     [SerializeField] private MapCollision MC;
+    [SerializeField] private EnemyCollision EC;
 
     [SerializeField] private Texture2D cursorDefault;
     [SerializeField] private Texture2D cursorInvalid;
@@ -44,7 +44,7 @@ public class CursorControllerExperimentation : MonoBehaviour
     {
         DetectBarrel();
 
-        if (MC.isValidLocation && !isObject)
+        if (MC.isValidLocation && !EC.isEnemy && !isObject)
         {
             ChangeCursor(cursorDefault);
         }
@@ -52,7 +52,7 @@ public class CursorControllerExperimentation : MonoBehaviour
         {
             ChangeCursor(cursorInvalid);
         }
-        if (isObject)
+        if (EC.isEnemy || isObject)
         {
             ChangeCursor(cursorAttack);
         }
