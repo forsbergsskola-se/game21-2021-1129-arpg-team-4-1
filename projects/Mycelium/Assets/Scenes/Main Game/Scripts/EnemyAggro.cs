@@ -6,10 +6,11 @@ using UnityEngine;
 public class EnemyAggro : MonoBehaviour
 {
     [SerializeField] private Transform player;
+    [SerializeField] private Animator enemyAnimator;
     [SerializeField] private float agroRange;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float attackTimer = 0.0f;
-    [SerializeField] private Animator enemyAnimator;
+    
     
     public float minDistance;
     private float attackCooldown = 2.5f;
