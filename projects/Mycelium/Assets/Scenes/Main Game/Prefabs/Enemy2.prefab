@@ -114,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8167483271600334241
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
-  enemyAnimator: {fileID: 0}
+  enemyAnimator: {fileID: 7402378668187193821}
   speed: 1
   waitTime: 0
 --- !u!114 &8167483272748890058
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  enemyAnimator: {fileID: 0}
+  enemyAnimator: {fileID: 7402378668187193821}
   agroRange: 1.5
   moveSpeed: 1.5
   attackTimer: 0
