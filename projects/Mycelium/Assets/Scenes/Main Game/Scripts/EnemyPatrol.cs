@@ -9,6 +9,7 @@ public class EnemyPatrol : MonoBehaviour
     public Transform[] patrolPoints;
     public float waitTime;
     private int currentPointIndex;
+    [SerializeField] private Animator enemyAnimator;
 
     private bool once;        
     
@@ -17,8 +18,10 @@ public class EnemyPatrol : MonoBehaviour
         if(transform.position != patrolPoints[currentPointIndex].position)
         {
             
-            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position,
-                speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
+            enemyAnimator.SetFloat("Horizontal", transform.position.x);
+            enemyAnimator.SetFloat("Vertical", transform.position.y);
+            SpeedFix();
         }
         else
         {
@@ -29,6 +32,16 @@ public class EnemyPatrol : MonoBehaviour
             }
             
         }
+    }
+    
+    private void SpeedFix()
+    {
+        if (transform.position == patrolPoints[currentPointIndex].position)
+        {
+            enemyAnimator.SetFloat("Speed", 0);
+        }
+        else enemyAnimator.SetFloat("Speed", transform.position.sqrMagnitude);
+        
     }
 
     IEnumerator Wait()
