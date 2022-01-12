@@ -349,7 +349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94297620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -8.4, y: 5.02, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children:
   - {fileID: 2144791795}
@@ -507,7 +507,7 @@ MonoBehaviour:
   attackRange: 5
   attackTimer: 0
   player: {fileID: 94297621}
-  _animator: {fileID: 0}
+  _animator: {fileID: 94297623}
 --- !u!114 &94297628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1152,6 +1152,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6768581690402033420, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
+      propertyPath: PC
+      value: 
+      objectReference: {fileID: 94297628}
+    - target: {fileID: 6768581690402033420, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 94297620}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd778146df3cf1c4db8a2a5da9a2b550, type: 3}
 --- !u!4 &398642473 stripped
