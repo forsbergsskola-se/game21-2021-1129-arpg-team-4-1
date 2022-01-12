@@ -220,10 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4434ec8addb10c04ea33047d7f15f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextPrefab: {fileID: 12802014288807881}
-  enemyInstance: {fileID: 3424546401928407565}
+  damageTextPrefab: {fileID: 0}
+  enemyInstance: {fileID: 0}
   damageTaken: 
-  dmgTake: {fileID: 8167483271600334240}
+  dmgTake: {fileID: 0}
 --- !u!114 &8167483272748890056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,11 +740,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eee52579c8ff0b4789238b6241301d1, type: 3}
---- !u!1 &12802014288807881 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 391663430712896817, guid: 5eee52579c8ff0b4789238b6241301d1, type: 3}
-  m_PrefabInstance: {fileID: 378879120819301112}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2381484806842206044 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2616230047852195236, guid: 5eee52579c8ff0b4789238b6241301d1, type: 3}
