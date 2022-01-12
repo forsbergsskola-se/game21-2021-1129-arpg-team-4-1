@@ -20844,10 +20844,10 @@ MonoBehaviour:
   enemyTargeted: {fileID: 0}
   enemyHealth: {fileID: 0}
   barrelHealth: {fileID: 0}
+  playerAnimator: {fileID: 213329026}
   attackRange: 1
   attackTimer: 0
   player: {fileID: 213329024}
-  playerAnimator: {fileID: 213329026}
 --- !u!1 &279714048
 GameObject:
   m_ObjectHideFlags: 0
@@ -21569,10 +21569,10 @@ MonoBehaviour:
   CC: {fileID: 953405599}
   MC: {fileID: 279714050}
   player: {fileID: 213329019}
-  movementSpeed: 2
   prefab: {fileID: 2864430325069958057, guid: 007fd0fcf2134d84bbd20ab2127e54d7, type: 3}
   map: {fileID: 1723071869}
   animator: {fileID: 213329026}
+  movementSpeed: 2
 --- !u!4 &953405598
 Transform:
   m_ObjectHideFlags: 0
