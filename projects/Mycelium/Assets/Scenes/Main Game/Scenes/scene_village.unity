@@ -505,7 +505,7 @@ MonoBehaviour:
   enemyTargeted: {fileID: 0}
   enemyHealth: {fileID: 0}
   barrelHealth: {fileID: 0}
-  playerAnimator: {fileID: 0}
+  playerAnimator: {fileID: 94297623}
   attackRange: 5
   attackTimer: 0
   player: {fileID: 94297621}
