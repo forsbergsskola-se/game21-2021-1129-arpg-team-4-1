@@ -75390,6 +75390,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 155780278}
     m_Modifications:
+    - target: {fileID: 1485386943479443301, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1650896661}
+    - target: {fileID: 1485386944645102848, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
+      propertyPath: patrolPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 706598091}
+    - target: {fileID: 1485386944645102848, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
+      propertyPath: patrolPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1915598959}
+    - target: {fileID: 1485386944645102862, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1650896658}
+    - target: {fileID: 1485386944645102863, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1650896664}
     - target: {fileID: 1485386945074264266, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
