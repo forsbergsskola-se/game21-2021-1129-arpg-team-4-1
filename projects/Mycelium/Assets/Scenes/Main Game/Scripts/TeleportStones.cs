@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TeleportStones : MonoBehaviour, IClick
 {
-    [SerializeField] private PlayerCollisionNR PC;
+    [SerializeField] private PlayerCollision PC;
     [SerializeField] private GameObject Player;
     [SerializeField] private PlayerMovementExperimentation PM;
     [SerializeField] private GameObject NextStatue;
