@@ -20668,9 +20668,9 @@ GameObject:
   - component: {fileID: 213329022}
   - component: {fileID: 213329021}
   - component: {fileID: 213329025}
-  - component: {fileID: 213329020}
   - component: {fileID: 213329026}
   - component: {fileID: 213329027}
+  - component: {fileID: 213329020}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -20687,9 +20687,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 213329019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfdb662f32f7c40428533eded3a572b8, type: 3}
+  m_Script: {fileID: 11500000, guid: ca3af87385a8aaa4c9f3fc235e39add6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClickColliding: 0
 --- !u!50 &213329021
 Rigidbody2D:
   serializedVersion: 4
@@ -35408,6 +35409,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 213329024}
+    - target: {fileID: 1485386944645102863, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
+      propertyPath: minDistance
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1485386945074264266, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
