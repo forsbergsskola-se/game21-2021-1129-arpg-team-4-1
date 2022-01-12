@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BarrelClick : MonoBehaviour ,IClick
 {
-    public GameObject player;
+    private GameObject player;
     private PlayerAttack attackScript;
     
     void Start()
