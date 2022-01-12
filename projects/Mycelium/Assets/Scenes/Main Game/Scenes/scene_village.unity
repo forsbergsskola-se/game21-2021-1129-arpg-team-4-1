@@ -60003,6 +60003,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy2
       objectReference: {fileID: 0}
+    - target: {fileID: 8167483271600334240, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 94297623}
+    - target: {fileID: 8167483272748890053, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+      propertyPath: patrolPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1261964363}
+    - target: {fileID: 8167483272748890053, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+      propertyPath: patrolPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1694393262}
+    - target: {fileID: 8167483272748890058, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 94297621}
+    - target: {fileID: 8167483272748890059, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 94297620}
     - target: {fileID: 8167483272923836943, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
