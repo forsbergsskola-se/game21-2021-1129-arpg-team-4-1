@@ -15,16 +15,13 @@ public class EnemyPatrol : MonoBehaviour
     
     void Update()
     {
-        
         if(transform.position != patrolPoints[currentPointIndex].position)
         {
-            var oldPosition = transform.position;
-            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
-            var difference = transform.position - oldPosition;
-            enemyAnimator.SetFloat("Horizontal", difference.x);
-            enemyAnimator.SetFloat("Vertical", difference.y);
-            enemyAnimator.SetFloat("Speed", difference.magnitude);
             
+            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
+            enemyAnimator.SetFloat("Horizontal", transform.position.x);
+            enemyAnimator.SetFloat("Vertical", transform.position.y);
+            SpeedFix();
         }
         else
         {
@@ -37,6 +34,16 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
     
+    private void SpeedFix()
+    {
+        if (transform.position == patrolPoints[currentPointIndex].position)
+        {
+            enemyAnimator.SetFloat("Speed", 0);
+        }
+        else enemyAnimator.SetFloat("Speed", transform.position.sqrMagnitude);
+        
+    }
+
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(waitTime);
