@@ -350,7 +350,7 @@ Transform:
   m_GameObject: {fileID: 94297620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children:
   - {fileID: 2144791795}
   m_Father: {fileID: 0}
@@ -397,7 +397,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -6172142855780797761, guid: 21ca8e386dbac3641b8cefba11f1af7f, type: 3}
+  m_Sprite: {fileID: 2890533792673289465, guid: 6bcb414959429de4ca73ddf449bb09d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -418,7 +418,7 @@ Animator:
   m_GameObject: {fileID: 94297620}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f281577d25bf795439eaa53528a0a78e, type: 2}
+  m_Controller: {fileID: 9100000, guid: e69b7f6684cddbe4fa139bbcd0c43044, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -476,18 +476,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.3939278, y: -0.83569163}
+  m_Offset: {x: -0.0006467104, y: -0.06696441}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.78, y: 7.0600004}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 5.78, y: 7.0600004}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8384194, y: 5.051513}
+  m_Size: {x: 0.34491366, y: 0.35921472}
   m_EdgeRadius: 0
 --- !u!114 &94297627
 MonoBehaviour:
@@ -507,6 +507,7 @@ MonoBehaviour:
   attackRange: 5
   attackTimer: 0
   player: {fileID: 94297621}
+  _animator: {fileID: 0}
 --- !u!114 &94297628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +517,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 94297620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfdb662f32f7c40428533eded3a572b8, type: 3}
+  m_Script: {fileID: 11500000, guid: ca3af87385a8aaa4c9f3fc235e39add6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isClickColliding: 0
