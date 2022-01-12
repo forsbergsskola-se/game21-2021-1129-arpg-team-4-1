@@ -5,11 +5,11 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     
-    public float speed;
     public Transform[] patrolPoints;
+    [SerializeField] private Animator enemyAnimator;
+    public float speed;
     public float waitTime;
     private int currentPointIndex;
-    [SerializeField] private Animator enemyAnimator;
 
     private bool once;        
     
