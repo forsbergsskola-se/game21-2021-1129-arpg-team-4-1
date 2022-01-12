@@ -9,10 +9,9 @@ public class BarrelDieEU : MonoBehaviour
     int barrelcurrentHealth;
 
     bool destroyed = false;
-
     public Animator animator;
     
-    // Start is called before the first frame update
+   
     void Start()
     {
         barrelcurrentHealth = barrelmaxHealth;
@@ -20,23 +19,18 @@ public class BarrelDieEU : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        // substracts health
+        // subtracts health
         barrelcurrentHealth -= damage;
         
-        // Animation and fucntion for destroying object
+        // Animation and function for destroying object
     
         if (barrelcurrentHealth <= 0)
         {
-            Destroy(gameObject, 2);
             destroyed = true;
             animator.SetBool("IsDestroyed", true);
             GetComponent<Collider2D>().enabled = false;
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
