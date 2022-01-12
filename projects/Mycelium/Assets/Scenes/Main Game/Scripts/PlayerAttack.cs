@@ -30,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else
         {
-            Debug.Log("Not Attacking");
+            _animator.SetBool("isAttacking", false);
         }
         
         if (attackTimer > 0)
@@ -66,6 +66,7 @@ public class PlayerAttack : MonoBehaviour
         {
             enemyHealth.TakeDamage(10);
             _animator.SetBool("isAttacking", true);
+            
             //Debug.Log("Hit enemy");
            attackTimer = attackCooldown;
         } 
