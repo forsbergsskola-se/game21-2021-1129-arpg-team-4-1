@@ -11,7 +11,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float attackRange = 0.1f;
     [SerializeField] private float attackTimer = 0.0f;
     [SerializeField] private Transform player;
-    [SerializeField] private Animator _animator;
+    [SerializeField] private Animator playerAnimator;
     private float attackCooldown = 2.5f; 
   
     
@@ -30,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else
         {
-            _animator.SetBool("isAttacking", false);
+            playerAnimator.SetBool("isAttacking", false);
         }
         
         if (attackTimer > 0)
@@ -65,13 +65,12 @@ public class PlayerAttack : MonoBehaviour
         if (enemyHealth != null)
         {
             enemyHealth.TakeDamage(10);
-            _animator.SetBool("isAttacking", true);
+            playerAnimator.SetBool("isAttacking", true);
             
             //Debug.Log("Hit enemy");
            attackTimer = attackCooldown;
         } 
-
-
+        
         
         if (barrelHealth != null)
         {
