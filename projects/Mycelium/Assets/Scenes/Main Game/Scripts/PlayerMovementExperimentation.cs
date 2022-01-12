@@ -28,11 +28,13 @@ public class PlayerMovementExperimentation : MonoBehaviour
     
     void Update()
     {
-        player.transform.position = Vector3.MoveTowards(player.transform.position, destination, movementSpeed * Time.deltaTime); 
+        var oldPosition = player.transform.position;
+        player.transform.position = Vector3.MoveTowards(player.transform.position, destination, movementSpeed * Time.deltaTime);
+        var difference = player.transform.position - oldPosition;
         
-        animator.SetFloat("Horizontal", destination.x);
-        animator.SetFloat("Vertical", destination.y);
-        SpeedFix();
+        animator.SetFloat("Horizontal", difference.x);
+        animator.SetFloat("Vertical", difference.y);
+        animator.SetFloat("Speed", difference.magnitude);
         
         if (DestinationReached() && hasSpawned)
         {
@@ -41,7 +43,8 @@ public class PlayerMovementExperimentation : MonoBehaviour
         }
     }
 
-    private void SpeedFix()
+    /*
+     private void SpeedFix()
     {
         if (DestinationReached())
         {
@@ -50,6 +53,7 @@ public class PlayerMovementExperimentation : MonoBehaviour
         else animator.SetFloat("Speed", destination.sqrMagnitude);
         
     }
+    */
 
     private void MouseClick()
     {
