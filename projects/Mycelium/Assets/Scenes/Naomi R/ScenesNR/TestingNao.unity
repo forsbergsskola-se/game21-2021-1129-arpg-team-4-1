@@ -281,7 +281,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 167959094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfdb662f32f7c40428533eded3a572b8, type: 3}
+  m_Script: {fileID: 11500000, guid: ca3af87385a8aaa4c9f3fc235e39add6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isClickColliding: 0
@@ -7103,8 +7103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1bcd26f2fe4ec499d7f26d3d56bff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PC: {fileID: 0}
-  PM: {fileID: 0}
+  PC: {fileID: 167959095}
+  PM: {fileID: 1530395394}
   Player: {fileID: 167959094}
   LL: {fileID: 1919975237}
 --- !u!1 &1530395389
