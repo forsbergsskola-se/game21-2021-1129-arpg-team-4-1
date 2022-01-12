@@ -34,7 +34,7 @@ public class PlayerMovementExperimentation : MonoBehaviour
         
         animator.SetFloat("Horizontal", difference.x);
         animator.SetFloat("Vertical", difference.y);
-        animator.SetFloat("Speed", difference.magnitude);
+        SpeedFix();
         
         if (DestinationReached() && hasSpawned)
         {
