@@ -6,12 +6,10 @@ using UnityEngine;
 public class EnemyAggro : MonoBehaviour
 {
     [SerializeField] private Transform player;
-
     [SerializeField] private float agroRange;
-
     [SerializeField] private float moveSpeed;
-    
     [SerializeField] private float attackTimer = 0.0f;
+    [SerializeField] private Animator enemyAnimator;
     
     public float minDistance;
     private float attackCooldown = 2.5f;
@@ -98,11 +96,12 @@ public class EnemyAggro : MonoBehaviour
     private void StopChasingPlayer()
     {
         rb2d.velocity = Vector3.zero;
-
+        enemyAnimator.SetBool("isAttacking", false);
     }
 
     private void ChasePlayer()
     {
+        enemyAnimator.SetBool("isAttacking", false);
 
         if (Vector3.Distance(transform.position, player.position) > minDistance)
         {
@@ -115,6 +114,9 @@ public class EnemyAggro : MonoBehaviour
    
     private void Attack()
     {
+        
+        enemyAnimator.SetBool("isAttacking", true);
+        
         if (attackTimer > 0)
         {
             return;
