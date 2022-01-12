@@ -8,10 +8,10 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject enemyTargeted;
     [SerializeField] private EnemyHealthSO enemyHealth;
     [SerializeField] private BarrelDieEU barrelHealth;
+    [SerializeField] private Animator playerAnimator;
     [SerializeField] private float attackRange = 0.1f;
     [SerializeField] private float attackTimer = 0.0f;
     [SerializeField] private Transform player;
-    [SerializeField] private Animator playerAnimator;
     private float attackCooldown = 2.5f; 
   
     
