@@ -64,7 +64,7 @@ public class PlayerAttack : MonoBehaviour
         
         if (enemyHealth != null)
         {
-            enemyHealth.TakeDamage(10);
+            enemyHealth.TakeDamage(40);
             playerAnimator.SetBool("isAttacking", true);
             
             //Debug.Log("Hit enemy");
