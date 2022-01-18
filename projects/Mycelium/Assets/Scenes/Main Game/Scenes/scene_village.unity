@@ -154,7 +154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MC: {fileID: 796436103}
-  EC: {fileID: 1220489383}
   cursorDefault: {fileID: 2800000, guid: fcd0405a0c5ec4d4f851536acc516eed, type: 3}
   cursorInvalid: {fileID: 2800000, guid: ec92b904ffa5b6d42b04e95bf7bf992c, type: 3}
   cursorAttack: {fileID: 2800000, guid: 3efe1e0e0c77c844ca907a8947039ede, type: 3}
@@ -443,7 +442,7 @@ MonoBehaviour:
   healthBar: {fileID: 1647877116}
   minDistance: 0
   attackRange: 0
-  animator: {fileID: 0}
+  animator: {fileID: 94297623}
 --- !u!50 &94297625
 Rigidbody2D:
   serializedVersion: 4
