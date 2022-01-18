@@ -38,6 +38,11 @@ public class PlayerAttack : MonoBehaviour
             attackTimer -= Time.deltaTime;
             //Debug.Log("attacktimer"+ attackTimer);
         }
+
+        if (Player.gameOver)
+        {
+            this.enabled = false;
+        }
     }
 
     public void SetEnemyTarget(GameObject newTarget)

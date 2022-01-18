@@ -32,6 +32,8 @@ public class EnemyPatrol : MonoBehaviour
             }
             
         }
+
+       
     }
     
     private void SpeedFix()

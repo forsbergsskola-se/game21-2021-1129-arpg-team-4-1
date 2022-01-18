@@ -11,7 +11,7 @@ public class EnemyAggro : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float attackTimer = 0.0f;
     
-    
+    public static bool GameOver;
     public float minDistance;
     private float attackCooldown = 2.5f;
     public float attackRange = 0f;
@@ -24,8 +24,8 @@ public class EnemyAggro : MonoBehaviour
         
         rb2d = GetComponent<Rigidbody2D>();
         attackRange = minDistance + 0.2f;
-       
-        
+
+        GameOver = false;
 
     }
 
@@ -60,7 +60,7 @@ public class EnemyAggro : MonoBehaviour
         }
       
 
-        if (Player.gameOver)
+        if (GameOver)
         {
             //disable animator
             this.enabled = false;
