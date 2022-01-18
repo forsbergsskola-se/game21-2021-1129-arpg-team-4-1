@@ -11,12 +11,12 @@ public class EnemyHealthSO : MonoBehaviour
     public Slider slider;
     [SerializeField] private Animator animator;
     [SerializeField] private float enemyDespawn = 0.8f;
-    //public static bool GameOver;
+    
     void Start()
     {
         enemyHealth = maxEnemyHealth;
         slider.value = CalculateHealth();
-        //GameOver = false;
+        
     }
 
 

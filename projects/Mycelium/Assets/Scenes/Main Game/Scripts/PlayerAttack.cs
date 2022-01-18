@@ -18,7 +18,9 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         if (enemyTargeted == null)
-        {
+        { 
+            playerAnimator.SetBool("isAttacking", false);
+            Debug.Log("IsDead");
             return;
         }
         float distToEnemy = Vector3.Distance(transform.position, enemyTargeted.transform.position);
@@ -26,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
         if (distToEnemy <= attackRange)
         {
             Attack(); 
-            Debug.Log("Attacking");
+           // Debug.Log("Attacking");
         }
         else
         {
@@ -41,7 +43,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Player.gameOver)
         {
-            this.enabled = false;
+         this.enabled = false;
         }
     }
 
@@ -71,6 +73,7 @@ public class PlayerAttack : MonoBehaviour
         {
             enemyHealth.TakeDamage(40);
             playerAnimator.SetBool("isAttacking", true);
+            
             
             //Debug.Log("Hit enemy");
            attackTimer = attackCooldown;

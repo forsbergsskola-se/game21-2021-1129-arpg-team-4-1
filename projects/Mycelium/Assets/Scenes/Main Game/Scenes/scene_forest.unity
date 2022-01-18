@@ -13258,7 +13258,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295382762}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1295382764
 Camera:
   m_ObjectHideFlags: 0
@@ -13830,7 +13830,7 @@ PrefabInstance:
       objectReference: {fileID: 1626544282}
     - target: {fileID: 8167483271600334240, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
       propertyPath: enemyDespawn
-      value: 0.6
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8167483271600334240, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
       propertyPath: playerAnimator
