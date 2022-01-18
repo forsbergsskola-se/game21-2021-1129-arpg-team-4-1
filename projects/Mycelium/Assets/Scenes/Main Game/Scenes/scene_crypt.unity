@@ -4148,6 +4148,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1749611902455499869, guid: 96a910b6fdd57bf4aac2d6b93d295324, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 568197438}
+    - target: {fileID: 1749611902455499869, guid: 96a910b6fdd57bf4aac2d6b93d295324, type: 3}
       propertyPath: playerAnimator
       value: 
       objectReference: {fileID: 1650896661}
@@ -4204,6 +4208,11 @@ PrefabInstance:
 --- !u!4 &568197437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5087109128464221180, guid: 96a910b6fdd57bf4aac2d6b93d295324, type: 3}
+  m_PrefabInstance: {fileID: 568197436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &568197438 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8812352520813300311, guid: 96a910b6fdd57bf4aac2d6b93d295324, type: 3}
   m_PrefabInstance: {fileID: 568197436}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &571738398
@@ -75818,6 +75827,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155780278}
     m_Modifications:
     - target: {fileID: 1485386943479443301, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2042053115}
+    - target: {fileID: 1485386943479443301, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
       propertyPath: playerAnimator
       value: 
       objectReference: {fileID: 1650896661}
@@ -75898,6 +75911,11 @@ PrefabInstance:
 --- !u!4 &2042053114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5351388530297692356, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
+  m_PrefabInstance: {fileID: 2042053113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2042053115 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -1499087640457808845, guid: a7706c52ccb552b4581d8cf6e6048558, type: 3}
   m_PrefabInstance: {fileID: 2042053113}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2066602469
