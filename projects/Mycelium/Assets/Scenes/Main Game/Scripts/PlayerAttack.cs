@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
         if (enemyTargeted == null)
         { 
             playerAnimator.SetBool("isAttacking", false);
-            Debug.Log("IsDead");
+            
             return;
         }
         float distToEnemy = Vector3.Distance(transform.position, enemyTargeted.transform.position);
