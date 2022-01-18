@@ -709,6 +709,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 131347130}
     - target: {fileID: 1749611902455499869, guid: 96a910b6fdd57bf4aac2d6b93d295324, type: 3}
+      propertyPath: enemyDespawn
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749611902455499869, guid: 96a910b6fdd57bf4aac2d6b93d295324, type: 3}
       propertyPath: playerAnimator
       value: 
       objectReference: {fileID: 65142210}
@@ -9885,6 +9889,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 832595651}
     - target: {fileID: 8167483271600334240, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+      propertyPath: enemyDespawn
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167483271600334240, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
       propertyPath: playerAnimator
       value: 
       objectReference: {fileID: 65142210}
@@ -13820,6 +13828,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1626544282}
+    - target: {fileID: 8167483271600334240, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+      propertyPath: enemyDespawn
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 8167483271600334240, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
       propertyPath: playerAnimator
       value: 
