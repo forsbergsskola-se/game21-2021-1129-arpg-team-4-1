@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BarrelDieEU : MonoBehaviour
 {
-    public int barrelmaxHealth = 10;
+    public int barrelmaxHealth = 5;
     int barrelcurrentHealth;
 
     private GameObject player;
