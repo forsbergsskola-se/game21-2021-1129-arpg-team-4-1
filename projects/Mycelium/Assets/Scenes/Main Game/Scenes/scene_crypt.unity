@@ -71148,6 +71148,10 @@ PrefabInstance:
       value: Enemy2
       objectReference: {fileID: 0}
     - target: {fileID: 8167483271600334240, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1435283276}
+    - target: {fileID: 8167483271600334240, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
       propertyPath: playerAnimator
       value: 
       objectReference: {fileID: 1650896661}
@@ -71177,6 +71181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+--- !u!95 &1435283276 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7402378668187193821, guid: 9c93e51e0de485b41b08463189583f50, type: 3}
+  m_PrefabInstance: {fileID: 1435283275}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1447343063
 GameObject:
   m_ObjectHideFlags: 0
