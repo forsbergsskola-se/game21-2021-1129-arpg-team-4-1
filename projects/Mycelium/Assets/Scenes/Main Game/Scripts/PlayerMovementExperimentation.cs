@@ -10,6 +10,7 @@ public class PlayerMovementExperimentation : MonoBehaviour
     
     private GameObject currentPrefab;
     private bool hasSpawned;
+    
 
     [SerializeField] private CursorControllerExperimentation CC;
     [SerializeField] private MapCollision MC;
@@ -20,10 +21,12 @@ public class PlayerMovementExperimentation : MonoBehaviour
     [SerializeField] private float movementSpeed;
     
     
+    
     void Start()
     {
         destination = player.transform.position;
         CC.controls.Mouse.MouseClick.performed += _ => MouseClick();
+        
     }
     
     void Update()
@@ -40,6 +43,11 @@ public class PlayerMovementExperimentation : MonoBehaviour
         {
             Destroy(currentPrefab);
             hasSpawned = false;
+        }
+
+        if (Player.gameOver)
+        {
+            this.enabled = false;
         }
     }
 
