@@ -6,10 +6,10 @@ public class CursorControllerExperimentation : MonoBehaviour
 {
     public MouseInput controls;
     private Camera mainCamera;
-    private bool isObject;
+    private bool canAttack;
 
     [SerializeField] private MapCollision MC;
-    [SerializeField] private EnemyCollision EC;
+    //[SerializeField] private EnemyCollision EC;
 
     [SerializeField] private Texture2D cursorDefault;
     [SerializeField] private Texture2D cursorInvalid;
@@ -42,9 +42,9 @@ public class CursorControllerExperimentation : MonoBehaviour
 
     private void FixedUpdate()
     {
-        DetectBarrel();
+        DetectAttackable();
 
-        if (MC.isValidLocation && !EC.isEnemy && !isObject)
+        if (MC.isValidLocation && !canAttack)
         {
             ChangeCursor(cursorDefault);
         }
@@ -52,7 +52,7 @@ public class CursorControllerExperimentation : MonoBehaviour
         {
             ChangeCursor(cursorInvalid);
         }
-        if (EC.isEnemy || isObject)
+        if (canAttack)
         {
             ChangeCursor(cursorAttack);
         }
@@ -71,13 +71,13 @@ public class CursorControllerExperimentation : MonoBehaviour
         
     }
 
-    public void DetectBarrel()
+    public void DetectAttackable()
     {
         Ray rayObject = mainCamera.ScreenPointToRay(controls.Mouse.MousePosition.ReadValue<Vector2>());
         RaycastHit2D hitsObject = Physics2D.GetRayIntersection(rayObject);
         
-        if (hitsObject.collider != null && hitsObject.collider.tag == "Barrel") isObject = true;
-        else isObject = false;
+        if (hitsObject.collider != null && hitsObject.collider.tag == "Clickable") canAttack = true;
+        else canAttack = false;
     }
 
     private void StartedClick()

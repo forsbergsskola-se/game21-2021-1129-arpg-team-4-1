@@ -2774,7 +2774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660a2e901b77cf6488448c9147c0d6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PC: {fileID: 0}
+  PC: {fileID: 1650896660}
   Player: {fileID: 1650896658}
   PM: {fileID: 1363517686}
   NextStatue: {fileID: 458387699}
@@ -5205,10 +5205,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660a2e901b77cf6488448c9147c0d6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PC: {fileID: 0}
-  Player: {fileID: 0}
-  PM: {fileID: 0}
-  NextStatue: {fileID: 0}
+  PC: {fileID: 1650896660}
+  Player: {fileID: 1650896658}
+  PM: {fileID: 1363517686}
+  NextStatue: {fileID: 265543540}
   offset: {x: 0, y: 0, z: 0}
 --- !u!61 &680973139
 BoxCollider2D:
@@ -5930,10 +5930,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660a2e901b77cf6488448c9147c0d6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PC: {fileID: 0}
+  PC: {fileID: 1650896660}
   Player: {fileID: 1650896658}
   PM: {fileID: 1363517686}
-  NextStatue: {fileID: 458387699}
+  NextStatue: {fileID: 400919845}
   offset: {x: 0, y: 0, z: 0}
 --- !u!61 &776897746
 BoxCollider2D:
@@ -7748,7 +7748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660a2e901b77cf6488448c9147c0d6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PC: {fileID: 0}
+  PC: {fileID: 1650896660}
   Player: {fileID: 1650896658}
   PM: {fileID: 1363517686}
   NextStatue: {fileID: 680973137}

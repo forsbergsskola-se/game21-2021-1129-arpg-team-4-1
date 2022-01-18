@@ -428,7 +428,6 @@ GameObject:
   - component: {fileID: 1485386944645102862}
   - component: {fileID: 1485386943479443301}
   - component: {fileID: 1485386943479443310}
-  - component: {fileID: 1485386944645102861}
   - component: {fileID: -1499087640457808845}
   m_Layer: 0
   m_Name: Enemy1
@@ -634,19 +633,6 @@ MonoBehaviour:
   enemyInstance: {fileID: 0}
   damageTaken: 
   dmgTake: {fileID: 0}
---- !u!114 &1485386944645102861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5351388530297692360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb39cb7dfd61f747a23838e6a317e8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEnemy: 1
 --- !u!95 &-1499087640457808845
 Animator:
   serializedVersion: 3
