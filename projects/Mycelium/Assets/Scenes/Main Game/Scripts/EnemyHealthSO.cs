@@ -9,7 +9,7 @@ public class EnemyHealthSO : MonoBehaviour
 
     public GameObject healthBarUI;
     public Slider slider;
-    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private Animator animator;
     
     void Start()
     {
@@ -29,8 +29,8 @@ public class EnemyHealthSO : MonoBehaviour
 
         if (enemyHealth <= 0)
         {
+            animator.SetBool("isDead", true);
             Destroy(gameObject);
-            playerAnimator.SetBool("isDead", false);
         }
 
         if (enemyHealth > maxEnemyHealth)
