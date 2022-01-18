@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6768581690402033420}
   m_Layer: 7
   m_Name: Barrel 1
-  m_TagString: Barrel
+  m_TagString: Clickable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,6 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrelmaxHealth: 10
   animator: {fileID: 6541324141230453610}
+  playerAnimator: {fileID: 0}
 --- !u!114 &6768581690402033420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,4 +220,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191598f5127d2fd44a26b3ac67b8711f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
