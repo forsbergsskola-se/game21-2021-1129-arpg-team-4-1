@@ -30,7 +30,7 @@ public class EnemyHealthSO : MonoBehaviour
         if (enemyHealth <= 0)
         {
             animator.SetBool("isDead", true);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
         if (enemyHealth > maxEnemyHealth)
