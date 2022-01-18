@@ -59,12 +59,7 @@ public class EnemyAggro : MonoBehaviour
            
         }
       
-
-        if (EnemyHealthSO.GameOver)
-        {
-            //disable animator
-            this.enabled = false;
-        }
+        
         
     }
 

@@ -33,12 +33,6 @@ public class EnemyPatrol : MonoBehaviour
             
         } 
         
-        if (EnemyHealthSO.GameOver)
-        {
-            //disable animator
-            this.enabled = false;
-        }
-
        
     }
     

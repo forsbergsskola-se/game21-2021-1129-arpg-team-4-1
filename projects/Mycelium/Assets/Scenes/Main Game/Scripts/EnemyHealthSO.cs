@@ -10,12 +10,13 @@ public class EnemyHealthSO : MonoBehaviour
     public GameObject healthBarUI;
     public Slider slider;
     [SerializeField] private Animator animator;
-    public static bool GameOver;
+    [SerializeField] private float enemyDespawn = 0.8f;
+    //public static bool GameOver;
     void Start()
     {
         enemyHealth = maxEnemyHealth;
         slider.value = CalculateHealth();
-        GameOver = false;
+        //GameOver = false;
     }
 
 
@@ -31,7 +32,7 @@ public class EnemyHealthSO : MonoBehaviour
         if (enemyHealth <= 0)
         {
             animator.SetBool("isDead", true);
-            GameOver = true;
+            Destroy(gameObject, enemyDespawn );
         }
 
         if (enemyHealth > maxEnemyHealth)
