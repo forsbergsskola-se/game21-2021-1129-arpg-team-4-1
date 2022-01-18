@@ -31,6 +31,12 @@ public class EnemyPatrol : MonoBehaviour
                 StartCoroutine(Wait());
             }
             
+        } 
+        
+        if (EnemyHealthSO.GameOver)
+        {
+            //disable animator
+            this.enabled = false;
         }
 
        
