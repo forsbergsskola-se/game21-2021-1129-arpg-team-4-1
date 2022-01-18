@@ -14,8 +14,7 @@ public class Player : MonoBehaviour
     public float minDistance;
     private float attackCooldown = 2.5f;
     public float attackRange = 0f;
-    public Animator animator;
-    
+    [SerializeField] private Animator animator;
    
 
     void Start()
