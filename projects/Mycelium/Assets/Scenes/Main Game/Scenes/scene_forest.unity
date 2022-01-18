@@ -269,6 +269,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2484909549501245062, guid: 6a56cd04e622db442a32ffebd4709dac, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 268533032}
+    - target: {fileID: 2484909549501245062, guid: 6a56cd04e622db442a32ffebd4709dac, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     - target: {fileID: 2484909549821562018, guid: 6a56cd04e622db442a32ffebd4709dac, type: 3}
       propertyPath: m_Name
       value: Quit Canvas
@@ -819,7 +827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 315343049670075977, guid: 68c5c46aaf55c0343b5c8b97a19feb6e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 315343049670075979, guid: 68c5c46aaf55c0343b5c8b97a19feb6e, type: 3}
       propertyPath: m_RootOrder
@@ -1044,6 +1052,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268afd6086c75c44ab177b1e6babc1c9, type: 3}
+--- !u!114 &268533032 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4976995576384565695, guid: 268afd6086c75c44ab177b1e6babc1c9, type: 3}
+  m_PrefabInstance: {fileID: 268533031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb832b3f9fe6bc41ad8d8b37d641394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &347955904
 GameObject:
   m_ObjectHideFlags: 0
