@@ -1,16 +1,38 @@
-# {game-title}
+# Mycelium
 
-{video}
+# Created by:
 
-{description}
+## Programmers:
+Emir Ulusoy
 
-## Team Name
+Denise Joy
 
-{team members and roles}
+Nadia Dahlberg
 
-Feel free to link any existing Linked.in Profiles or Portfolio Websites.
+Naomi Ruokamo
 
-## Design Documents
+Nicci Arosén
+
+Sami Olsson
+
+## Designers:
+Hugo Molander
+
+Joakim Ornerfors
+
+## Artists:
+Judit H
+
+Olof F
+
+Salomon
+
+## Sound:
+Carl J
+
+Ludvig
+
+# Design Documents
 
 {gdd}
 
@@ -18,4 +40,4 @@ Feel free to link any existing Linked.in Profiles or Portfolio Websites.
 
 {art-bible}
 
-## Media
+# Media
